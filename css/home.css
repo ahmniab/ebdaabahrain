@@ -66,6 +66,10 @@
     overflow: hidden;
     height: 100%;
     border: none;
+    display: flex;
+    flex-direction: column;
+
+
   }
 
   .service-card::before {
@@ -149,6 +153,8 @@
     position: relative;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+    align-self: center;
   }
 
   .service-btn::before {
