@@ -35,7 +35,7 @@ $translations = GetTranslations($file);  // Force the translation folder
         <div class="img-container">
             <img loading="lazy" src="<?php echo $translations['leader']['image']; ?>" alt="stuff img">
         </div>
-        <div class="info-container">
+        <div class="info-container text-nowrap">
             <h3><?php echo $translations['leader']['name']; ?></h3>
             <p><?php echo $translations['leader']['title']; ?></p>
         </div>
