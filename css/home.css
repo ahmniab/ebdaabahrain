@@ -1,7 +1,29 @@
   /* ==========================================================================
      6. SERVICES SECTION - MODERN STYLING
      ========================================================================== */
+/* Reset body margin/padding */
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
+  /* Ensure navbar is full-width with no extra spacing */
+  .navbar {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0; /* Remove default Bootstrap margin */
+  }
+
+  /* Remove Bootstrap container-fluid padding */
+  .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Ensure content starts right after navbar */
+  .main-content {
+    margin-top: 0;
+  }
   .services-section {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     padding: 80px 0;
@@ -801,7 +823,7 @@
     line-height: 1.2;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
-
+  
   .slide-title .highlight {
     color: #B7C639;
     position: relative;
@@ -1440,7 +1462,6 @@
   .contact-box ul li {
     margin-bottom: 15px;
     text-align: right;
-    display: flex;
   }
 
   .contact-box ul li a {

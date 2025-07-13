@@ -1,56 +1,130 @@
-<!-- <?php
- require_once 'lang/init.php';
- $navbar_translations = GetTranslations(basename(__FILE__,".php"));
-?> -->
-<!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-  <div class="navbar-brand">
-    <a href="index.php" class="logo">
-      <img loading="lazy" src="<?= $navbar_translations['logo']; ?>" alt="">
+<?php
+  require_once 'lang/init.php';
+  $navbar_translations = GetTranslations(basename(__FILE__, ".php"));
+  $lang_url = '?lang=' . ($lang === 'ar' ? 'en' : 'ar');
+  foreach ($_GET as $key => $value) {
+    if ($key === 'lang') continue;
+    $lang_url .= '&' . $key . '=' . $value;
+  }
+  $is_arabic = ($lang === 'ar');
+?>
+<!DOCTYPE html>
+<html lang="<?= $lang; ?>" dir="<?= $is_arabic ? 'rtl' : 'ltr' ?>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navbar</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/home.css">
+
+
+  <style>
+    /* Logo fix */
+    .navbar-brand img {
+      height: 70px;
+      width: auto;
+    }
+
+    /* Remove space between logo and nav */
+    .navbar .container-fluid {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    /* RTL alignment */
+    html[dir="rtl"] .navbar-nav {
+      margin-right: auto;
+      margin-left: 0;
+    }
+
+    html[dir="ltr"] .navbar-nav {
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .lang-switch img {
+      width: 20px;
+      height: auto;
+      margin-inline-end: 5px;
+    }
+
+    @media (max-width: 991.98px) {
+      .navbar-collapse {
+        background-color: #f8f9fa;
+        padding: 1rem;
+        position: absolute;
+        top: 56px;
+        width: 100%;
+        z-index: 10;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top p-0 m-0 w-100">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.php">
+      <img src="<?= $navbar_translations['logo']; ?>" alt="Logo">
     </a>
-  </div>
-  <ul class="navbar-nav mr-auto" id="navbarItems" style>
-    <?php foreach ($navbar_translations['items'] as $key => $value) { ?>
-      <?php if (isset($value['submenu']) && is_array($value['submenu'])) { ?>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown<?= $key ?>" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <?= $value['name']; ?>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown<?= $key ?>">
-            <?php foreach ($value['submenu'] as $submenu) { ?>
-              <a class="dropdown-item" href="<?= $submenu['href']; ?>"><?= $submenu['name']; ?></a>
-            <?php } ?>
-          </div>
-        </li>
-      <?php } else { ?>
-        <li class="nav-item"><a class="nav-link <?= isset($value['active']) && $value['active'] ? 'active' : ''; ?>" href="<?= $value['href']; ?>"><?= $value['name']; ?></a></li>
-      <?php } ?>
-    <?php } ?>
-    <li class="nav-item"><a class="nav-link lang-switch" 
-        <?php 
-          
-          $lang_url ='?lang=' . ($lang === 'ar' ? 'en' : 'ar');
-          foreach($_GET as $key => $value) {
-            if($key === 'lang') continue;
-            $lang_url .= '&' . $key . '=' . $value;
-          }
-        ?>
-      href="<?= $lang_url; ?>"><img src="<?= $navbar_translations['lang-flag']; ?>" alt="flag" > &nbsp; <?= $navbar_translations['lang']; ?></a></li>
-  </ul>
-  <div class="collapse-button" >
-    <i class="fa-solid fa-bars"></i>
-  </div>
+
+    <!-- Mobile language + hamburger -->
+    <div class="d-flex d-lg-none align-items-center">
+      <a class="nav-link lang-switch me-2" href="<?= $lang_url; ?>">
+        <img src="<?= $navbar_translations['lang-flag']; ?>" alt="flag">
+        <?= $navbar_translations['lang']; ?>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!-- Navbar Items -->
+    <div class="collapse navbar-collapse" id="navbarItems">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <?php foreach ($navbar_translations['items'] as $key => $value): ?>
+          <?php if (isset($value['submenu']) && is_array($value['submenu'])): ?>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown<?= $key ?>" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <?= $value['name']; ?>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown<?= $key ?>">
+                <?php foreach ($value['submenu'] as $submenu): ?>
+                  <li><a class="dropdown-item" href="<?= $submenu['href']; ?>"><?= $submenu['name']; ?></a></li>
+                <?php endforeach; ?>
+              </ul>
+            </li>
+          <?php else: ?>
+            <li class="nav-item">
+              <a class="nav-link <?= isset($value['active']) && $value['active'] ? 'active' : ''; ?>" href="<?= $value['href']; ?>">
+                <?= $value['name']; ?>
+              </a>
+            </li>
+          <?php endif; ?>
+        <?php endforeach; ?>
+      </ul>
+
+      <!-- Desktop language switcher -->
+      <div class="d-none d-lg-flex <?= $is_arabic ? 'me-auto' : 'ms-auto' ?>">
+        <a class="nav-link lang-switch" href="<?= $lang_url; ?>">
+          <img src="<?= $navbar_translations['lang-flag']; ?>" alt="flag">
+          <?= $navbar_translations['lang']; ?>
+        </a>
+      </div>
+    </div>
   </div>
 </nav>
-<script>
-  document.querySelector('.collapse-button').addEventListener('click', function() {
-    const navbarItems = document.getElementById('navbarItems');
-    // navbarItems.classList.toggle('show');
-    if (navbarItems.style.display === 'block') {
-      navbarItems.style.display = 'none';
-    } else {
-      navbarItems.style.display = 'block';
-    }
-  });
-</script>
-<!-- Navbar End  -->
+
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

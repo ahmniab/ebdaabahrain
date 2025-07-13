@@ -4,7 +4,7 @@ return [
     'career'=>'Careers',
     'service'=>'Our Services',
     'cont-whts'=>'Contact us via WhatsApp',
-    'copy-rt'=>'All rights reserved © 2025 - Design and Development',
+    'copy-rt'=>'All rights reserved © 2025 - Design and development by ',
     'license'=>'Licensed by the Central Bank of Bahrain as a microfinance institution',
     'main'=>'Home',
     'about'=>'About',
