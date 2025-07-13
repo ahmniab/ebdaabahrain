@@ -2158,11 +2158,11 @@ font-size: 25px !important;
     padding-top: 20px;
   }
 
-  #contactForm,#complaintForm,#jobsForm {
+  /* #contactForm,#complaintForm,#jobsForm {
     padding: 20px;
-  }
+  } */
 
-  #contactForm input, #contactForm textarea, #contactForm select, #jobsForm input, #jobsForm textarea, #jobsForm select {
+  /* #contactForm input, #contactForm textarea, #contactForm select, #jobsForm input, #jobsForm textarea, #jobsForm select {
     width: 100%;
     margin-bottom: 10px;
     border: 1px solid #61D2B4;
@@ -2176,18 +2176,18 @@ font-size: 25px !important;
     box-shadow: none;
     padding: .375rem .75rem !important;
 
-  }
-  #contactForm input:focus,textarea:focus, #jobsForm input:focus,textarea:focus {
+  } */
+  /* #contactForm input:focus,textarea:focus, #jobsForm input:focus,textarea:focus {
   box-shadow: none;
   color: black;
   border: 1px solid #61D2B4;
   background: transparent;
   outline: none;
-  }
+  } */
 
-  .btn.disabled, .btn:disabled {
+  /* .btn.disabled, .btn:disabled {
     opacity: 1;
-  }
+  } */
 
   .text-danger {
     font-size: 14px;
