@@ -153,21 +153,21 @@ $translations = GetTranslations(basename(__FILE__,".php"));
   </div>
   <!-- Contact Us Section Start -->
   <section class="section contact-section" id="contact">
-    <div class="container">
+    <div class="container container-fluid--mobile">
       <div class="section-header">
         <h2 class="section-title"><?= $translations['contact']; ?></h2>
         <hr class="lines" />
         <p class="section-subtitle"><?= $translations['contact-us2']; ?>
           <br /><?= $translations['ur-opn']; ?></p>
       </div>
-      <div class="contact-form" id="contactUs">
+      <div class="contact-form text-nowrap" id="contactUs">
         <div class="row ar-dir">
-          <div class="col-lg-7 col-sm-12 col-xs-12">
+          <div class="col-lg-7 col-md-6 col-sm-12 mb-4 ">
             <div class="contact-address">
               <div class="row">
                 <!-- الادارة العامة -->
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                  <div class="contact-box">
+                <div class="col-lg-6 col-md-6 col-lg-6 col-sm-6">
+                  <div class="contact-box container-fluid--mobile">
                     <h5><?= $translations['manama-tit']; ?></h5>
                     <hr />
                     <ul>
@@ -179,21 +179,21 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                 </div>
 
                 <!-- فرع العاصمة -->
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                  <div class="contact-box">
+                <div class="col-lg-6 col-md-6 col-lg-6 col-sm-6">
+                  <div class="contact-box container-fluid--mobile">
                     <h5><?= $translations['manama-tit2']; ?></h5>
                     <hr />
                     <ul>
                       <li><a href="tel:+973 17381003"><i class="fa fa-phone"></i>973 17381003+</a></li>
-                      <li><a href="mailto:almanama@ebdaabahrain.com"><i class="fa fa-envelope"></i>almanama@ebdaabahrain.com</a></li>
+                      <li><a href="mailto:almanama@ebdaabahrain.com"><i class="fa fa-envelope"></i><span>almanama@ebdaabahrain.com</span></a></li>
                       <li><a href="https://goo.gl/maps/M64LjU9m4v32" target="_blank"><i class="fa fa-map-marker"></i><?= $translations['manama']; ?></a></li>
                     </ul>
                   </div>
                 </div>
 
                 <!-- فرع عالي -->
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                  <div class="contact-box">
+                <div class="col-lg-6 col-md-6 col-lg-6 col-sm-6">
+                  <div class="contact-box container-fluid--mobile">
                     <h5><?= $translations['aali-tit']; ?></h5>
                     <hr />
                     <ul>
@@ -218,13 +218,13 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                 </div> -->
 
                 <!-- فرع مدينة حمد -->
-                <div class="col-lg-6 col-sm-6 col-xs-12">
-                  <div class="contact-box">
+                <div class="col-lg-6 col-md-6 col-lg-6 col-sm-6">
+                  <div class="contact-box container-fluid--mobile">
                     <h5><?= $translations['hamad-tit']; ?></h5>
                     <hr />
                     <ul>
                       <li><a href="tel:+973 17381018"><i class="fa fa-phone"></i>973 17381018+</a></li>
-                      <li><a href="mailto:hamad.town@ebdaabahrain.com"><i class="fa fa-envelope"></i>hamad.town@ebdaabahrain.com</a></li>
+                      <li><a href="mailto:hamad.town@ebdaabahrain.com"><i class="fa fa-envelope"></i><span>hamad.town@ebdaabahrain.com</span></a></li>
                       <li><a href="https://goo.gl/maps/qShfUw1tMhk" target="_blank"><i class="fa fa-map-marker"></i><?= $translations['hamad']; ?></a></li>
                     </ul>
                   </div>

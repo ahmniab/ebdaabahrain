@@ -58,7 +58,7 @@
         background-color: #f8f9fa;
         padding: 1rem;
         position: absolute;
-        top: 56px;
+        top: 80px;
         width: 100%;
         z-index: 10;
       }

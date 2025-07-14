@@ -1,10 +1,8 @@
 <?php
 return [
-    'lang' => 'العربية',
     'ebda-bh'=> 'Ebdaa Bahrain',
     'apply' => 'APPLY NOW',
     'apply2' => 'Start Your Loan Application',
-    'suc-story' => 'SUCCESS STORIES',
     'contact' => 'CONTACT US',
     'title' => 'Ebdaa For Microfinance - Bahrain',
     'meta-des' => 'Ebdaa Microfinance Bank Bahrain - Employment Opportunities, Financial Services, SME & Entrepreneurial Support Services.',
@@ -19,10 +17,6 @@ return [
     'bullet3' => 'Comprehensive startup support',
     'services' => 'Learn About Our Services',
     'apply-loan' => 'Apply for a Loan',
-    'succ' => 'Success',
-    'cunt' => 'Continuous ',
-    'our-succ'=> 'Our Track Record Speaks for Itself',
-    'header'=> 'For 14 years, we\'ve helped thousands of businesses grow and thrive. We take pride in our track record and remain committed to delivering exceptional service to our valued clients. ',
     'sts-cust' => 'Satisfied Customers',
     'mili-dinar' => 'Million BHD',
     'last-update' => 'Data last updated: 15/07/2025',
@@ -152,5 +146,11 @@ return [
     'cont-whts'=>'Contact us via WhatsApp',
     'copy-rt'=>'All Rights Reserved © 2024 - Design & Development by ',
     'license'=>'Licensed by the Central Bank of Bahrain as a traditional microfinance institution',
+    'header-des2'=>'Your dream deserves to grow.'. '<strong> Let us fund it.</strong>',
+    'ebdaa-loans'=>'With Ebdaa\'s tailored bussiness loans',
+    'header-des3'=>'Join the success stories of those who benefited from ',
+    'finance'=>'\'financing',
+    'header-des3-1'=>'Whatever your idea is -we\'ll help you make it a relaity ',
+    'know-succ'=>'Discover their stories',
 
 ];

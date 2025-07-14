@@ -27,7 +27,7 @@ $translations = GetTranslations(basename(__FILE__, '.php'));
 <body>
     <?php include 'navbar.php'; ?>
     <div class="header">
-        <h1><?php echo $translations['main_title'] ?></h1>
+        <h1><?php echo $translations['title'] ?></h1>
     </div>
     <div class="img-container">
         <img loading="lazy" src="assets/img/main-about-us-overflew.webp" alt="main img" class="main-img">

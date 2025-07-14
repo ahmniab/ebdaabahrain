@@ -67,13 +67,12 @@
             <li dir="<?php echo $dir ?>" class="splide__slide" style="background: url('assets/img/second-slide-bg.jpeg') center/cover;">
                 <div class="d-flex align-items-center justify-content-center h-50">
                     <div class="text-center text-white">
-                        <h1 class="display-4">إستثمر فى احلامك..وحولها
-                            <strong>لمشاريع ناجحة</strong>
+                        <h1 class="display-4"><?= $translations['header-des2']; ?>
                         </h1>
-                        <h2>مع قروض الابداع</h2>
+                        <h2 calass="m-2"><?= $translations['ebdaa-loans']; ?></h2>
                         <a href="application-form.php" class="btn btn-primary">
-                            اطلب قرضك الآن
-                        </a>
+                            <?= $lang === 'ar' ? $translations['apply-loans'] : $translations['apply-now'] ; ?>
+                         </a>
                     </div>
                 </div>
             </li>
@@ -102,13 +101,11 @@
 
                 </div>
                 <div class="success-text">
-                    <h1>انضم لسلسة الناجحين الذين استفادوا من تمويلات
-                        <strong class="bold">الإبداع</strong>
+                    <h1><?= $translations['header-des3']; ?>
+                        <strong class="bold"><?= $lang === 'ar' ? 'الإبداع' : 'Ebdaa\'s financing' ?></strong>
                     </h1>
-                    <h2>أيا كانت الفكرة نساعدك على تحقيقها</h2>
-                    <a href="success-stories.php" class="btn btn-info">
-                        تعرف على قصصهم
-                    </a>
+                    <h2><?= $translations['header-des3-1']; ?></h2>
+                    <a href="success-stories.php" class="btn btn-info"><?= $translations['know-succ']; ?>                    </a>
                 </div>
             </li>
             <li class="splide__slide" dir="<?php echo $dir ?>">
