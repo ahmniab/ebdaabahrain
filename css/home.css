@@ -350,9 +350,16 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 15px rgba(46, 143, 54, 0.1);
   }
-
-  .counter-card {
+  .counter-card{
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
+  }
+  .percentage-counter{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
+
+  }
+
+  .counter-card,
+  .percentage-counter {
     border-radius: 20px;
     padding: 50px 30px;
     text-align: center;
@@ -362,18 +369,26 @@
     position: relative;
     overflow: hidden;
     height: 100%;
-    min-height: 280px;
+    min-height: auto;
     backdrop-filter: blur(10px);
   }
+  .counter-card::before{
+    background: linear-gradient(90deg, #7EB55D, #B7C639, #5DA930, #2E8F36, #3BA8A2);
 
-  .counter-card::before {
+  }
+  .percentage-counter::before{
+    background: linear-gradient(90deg, #3BA8A2, #2E8F36, #5DA930, #B7C639);
+
+  }
+
+  .counter-card::before,
+  .percentage-counter::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #7EB55D, #B7C639, #5DA930, #2E8F36, #3BA8A2);
     border-radius: 20px 20px 0 0;
   }
 
@@ -382,16 +397,23 @@
     background: linear-gradient(90deg, #3BA8A2, #2E8F36, #5DA930, #B7C639, #7EB55D);
   }
 
-  .counter-card:hover {
+  .counter-card:hover,
+  .percentage-counter:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(46, 143, 54, 0.2);
     border-color: rgba(126, 181, 93, 0.4);
   }
+  .counter-icon{
+    background: linear-gradient(135deg, #5DA930, #2E8F36);
+  }
+  .percentage-icon{
+    background: linear-gradient(135deg, #3BA8A2, #2E8F36);
+  }
 
-  .counter-icon {
+  .counter-icon,
+  .percentage-icon {
     width: 90px;
     height: 90px;
-    background: linear-gradient(135deg, #5DA930, #2E8F36);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -401,7 +423,7 @@
     color: white;
     box-shadow: 0 8px 25px rgba(93, 169, 48, 0.3);
     transition: all 0.4s ease;
-    position: relative;
+    /* position: relative; */
   }
 
   .counter-card:hover .counter-icon {
@@ -410,23 +432,27 @@
     box-shadow: 0 12px 35px rgba(59, 168, 162, 0.4);
   }
 
-  .counter-icon i {
+  .counter-icon i,
+  .percentage-icon i {
     transition: all 0.4s ease;
   }
 
   .counter-card:hover .counter-icon i {
     transform: scale(1.2);
   }
-
-  .counter-number {
+  .counter-number{
     font-size: 2.3rem;
-    font-weight: 700;
-    color: #2E8F36;
-    margin-bottom: 15px;
     text-shadow: 0 2px 4px rgba(46, 143, 54, 0.1);
+    color: #2E8F36;
+  }
+
+  .counter-number,
+  .percentage-number{
+    font-weight: 700;
+    margin-bottom: 15px;
     transition: all 0.4s ease;
     line-height: 1.2;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
   }
 
   .counter-card:hover .counter-number {
@@ -434,7 +460,8 @@
     transform: scale(1.05);
   }
 
-  .counter-label {
+  .counter-label,
+  .percentage-label {
     font-size: 1.3rem;
     font-weight: 600;
     color: #5DA930;
@@ -443,7 +470,8 @@
     line-height: 1.3;
   }
 
-  .counter-card:hover .counter-label {
+  .counter-card:hover .counter-label,
+  .percentage-counter:hover .percentage-label {
     color: #2E8F36;
   }
 
@@ -515,56 +543,9 @@
     opacity: 0.9;
   }
 
-  .percentage-counter {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
-    border-radius: 20px;
-    padding: 50px 30px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(46, 143, 54, 0.1);
-    border: 1px solid rgba(126, 181, 93, 0.2);
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-    min-height: 280px;
-    backdrop-filter: blur(10px);
-  }
-
-  .percentage-counter::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #3BA8A2, #2E8F36, #5DA930, #B7C639);
-    border-radius: 20px 20px 0 0;
-  }
-
   .percentage-counter:hover::before {
     height: 6px;
     background: linear-gradient(90deg, #7EB55D, #B7C639, #5DA930, #3BA8A2);
-  }
-
-  .percentage-counter:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(46, 143, 54, 0.2);
-    border-color: rgba(126, 181, 93, 0.4);
-  }
-
-  .percentage-icon {
-    width: 90px;
-    height: 90px;
-    background: linear-gradient(135deg, #3BA8A2, #2E8F36);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 30px;
-    font-size: 2.2rem;
-    color: white;
-    box-shadow: 0 8px 25px rgba(59, 168, 162, 0.3);
-    transition: all 0.4s ease;
   }
 
   .percentage-counter:hover .percentage-icon {
@@ -573,18 +554,10 @@
     box-shadow: 0 12px 35px rgba(93, 169, 48, 0.4);
   }
 
-  .percentage-icon i {
-    transition: all 0.4s ease;
-  }
-
   .percentage-number {
     font-size: 2.6rem;
-    font-weight: 700;
     color: #3BA8A2;
-    margin-bottom: 15px;
     text-shadow: 0 2px 4px rgba(59, 168, 162, 0.1);
-    transition: all 0.4s ease;
-    line-height: 1.2;
   }
 
   .percentage-counter:hover .percentage-number {
@@ -592,18 +565,189 @@
     transform: scale(1.05);
   }
 
-  .percentage-label {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #5DA930;
-    margin: 0;
-    transition: all 0.4s ease;
-    line-height: 1.3;
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    }
+  /* Ensure consistent card heights */
+    .counter-card,
+    .precentage-counter {
+    height: 100%;
+    margin-bottom: 20px;
+  }
+   /* Responsive number sizes */
+    .counter-number {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .container {
+    width: 100% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 
-  .percentage-counter:hover .percentage-label {
-    color: #2E8F36;
+  .row {
+    margin: 0 !important;
+    width: 100% !important;
   }
+
+  /* Two columns layout */
+  .col-sm-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    box-sizing: border-box;
+  }
+
+  /* Adjust card size */
+  .counter-card,
+  .percentage-counter {
+    padding: 30px !important;
+    min-height: auto !important;
+    height: auto !important;
+    font-size: 0.95rem !important;
+    margin-bottom: 16px !important;
+    border: 1px solid rgba(126, 181, 93, 0.2) !important;
+    box-shadow: none !important;
+  }
+
+  /* Content inside cards */
+  .counter-card *,
+  .percentage-counter * {
+    font-size: 1rem !important;
+    line-height: 1.2;
+  }
+
+  .counter-icon,
+  .percentage-icon {
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 1.6rem !important;
+    margin-bottom: 10px;
+  }
+
+  .counter-number,
+  .percentage-number {
+    font-size: 1.4rem !important;
+    margin-bottom: 5px;
+  }
+
+  .counter-label,
+  .percentage-label {
+    font-size: 1rem !important;
+  }
+
+  .counter {
+    font-size: 1.2rem !important;
+  }
+
+  .counter-details {
+    padding: 8px !important;
+  }
+
+  .detail-item {
+    margin: 5px 0 !important;
+  }
+
+  .detail-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 1.2rem;
+  }
+
+  .detail-label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Use full-width layout */
+  .container {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .row {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Two equal columns */
+  .col-sm-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    /* padding-left: 4px !important; */
+    /* padding-right: 4px !important; */
+    box-sizing: border-box;
+  }
+
+  /* Smaller and tighter card */
+  .counter-card,
+  .percentage-counter {
+    padding: 50px !important;
+    min-height: auto !important;
+    height: auto !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* Shrink everything inside card */
+  .counter-card *,
+  .percentage-counter * {
+    font-size: 1rem !important;
+    line-height: 1.1;
+  }
+
+  .counter-icon,
+  .percentage-icon {
+    width: 55px !important;
+    height: 55px !important;
+    font-size: 1.4rem !important;
+    margin: 0 auto 5px auto;
+  }
+
+  .counter-number,
+  .percentage-number {
+    font-size: 1.1rem !important;
+    margin-bottom: 5px;
+  }
+
+  .counter-label,
+  .percentage-label {
+    font-size: 1.2rem !important;
+  }
+  .counter{
+    font-size: 1.2rem !important;
+  }
+  .counter-details {
+    padding: 4px !important;
+  }
+
+  .detail-item {
+    margin: 3px 0 !important;
+  }
+
+  .detail-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 1.4rem;
+  }
+
+  .detail-label {
+    font-size: 1.4rem;
+  }
+
+  /* Remove any border or shadow that makes cards look bigger */
+  .counter-card,
+  .percentage-counter {
+    box-shadow: none !important;
+    border: 1px solid rgba(126, 181, 93, 0.2) !important;
+  }
+}
+
+
 
   /*
   slide 3
@@ -618,6 +762,46 @@
     justify-content: center;
     align-items: flex-start;
   }
+  /* Mobile-specific adjustments (applies only below 768px) */
+@media (max-width: 767.98px) {
+    .success-element {
+        aspect-ratio: 1/1; /* Makes images square */
+        overflow: hidden;
+    }
+    
+    .success-element img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .success-text {
+        padding: 0 12px;
+        text-align: center;
+    }
+    
+    .success-text h1 {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+    
+    .success-text h2 {
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+    }
+    
+    .success-text .btn {
+        width: 100%;
+        max-width: 220px;
+        margin: 0 auto;
+        padding: 10px 16px;
+    }
+    
+    .bold {
+        display: block; /* Makes the strong text appear on its own line */
+        margin-top: 4px;
+    }
+}
 
   .success-element {
     height: 100%;
@@ -835,7 +1019,7 @@
     border-radius: 50px;
     padding: 8px 20px;
     margin-bottom: 30px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
   }
 
@@ -850,6 +1034,7 @@
     margin-bottom: 25px;
     line-height: 1.2;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
   }
   .slide-title:lang(ar){
     text-align: right;
@@ -861,6 +1046,7 @@
   .slide-title .highlight {
     color: #B7C639;
     position: relative;
+    /* display: inline-block; */
   }
 
   .slide-description {
@@ -1107,7 +1293,7 @@
     opacity: 0.9;
     margin: 0;
   }
-
+  
   /* Responsive Design for Carousel */
   @media (min-width: 991px) {
     .carousel-indicators {
@@ -1167,11 +1353,65 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .slide-title {
       font-size: 2.2rem;
     }
+  }
+    @media (max-width: 991px) {
+    .slide-title {
+      font-size: 2rem;
+      white-space: normal;
+      display: block;
+    }
 
+    @media (max-width: 479px) {
+  /* Reduce container padding */
+  .carousel-caption .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Stack columns vertically */
+  .carousel-caption .row.align-items-center {
+    flex-direction: column;
+  }
+
+  /* Adjust title font size and wrapping */
+  .slide-title {
+    font-size: 1.3rem !important; /* Down from 2.2rem */
+    line-height: 1.3;
+    margin-bottom: 0.5rem !important; /* Reduce space below title */
+  }
+  .text-md-wrap{
+    white-space: normal;
+  }
+
+  /* Shrink description text */
+  .slide-description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Scale down bullet points */
+  .slide-features {
+    margin-bottom: 1rem !important;
+  }
+  .feature-item {
+    font-size: 0.85rem;
+  }
+
+  /* Make buttons smaller and stack vertically */
+  .slide-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .slide-actions .btn {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
     .slide-description {
       font-size: 1rem;
     }
@@ -1219,11 +1459,11 @@
 
   @media (max-width: 576px) {
     .slide-title {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
 
     .slide-badge {
-      font-size: 12px;
+      font-size: 15px;
       padding: 6px 15px;
     }
 
@@ -1259,130 +1499,6 @@
     }
   }
 
-
-
-  /* Responsive adjustments for counters */
-  @media (max-width: 768px) {
-    .counters-section {
-      padding: 60px 0;
-    }
-
-    .counter-card {
-      padding: 40px 25px;
-      margin-bottom: 20px;
-      min-height: 250px;
-    }
-
-    .counter-icon {
-      width: 70px;
-      height: 70px;
-    }
-
-    .counter-icon i {
-      font-size: 1.8rem;
-    }
-
-    .counter-number {
-      font-size: 2rem;
-    }
-
-    .percentage-counter {
-      padding: 40px 25px;
-      min-height: 250px;
-    }
-
-    .percentage-number {
-      font-size: 2.2rem;
-    }
-
-    .update-info {
-      padding: 12px 20px;
-      font-size: 0.9rem;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .counter-card {
-      padding: 10px 20px;
-      min-height: 50px;
-    }
-
-    .counter-icon {
-      width: 35px;
-      height: 35px;
-      margin-bottom: 10px;
-    }
-
-    .counter-icon i {
-      font-size: 1rem;
-    }
-
-    .counter-number {
-      font-size: 1rem;
-    }
-
-    .counter-label {
-      font-size: 1.1rem;
-    }
-
-    .percentage-counter {
-      padding: 10px 20px;
-      min-height: 50px;
-    }
-
-    .percentage-number {
-      font-size: 1.2rem;
-    }
-
-    .percentage-label {
-      font-size: 0.8rem;
-    }
-
-    .update-info {
-      padding: 10px 15px;
-      font-size: 0.8rem;
-    }
-    .percentage-icon{
-      width: 35px;
-      height: 35px;
-      margin-bottom: 10px;
-      font-size: 1rem;
-    }
-  }
-
-  @media (max-width: 991px) and (min-width: 768px) {
-    .counters-section .row>div {
-      flex: 0 0 50%;
-      max-width: 50%;
-      margin-bottom: 24px;
-    }
-
-    .counter-card,
-    .percentage-counter {
-      padding: 28px 12px;
-      min-height: 180px;
-      width: 95%;
-      margin: 0 auto 18px auto;
-    }
-
-    .counter-icon,
-    .percentage-icon {
-      width: 60px;
-      height: 60px;
-      font-size: 1.5rem;
-      margin-bottom: 18px;
-    }
-
-    .counter-number,
-    .percentage-number {
-      font-size: 1.4rem;
-    }
-
-    .counter-label,
-    .percentage-label {
-      font-size: 1rem;
-    }
-  }
 
   /* ==========================================================================
      CONTACT SECTION MODERN STYLES
