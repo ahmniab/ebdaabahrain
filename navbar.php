@@ -64,7 +64,7 @@
       }
     }
     /* Mobile Navbar (360px and below) */
-  @media (max-width: 360px) {
+   @media (max-width: 479px) {
     /* Shrink logo */
     .navbar-brand img {
       height: 45px; /* Adjust based on your logo's aspect ratio */
@@ -93,7 +93,7 @@
         background-color: #f8f9fa;
         padding: 1rem;
         position: absolute;
-        top: 60px;
+        top: 55px;
         width: 100%;
         z-index: 10;
       }

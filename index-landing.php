@@ -20,7 +20,7 @@
                                             <span><?= $translations['des']; ?></span>
                                         </div>
 
-                                        <h1 class="slide-title mb-3 text-md-wrap">
+                                        <h1 class="slide-title mb-3">
                                             <?= ($lang == 'en')
                                                 ? '<span class="highlight">' . $translations['ebdaa'] . '</span>' . $translations['bank'] . $translations['bahrain']
                                                 : $translations['bank'] . '<span class="highlight">' . $translations['ebdaa'] . '</span>' . $translations['bahrain'];

@@ -171,7 +171,7 @@ $translations = GetTranslations(basename(__FILE__, '.php'));
                                     <?php if($lang == 'ar'){ ?>
                                         قدّم الآن
                                     <?php } else{ ?>
-                                        Submit Now
+                                        Submit
                                     <?php } ?>
                                 </button>
                             </div>
