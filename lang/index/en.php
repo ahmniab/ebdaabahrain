@@ -44,6 +44,11 @@ return [
     'tamayouz-tit'=>'AL TAMAYOUZ LOAN',
     'tamayouz-des'=>'Supporting licensed businesses with 1,500-7,000 BHD in funding for operational growth or equipment needs. Repay over 3 years with competitive rates.',
     'tamayouz-des2'=>'Ebdaa Bahrain now offers Al Tamayuz Loan for licensed commercial, industrial and service business owners. The loan amount ranges between BD 1500 and 7000, and is paid over 24 months.',
+    'tamayouzp-tit'=>'AL TAMAYOUZ PLUS LOAN',
+    'tamayouzp-des'=>'This loan is designed to support commercial, service, and industrial projects with flexible terms.
+',
+    'tamayouzp-des2'=>'The loan amount ranges between BD 7500 and 10,000 and can be paid over 36 months.
+',
     'tafawoq-tit'=>'AL TAFAWOQ LOAN',
     'tafawoq-des'=>'This loan stands out for its repayment flexibility, specifically designed to meet the needs of licensed commercial business owners (both men and women) operating outside residential premises. It is also available for mobile businesses such as distribution/delivery vans and taxis. The loan features adaptable repayment periods, allowing clients to choose 6, 12, 18, or 24-month plans.',
     'tafawoq-des2'=>'This loan is known for its flexibility. It is designed to meet the needs men or women with licensed businesses. It can also be provided to mobile businesses such as distribution and delivery businesses or even taxi owners. Al Tafawoq loan is an amount between BD 1000 and 7000 and can be paid over 6, 12, 18 or 24 months.',

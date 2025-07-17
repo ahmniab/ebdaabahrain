@@ -77,7 +77,7 @@
 
       </nav>      <!-- Navbar End  -->
      <div >
-         <img src="assets/img/job_application.jpg" style="width:100%; max-hieght:400px;">
+         <img src="assets/img/job_application.jpg" style="width:100%; max-height:400px;">
          <div class="col-sm-12 col-md-12 col-lg-12">
               <h4 class="job-header">Apply for a JOB</h4>
               </div>

@@ -77,6 +77,23 @@ $translations = GetTranslations('index', $lang);
           </div>
         </div>
 
+        <!-- قرض النجاح -->
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="service-card dark">
+            <div class="service-icon">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h4 class="service-title"><?= $translations['najah-tit']; ?></h4>
+            <p class="service-description">
+              <?= $translations['najah-des']; ?>
+            </p>
+            <a class="service-btn" href="loan-details.php?id=najah">
+              <i class="fa fa-info-circle ml-2"></i>
+               <?= $translations['det']; ?>
+            </a>
+          </div>
+        </div>
+
         <!-- قرض الأمل -->
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="service-card danger">
@@ -88,40 +105,6 @@ $translations = GetTranslations('index', $lang);
               <?= $translations['amal-des']; ?>
             </p>
             <a class="service-btn" href="loan-details.php?id=amal">
-              <i class="fa fa-info-circle ml-2"></i>
-               <?= $translations['det']; ?>
-            </a>
-          </div>
-        </div>
-
-        <!-- قرض التميز -->
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="service-card warning">
-            <div class="service-icon">
-              <i class="fa-solid fa-check"></i>
-            </div>
-            <h4 class="service-title"><?= $translations['tamayouz-tit']; ?></h4>
-            <p class="service-description">
-              <?= $translations['tamayouz-des']; ?>
-            </p>
-            <a class="service-btn" href="loan-details.php?id=tamayouz">
-              <i class="fa fa-info-circle ml-2"></i>
-               <?= $translations['det']; ?>
-            </a>
-          </div>
-        </div>
-
-        <!-- القرض الموسمي -->
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="service-card info">
-            <div class="service-icon">
-              <i class="fa-solid fa-sun"></i>
-            </div>
-            <h4 class="service-title"><?= $translations['mawsimi-tit']; ?></h4>
-            <p class="service-description">
-              <?= $translations['mawsimi-des']; ?>
-            </p>
-            <a class="service-btn" href="loan-details.php?id=mawsimi">
               <i class="fa fa-info-circle ml-2"></i>
                <?= $translations['det']; ?>
             </a>
@@ -145,17 +128,51 @@ $translations = GetTranslations('index', $lang);
           </div>
         </div>
 
-        <!-- قرض النجاح -->
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="service-card dark">
+        <!-- قرض التميز -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="service-card warning">
             <div class="service-icon">
-              <i class="fa-solid fa-rocket"></i>
+              <i class="fa-solid fa-check"></i>
             </div>
-            <h4 class="service-title"><?= $translations['najah-tit']; ?></h4>
+            <h4 class="service-title"><?= $translations['tamayouz-tit']; ?></h4>
             <p class="service-description">
-              <?= $translations['najah-des']; ?>
+              <?= $translations['tamayouz-des']; ?>
             </p>
-            <a class="service-btn" href="loan-details.php?id=najah">
+            <a class="service-btn" href="loan-details.php?id=tamayouz">
+              <i class="fa fa-info-circle ml-2"></i>
+               <?= $translations['det']; ?>
+            </a>
+          </div>
+        </div>
+
+        <!--  قرض التميز بلس -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="service-card warning">
+            <div class="service-icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <h4 class="service-title"><?= $translations['tamayouzp-tit']; ?></h4>
+            <p class="service-description">
+              <?= $translations['tamayouzp-des']; ?>
+            </p>
+            <a class="service-btn" href="loan-details.php?id=tamayouz-plus">
+              <i class="fa fa-info-circle ml-2"></i>
+               <?= $translations['det']; ?>
+            </a>
+          </div>
+        </div>
+
+        <!-- القرض الموسمي -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="service-card info">
+            <div class="service-icon">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <h4 class="service-title"><?= $translations['mawsimi-tit']; ?></h4>
+            <p class="service-description">
+              <?= $translations['mawsimi-des']; ?>
+            </p>
+            <a class="service-btn" href="loan-details.php?id=mawsimi">
               <i class="fa fa-info-circle ml-2"></i>
                <?= $translations['det']; ?>
             </a>

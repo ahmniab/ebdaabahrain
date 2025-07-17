@@ -16,7 +16,7 @@
                                 <div class="col-lg-6 col-md-12">
                                     <div class="slide-content">
                                         <div class="slide-badge">
-                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star text-nowrap"></i>
                                             <span><?= $translations['des']; ?></span>
                                         </div>
 
@@ -46,7 +46,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="slide-actions ">
+                                        <div class="slide-actions text-nowrap">
                                             <a href="application-form.php" class="btn btn-primary btn-lg">
                                                 <i class="fa-solid fa-rocket ml-2"></i>
                                                 <?= $translations['apply-loan']; ?>

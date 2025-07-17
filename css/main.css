@@ -275,8 +275,11 @@ html[dir="ltr"] .navbar-nav {
     width: 100%;
     z-index: 10;
   }
+  .navbar-collapse {
+    top: 95px;
+  }
 }
-/* Mobile Navbar (360px and below) */
+
 @media (max-width: 479px) {
 /* Shrink logo */
 .navbar-brand img {
@@ -306,7 +309,7 @@ html[dir="ltr"] .navbar-nav {
     background-color: #f8f9fa;
     padding: 1rem;
     position: absolute;
-    top: 55px;
+    top: 65px;
     width: 100%;
     z-index: 10;
   }
