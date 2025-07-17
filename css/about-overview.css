@@ -29,6 +29,7 @@ img {
     width: 100%;
     height: auto;
     display: block;
+    /* margin-top: 20px; */
 }
 .main-img {
     object-fit: cover;
@@ -39,10 +40,25 @@ img {
 .text-section{
     margin-top: 30px;
     text-align: justify;
-    color: #7D8285;
+    color: #7e857d;
     margin-bottom: 50px;
     padding: 0 10px;
 }
 .text-section h5{
     font-family: 'Arabic-bold';
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #37672f;
+    font-size: 1.4rem;
+}
+
+.text-section li{
+    font-size: 0.95rem;
+}
+.text-section:lang(ar){
+    text-align: right;
+}
+
+.text-section:lang(en){
+    text-align: left;
 }

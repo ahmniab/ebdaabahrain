@@ -1198,6 +1198,11 @@ html[dir="ltr"] .navbar-nav {
   margin-bottom: 20px;
   text-shadow: 0 2px 4px rgba(46, 143, 54, 0.1);
 }
+@media(max-width:450px){
+  #application .section-title {
+  font-size: 2rem;
+  }
+}
 
 #application .section-title::after {
   content: '';

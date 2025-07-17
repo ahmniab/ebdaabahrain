@@ -33,7 +33,7 @@ $loan = $id ? getLoanById($id, $lang) : null;
             <img loading="lazy" src="<?= htmlspecialchars($loan['image']) ?>" alt="<?= htmlspecialchars($loan['title']) ?>" style="max-width: 220px; width: 100%; height: auto; border-radius: 18px; box-shadow: 0 2px 16px rgba(46,143,54,0.08);" />
           </div>
         <?php } ?>
-        <div class="loan-description"> <?= htmlspecialchars($loan['description']) ?> </div>
+        <!-- <div class="loan-description"> <?= htmlspecialchars($loan['description']) ?> </div> -->
         <div class="loan-details-body"> <?= nl2br(htmlspecialchars($loan['details'])) ?> </div>
         <div class="loan-details-section">
           <h3><?= $translations['loan-terms'] ?? ($lang === 'ar' ? 'شروط القرض:' : 'Eligibility Criteria:') ?></h3>

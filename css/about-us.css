@@ -329,6 +329,12 @@ h4{
   font-weight: 700;
   margin-bottom: 20px;
 }
+.financial-title:lang(ar){
+  text-align: right;
+}
+.financial-title:lang(en){
+  text-align: left;
+}
 
 /* Board Bio Button */
 .board-bio-btn {

@@ -6,7 +6,12 @@
     margin: 0;
     padding: 0;
   }
-
+body:lang(ar){
+  text-align: right;
+}
+body:lang(en){
+  text-align: left;
+}
   /* Ensure navbar is full-width with no extra spacing */
   .navbar {
     padding-left: 0;
@@ -82,6 +87,11 @@
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.8;
+  }
+  @media(max-width:550px){
+    .section-title {
+    font-size: 2rem;
+  }
   }
 
   /* Service Cards */

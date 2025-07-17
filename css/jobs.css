@@ -5,6 +5,12 @@ body {
     /* font-family: 'Tajawal', Arial, sans-serif; */
     color: #222;
 }
+.jobs-section:lang(ar){
+    text-align: right;
+  }
+.jobs-section:lang(en){
+    text-align: left;
+  }
 
 .jobs-section {
     background: #fff;
@@ -50,7 +56,7 @@ body {
     padding: 1rem 1.5rem;
     width: 100%;
     border: none;
-    text-align: right;
+    /* text-align: right; */
     outline: none;
     font-size: 1.1rem;
     font-weight: 600;
@@ -75,7 +81,7 @@ body {
     margin-bottom: 1rem;
     border: 1px solid #e9f9f7;
     color: #222;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .content p,

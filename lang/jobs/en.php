@@ -1,7 +1,7 @@
 <?php
 
 return [
-    "page_title" => "Careers | IBdaa Bank Bahrain",
+    "page_title" => "Careers | EBdaa Bank Bahrain",
     "title" => "Available Jobs",
     "jobs" => [
         0 => [
