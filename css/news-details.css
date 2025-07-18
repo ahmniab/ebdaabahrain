@@ -1,11 +1,8 @@
 /* News Details Page Custom Styles */
 .news-details-container {
-    text-align: justify;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    /* direction: rtl; */
     /* font-family: 'Tajawal', Arial, sans-serif; */
-    text-align: justify !important;
 }
 
 .news-details-card {
@@ -39,6 +36,14 @@
     color: #222;
     line-height: 2;
     
+}
+.news-details-card .card-title:lang(ar),
+.news-details-card .card-text:lang(ar){
+    text-align: right;
+}
+.news-details-card .card-title:lang(en),
+.news-details-card .card-text:lang(en){
+    text-align: right;
 }
 
 .news-gallery {

@@ -122,7 +122,7 @@
                   <div class="col-sm-12 col-md-6">
                     <div class="box_shadow">
                       <p><b>First, let the person in charge know your problem</b></p>
-                      <p>   Let us know your problem and suggestions by contacting the Complaints Officer:</p>
+                      <p>Let us know your problem and suggestions by contacting the Complaints Officer:</p>
                       <p> Telephone +973 38712712</p>
                       <p> Or email complaints@ebdaabahrain.com </p>
                     </div>

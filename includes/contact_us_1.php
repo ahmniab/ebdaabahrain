@@ -3,7 +3,7 @@
         <div class="section-header">
           <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">اتصل بنا  </h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">اذا كانت لديكم اي استفسار أو اقتراح أو شكوى حول خدمات بنك الابداع، الرجاء التواصل معنا <br>.رأيكم يهمنا وخدمتكم هدفنا</p>
+          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">اذا كانت لديكم اي استفسار أو اقتراح أو شكوى حول خدمات بنك الإبداع، الرجاء التواصل معنا <br>.رأيكم يهمنا وخدمتكم هدفنا</p>
         </div>
 
         <div class="contact-form" id="contactUs">

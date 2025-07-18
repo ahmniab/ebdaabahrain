@@ -109,7 +109,7 @@
   }
   
   .news-card .card-body {
-    padding: 25px;
+    /* padding: 25px; */
     display: flex;
     flex-direction: column;
     height: calc(100% - 220px);
@@ -118,10 +118,10 @@
   .news-card .card-title {
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     line-height: 1.4;
-    flex-grow: 1;
-    height: 85px;
+    /* flex-grow: 1; */
+    /* height: 85px; */
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -139,13 +139,23 @@
   .news-card .card-text {
     color: #6c757d;
     font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    /* line-height: 1.6; */
+    /* margin-bottom: 20px; */
     flex-grow: 1;
-    height: 198px;
+    /* height: 198px; */
     overflow: hidden;
     text-overflow: '...';
   }
+  .news-card .card-title:lang(ar),
+  .news-card .card-text:lang(ar){
+    text-align: right;
+  }
+
+  .news-card .card-title:lang(en),
+  .news-card .card-text:lang(en){
+    text-align: left;
+  }
+  
   
   .news-card .btn {
     background: linear-gradient(135deg, #61D2B4, #4CAF50);
@@ -156,9 +166,15 @@
     font-weight: 500;
     color: white;
     transition: all 0.3s ease;
-    align-self: flex-start;
     margin-top: auto;
   }
+  .news-card .btn:lang(ar){
+    align-self: flex-end;
+  }
+  .news-card .btn:lang(en){
+    align-self: flex-start;
+  }
+
   
   .news-card .btn:hover {
     background: linear-gradient(135deg, #4CAF50, #45a049);

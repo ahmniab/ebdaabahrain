@@ -2,8 +2,6 @@
 require_once 'services/stories-service.php';
 require_once 'lang/init.php';
 $stories_data = getStories($lang);
-// echo $lang;
-// exit;
 ?>
 <!DOCTYPE html>
 <html dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>" lang="<?php echo $lang ?>">
@@ -32,7 +30,7 @@ $stories_data = getStories($lang);
 <body>
   <?php include "navbar.php"; ?>
 
-  <div class="container">
+  <!-- <div class="container"> -->
     <!-- Modern Success Stories Section -->
     <section class="section success-stories-section" id="portfolios">
       <div class="container">
@@ -79,7 +77,7 @@ $stories_data = getStories($lang);
         </div>
       </div>
     </section>
-  </div>
+  <!-- </div> -->
 
   <?php include "footer.php"; ?>
   <script>

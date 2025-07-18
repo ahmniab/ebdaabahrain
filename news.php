@@ -32,7 +32,7 @@ $news_data = getNews($lang);
 
     <?php include 'navbar.php'; ?>
 
-    <div class="container">
+    <!-- <div class="container"> -->
         <!-- Modern News Section -->
         <section class="section news-section" id="blog">
             <div class="container">
@@ -62,7 +62,10 @@ $news_data = getNews($lang);
                                         <?php echo nl2br(htmlspecialchars($item['summary'])); ?>
                                     </p>
                                     <a href="news-details.php?id=<?php echo urlencode($item['id']); ?>" class="btn">
-                                        تفاصيل الخبر <i class="fa fa-arrow-left mr-2"></i>
+                                        <?php echo $lang === 'ar'?
+                                     'تفاصيل الخبر<i class="fa fa-arrow-left mr-2"></i>'
+                                     : '<i class="fa fa-arrow-right ml-2"></i>MORE DETAILS' 
+                                     ?>
                                     </a>
                                 </div>
                             </div>
@@ -72,7 +75,7 @@ $news_data = getNews($lang);
                 </ul>
             </div>
         </section>
-    </div>
+    <!-- </div> -->
     <!-- Modals -->
 
 
