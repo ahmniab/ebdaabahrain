@@ -1,0 +1,170 @@
+/* application-form.css - Custom styles for the Application Form (بنك الإبداع البحرين) */
+
+@media (max-width: 576px) {    
+    .section-title {
+        font-size: 40px !important;
+    }
+    
+}
+
+.application-form-section {
+    background: linear-gradient(135deg, #f8fff8 0%, #e9f9f7 50%, #f0fdfa 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.application-form-card {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 10px 32px 0 rgba(59, 168, 162, 0.10);
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 540px;
+    border: 1.5px solid rgba(126, 181, 93, 0.18);
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.application-form-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #7EB55D, #B7C639, #5DA930, #2E8F36, #3BA8A2);
+    border-radius: 22px 22px 0 0;
+    z-index: 2;
+}
+
+.application-form-card h2 {
+    color: #2E8F36;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.form-group label {
+    color: #2E8F36;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.application-input,
+.application-form-card select.form-control {
+    background: rgba(255, 255, 255, 0.95);
+    color: #2E8F36;
+    border: 2px solid rgba(126, 181, 93, 0.3);
+    border-radius: 14px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: 'Tajawal', sans-serif;
+    padding: 0.75rem 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.application-input:focus,
+.application-form-card select.form-control:focus {
+    background: #fff;
+    color: #2E8F36;
+    border-color: #3BA8A2;
+    box-shadow: 0 0 0 3px rgba(59, 168, 162, 0.10);
+}
+
+.application-input::placeholder {
+    color: #5DA930;
+    opacity: 0.7;
+}
+
+.application-input:focus::placeholder {
+    opacity: 0.5;
+}
+
+select.application-input {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%232E8F36' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: left 1.2rem center;
+    background-size: 16px;
+    padding-left: 2.5rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #5DA930, #2E8F36);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 14px;
+    padding: 0.75rem 2.5rem;
+    font-size: 1.15rem;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 25px rgba(46, 143, 54, 0.18);
+    position: relative;
+    margin-top: 10px;
+    z-index: 3;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: linear-gradient(135deg, #2E8F36, #3BA8A2);
+    color: #fff;
+    box-shadow: 0 12px 35px rgba(46, 143, 54, 0.22);
+}
+
+#loadingMessage {
+    background: linear-gradient(135deg, rgba(59, 168, 162, 0.1), rgba(46, 143, 54, 0.1));
+    border: 1px solid rgba(59, 168, 162, 0.3);
+    border-radius: 15px;
+    padding: 15px 20px;
+    color: #2E8F36;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.help-block.with-errors {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    .application-form-card {
+        padding: 1.2rem 0.5rem;
+        max-width: 98vw;
+    }
+
+    .application-form-section {
+        padding: 1.5rem 0.2rem;
+    }
+}
+.form-check-label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.arabic-checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+}
+.arabic-checkbox .form-check-label{
+    color: #2E8F36;
+}
+
+.arabic-checkbox .form-check-input {
+    margin: 0 -5%;
+}
+
+
+
+#type_apply{
+    height: calc(2.25rem + 13px);
+}

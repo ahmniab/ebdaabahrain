@@ -1,0 +1,71 @@
+[28-May-2025 01:03:20 America/Chicago] PHP Warning:  Undefined property: stdClass::$score in /home4/ebdaaban/ebdaabahrain.com/php/jobs-process.php on line 26
+[28-May-2025 05:58:47 America/Chicago] PHP Parse error:  Unclosed '{' on line 70 in /home4/ebdaaban/ebdaabahrain.com/php/jobs-process.php on line 107
+[28-May-2025 05:58:47 America/Chicago] PHP Parse error:  Unclosed '{' on line 70 in /home4/ebdaaban/ebdaabahrain.com/php/jobs-process.php on line 107
+[28-May-2025 05:58:47 America/Chicago] PHP Parse error:  Unclosed '{' on line 70 in /home4/ebdaaban/ebdaabahrain.com/php/jobs-process.php on line 107
+[28-May-2025 06:03:26 America/Chicago] PHP Parse error:  Unclosed '{' on line 70 in /home4/ebdaaban/ebdaabahrain.com/php/jobs-process.php on line 107
+[28-May-2025 06:03:26 America/Chicago] PHP Parse error:  Unclosed '{' on line 70 in /home4/ebdaaban/ebdaabahrain.com/php/jobs-process.php on line 107
+[28-May-2025 06:07:35 America/Chicago] PHP Parse error:  Unclosed '{' on line 70 in /home4/ebdaaban/ebdaabahrain.com/php/jobs-process.php on line 113
+[28-May-2025 06:07:35 America/Chicago] PHP Parse error:  Unclosed '{' on line 70 in /home4/ebdaaban/ebdaabahrain.com/php/jobs-process.php on line 113
+[28-May-2025 06:12:54 America/Chicago] PHP Parse error:  Unclosed '{' on line 70 in /home4/ebdaaban/ebdaabahrain.com/php/jobs-process.php on line 113
+[28-May-2025 06:13:37 America/Chicago] PHP Parse error:  Unclosed '{' on line 70 in /home4/ebdaaban/ebdaabahrain.com/php/jobs-process.php on line 113
+[28-May-2025 06:13:38 America/Chicago] PHP Parse error:  Unclosed '{' on line 70 in /home4/ebdaaban/ebdaabahrain.com/php/jobs-process.php on line 113
+[28-May-2025 06:13:38 America/Chicago] PHP Parse error:  Unclosed '{' on line 70 in /home4/ebdaaban/ebdaabahrain.com/php/jobs-process.php on line 113
+[28-May-2025 06:13:39 America/Chicago] PHP Parse error:  Unclosed '{' on line 70 in /home4/ebdaaban/ebdaabahrain.com/php/jobs-process.php on line 113
+[28-May-2025 20:32:20 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[28-May-2025 20:32:20 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[01-Jun-2025 20:49:09 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[01-Jun-2025 20:49:09 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[05-Jun-2025 23:05:58 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[05-Jun-2025 23:05:58 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[13-Jun-2025 21:49:02 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[13-Jun-2025 21:49:02 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[16-Jun-2025 22:53:13 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[16-Jun-2025 22:53:13 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[17-Jun-2025 08:39:45 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:40:11 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:40:39 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:40:49 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:40:49 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:40:49 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:40:49 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:40:49 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:40:49 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:11 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:11 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:11 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:11 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:12 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:12 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:12 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:12 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:12 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:13 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:13 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:13 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:13 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:14 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:14 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:14 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[17-Jun-2025 08:41:14 America/Chicago] PHP Warning:  Undefined variable $subject_contact in /home4/ebdaaban/ebdaabahrain.com/php/form-process.php on line 42
+[19-Jun-2025 03:29:53 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[19-Jun-2025 03:29:53 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[23-Jun-2025 09:44:00 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[23-Jun-2025 09:44:00 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[23-Jun-2025 09:44:01 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[23-Jun-2025 09:44:01 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[27-Jun-2025 16:20:51 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[27-Jun-2025 16:20:51 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[05-Jul-2025 16:20:53 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[05-Jul-2025 16:20:53 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[08-Jul-2025 07:06:38 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[08-Jul-2025 07:06:38 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[08-Jul-2025 07:06:54 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[08-Jul-2025 07:06:54 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[08-Jul-2025 07:07:01 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[08-Jul-2025 07:07:01 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[08-Jul-2025 07:07:47 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[08-Jul-2025 07:07:47 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[08-Jul-2025 07:07:57 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[08-Jul-2025 07:07:57 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94
+[09-Jul-2025 16:21:02 America/Chicago] PHP Warning:  Undefined variable $name in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 92
+[09-Jul-2025 16:21:02 America/Chicago] PHP Warning:  Undefined variable $mobile in /home4/ebdaaban/ebdaabahrain.com/php/application-process.php on line 94

@@ -1,0 +1,125 @@
+<?php
+
+$errorMSG = "";
+
+// NAME
+if (empty($_POST["name"])) {
+    $errorMSG .= "Name is required ";
+} else {
+    $name = $_POST["name"];
+}
+
+// MOBILE
+if (empty($_POST["mobile"])) {
+    $errorMSG .= "Mobile is required ";
+} else {
+    $mobile = $_POST["mobile"];
+}
+
+/*// PROJECT
+if (empty($_POST["project"])) {
+    $errorMSG .= "Project is required ";
+} else {
+    $project = $_POST["project"];
+}
+
+// LOAN
+if (empty($_POST["type"])) {
+    $errorMSG .= "Loan type is required ";
+} else {
+    $loan = $_POST["type"];
+}
+
+// CPR
+if (empty($_POST["cpr"])) {
+    $errorMSG .= "CPR is required ";
+} else {
+    $cpr = $_POST["cpr"];
+}
+
+// AMOUNT
+if (empty($_POST["amount"])) {
+    $errorMSG .= "Loan amount is required ";
+} else {
+    $amount = $_POST["amount"];
+}
+
+// ADDRESS
+if (empty($_POST["address"])) {
+    $errorMSG .= "Address is required ";
+} else {
+    $address = $_POST["address"];
+}
+
+// JOB
+if (empty($_POST["job"])) {
+    $errorMSG .= "Job title is required ";
+} else {
+    $job = $_POST["job"];
+}
+
+// Guarantee
+  $bankname1 = $_POST["bankname1"];
+  $salaryvalue1 = $_POST["salaryvalue1"];
+  $bankname2 = $_POST["bankname2"];
+  $others = $_POST["others"];
+  $radio = $_POST["radio"];
+
+
+*/
+
+
+
+
+
+
+$EmailTo = "loan@ebdaabank.com";
+$Subject = "New Application Received";
+$email = "Applicant@ebdaabank.com";
+
+// prepare email body text
+$Body = "
+<html>
+  <head>
+
+  </head>
+  <body style='background-color: #e4e4e4; direction: rtl; font-size:20px;'>
+	<div style='width:100%;height:10%;'></div>
+
+      <table cellspacing='0' style='border-collapse: collapse; border: solid 1px black; width: 90%; min-height: 30%; margin:40px auto; background-color:white'>
+          <tr>
+			<th style='border: 1px solid black; width:10%;'>Name<br>الاسم</th>
+			<td style='border: 1px solid black; width:40%;text-align: center;'>$name</td>
+            <th style='border: 1px solid black; width:10%;'>Mobile<br>رقم المحمول</th>
+			<td style='border: 1px solid black; width:40%;text-align: center;'>$mobile</td>
+          </tr>
+      </table>
+
+
+
+      <div style='width:100%;height:10%;'></div>
+  </body>
+  </html>
+
+";
+
+        $headers = "From: " . $email . "\r\n";
+		$headers .= "MIME-Version: 1.0\r\n";
+		$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+    // send email
+    $success = mail($EmailTo, $Subject, $Body, $headers);
+
+    // redirect to success page
+    if ($success && $errorMSG == ""){
+       echo "success";
+    }else{
+        if($errorMSG == ""){
+            echo "Something went wrong :(";
+        } else {
+            echo $errorMSG;
+        }
+    }
+
+
+?>

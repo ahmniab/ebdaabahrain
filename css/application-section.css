@@ -1,0 +1,116 @@
+  .application-input {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(126, 181, 93, 0.3);
+    border-radius: 15px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: #2E8F36;
+    transition: all 0.3s ease;
+    width: 100%;
+    backdrop-filter: blur(5px);
+  }
+  
+  .application-input:focus {
+    outline: none;
+    border-color: #2E8F36;
+    box-shadow: 0 0 0 3px rgba(46, 143, 54, 0.1);
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(-2px);
+  }
+  
+  .application-input::placeholder {
+    color: #5DA930;
+    opacity: 0.7;
+  }
+  
+  .application-input:focus::placeholder {
+    opacity: 0.5;
+  }
+  
+  /* Custom Select Styling */
+  select.application-input {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%232E8F36' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+    padding-right: 45px;
+  }
+  
+  /* Submit Button */
+  #submitBtn {
+    background: linear-gradient(135deg, #5DA930, #2E8F36);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(93, 169, 48, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #submitBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #3BA8A2, #2E8F36, #5DA930, #B7C639, #7EB55D);
+    transition: left 0.3s ease;
+  }
+  
+  #submitBtn:hover::before {
+    left: 0;
+  }
+  
+  #submitBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(93, 169, 48, 0.4);
+    color: white;
+  }
+  
+  #submitBtn:active {
+    transform: translateY(-1px);
+  }
+  
+  /* Loading Message */
+  #loadingMessage {
+    background: linear-gradient(135deg, rgba(59, 168, 162, 0.1), rgba(46, 143, 54, 0.1));
+    border: 1px solid rgba(59, 168, 162, 0.3);
+    border-radius: 15px;
+    padding: 15px 20px;
+    color: #2E8F36;
+    font-weight: 500;
+    margin: 20px 0;
+  }
+  
+  /* reCAPTCHA Styling */
+  .g-recaptcha {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Error Messages */
+  .help-block.with-errors {
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-weight: 500;
+  }
+  
+  /* Success Message */
+  #msgSubmit-apply {
+    background: linear-gradient(135deg, rgba(93, 169, 48, 0.1), rgba(46, 143, 54, 0.1));
+    border: 1px solid rgba(93, 169, 48, 0.3);
+    border-radius: 15px;
+    padding: 15px 20px;
+    color: #2E8F36;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  

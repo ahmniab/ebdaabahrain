@@ -1,0 +1,103 @@
+/* Admin News Management Styles */
+.admin-news-container {
+    direction: rtl;
+    font-family: 'Tajawal', Arial, sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.admin-news-container h2 {
+    color: #bfa046;
+    font-weight: bold;
+}
+
+.news-card {
+    border-radius: 1rem;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+    border: none;
+    background: #fff;
+    transition: box-shadow 0.2s;
+}
+
+.news-card:hover {
+    box-shadow: 0 4px 24px rgba(191, 160, 70, 0.15);
+}
+
+.news-card .card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.news-card .badge {
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+.news-card .card-title {
+    font-weight: bold;
+    color: #bfa046;
+    font-size: 1.2rem;
+}
+
+.news-card .card-text {
+    font-size: 1rem;
+    color: #222;
+    line-height: 1.7;
+}
+
+.admin-controls {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.admin-controls .btn {
+    min-width: 80px;
+    font-size: 0.95rem;
+}
+
+.edit-form {
+    background: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #e0e0e0;
+}
+
+.edit-form label {
+    font-weight: 500;
+}
+
+.card-header {
+    background: #bfa046;
+    color: #fff;
+    font-weight: bold;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card-body .btn-success {
+    background: #bfa046;
+    border: none;
+}
+
+.card-body .btn-success:hover {
+    background: #a88d2a;
+}
+
+@media (max-width: 767.98px) {
+    .news-card .card-img-top {
+        max-height: 120px;
+    }
+
+    .news-card .card-title {
+        font-size: 1rem;
+    }
+
+    .news-card .card-text {
+        font-size: 0.95rem;
+    }
+}

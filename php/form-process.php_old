@@ -1,0 +1,93 @@
+<?php
+
+$errorMSG = "";
+
+// NAME
+if (empty($_POST["name"])) {
+    $errorMSG .= "Name is required ";
+} else {
+    $name = $_POST["name"];
+}
+
+// Mobile
+if (empty($_POST["mobile"])) {
+    $errorMSG .= "Mobile is required ";
+} else {
+    $mobile = $_POST["mobile"];
+}
+
+// EMAIL
+if (empty($_POST["email"])) {
+    $errorMSG .= "Email is required ";
+} else {
+    $email = $_POST["email"];
+}
+
+// Subject
+if (empty($_POST["subject_contact"])) {
+    $errorMSG .= "Email is required ";
+} else {
+    $subject_contact = $_POST["subject_contact"];
+}
+
+// MESSAGE
+if (empty($_POST["message"])) {
+    $errorMSG .= "Message is required ";
+} else {
+    $message = $_POST["message"];
+}
+
+
+$EmailTo = "info@ebdaabank.com";
+$Subject = "New $subject_contact Received";
+$EmailFrom = "contactus@ebdaabank.com";
+
+// prepare email body text
+$Body = "
+<html>
+  <head>
+
+  </head>
+  <body style='background-color: #e4e4e4; direction: rtl; font-size:20px;'>
+	<div style='width:100%;height:10%;'></div>
+
+      <table cellspacing='0' style='border-collapse: collapse; border: 5px black; width: 70%; min-height: 30%; margin:50px auto; background-color:white'>
+          <tr>
+			<th style='border: 1px solid black; width:10%;'>Name<br>الاسم</th>
+			<td style='border: 1px solid black; width:40%;text-align: center;'>$name</td>
+			<th style='border: 1px solid black; width:10%;'>Mobile<br>رقم الهاتف</th>
+			<td style='border: 1px solid black; width:40%;text-align: center;'>$mobile/</td>
+			<th style='border: 1px solid black; width:10%;'>Email<br>الايميل</th>
+			<td style='border: 1px solid black; width:40%;text-align: center;'>$email</td>
+          </tr>
+
+          <tr>
+            <th rowspan='5' style='border: 1px solid black; width:10%;'>Message<br>ملاحظات</th>
+			<td rowspan='5' colspan='3' style='border: 1px solid black; width:90%;'>$message</td>
+
+          </tr>
+      </table>
+      <div style='width:100%;height:10%;'></div>
+  </body>
+  </html>
+";
+
+    $headers = "From: " . $EmailFrom . "\r\n";
+		$headers .= "MIME-Version: 1.0\r\n";
+		$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// send email
+$success = mail($EmailTo, $Subject, $Body, $headers);
+
+// redirect to success page
+if ($success && $errorMSG == ""){
+   echo "success";
+}else{
+    if($errorMSG == ""){
+        echo "Something went wrong :(";
+    } else {
+        echo $errorMSG;
+    }
+}
+
+?>

@@ -1,0 +1,173 @@
+<?php
+
+// Checks if form has been submitted
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    function post_captcha($user_response) {
+        $fields_string = '';
+        $fields = array(
+            'secret' => '6LetsOQZAAAAAHcz4IW80aXL9bjANt2IQlRKsNnP',
+            'response' => $user_response
+        );
+        foreach($fields as $key=>$value)
+        $fields_string .= $key . '=' . $value . '&';
+        $fields_string = rtrim($fields_string, '&');
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
+        curl_setopt($ch, CURLOPT_POST, count($fields));
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, True);
+
+        $result = curl_exec($ch);
+        curl_close($ch);
+
+        return json_decode($result, true);
+    }
+
+    // Call the function post_captcha
+    $res = post_captcha($_POST['g-recaptcha-response']);
+
+    if (!$res['success']) {
+        // What happens when the CAPTCHA wasn't checked
+        print json_encode(array('type'=>'error', 'text' => 'recaptcha'));
+        exit;
+    } else {
+
+
+if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
+	die('Sorry Request must be Ajax POST'); //exit script
+}
+
+if($_POST){
+
+    $sender_name 	= filter_var($_POST["name_job"], FILTER_SANITIZE_STRING); //capture sender name
+    $sender_email 	= filter_var($_POST["email_job"], FILTER_SANITIZE_STRING); //capture sender email
+    $job 		= $_POST["job_type"];
+    $message 		= filter_var($_POST["message_job"], FILTER_SANITIZE_STRING); //capture message
+
+    $attachments = $_FILES['file_attach'];
+
+
+    //php validation, exit outputting json string
+    if(strlen($sender_name)<2){
+        print json_encode(array('type'=>'error', 'text' => 'name'));
+        exit;
+    }
+    if(!filter_var($sender_email, FILTER_VALIDATE_EMAIL)){ //email validation
+        print json_encode(array('type'=>'error', 'text' => 'email'));
+        exit;
+    }
+    if(strlen($message)<3){ //check emtpy message
+        print json_encode(array('type'=>'error', 'text' => 'message'));
+        exit;
+    }
+
+
+    $file_count = count($attachments['name']); //count total files attached
+    $boundary = md5("random");
+
+    $recipient_email    = "jobs@ebdaabank.com"; //recepient
+    $from_email         = "CVs@ebdaabank.com"; //from email using site domain.
+    $subject            = "New Job Application received ($job)";
+
+
+	//construct a message body to be sent to recipient
+	$message_body =  "
+  <html>
+    <head>
+
+    </head>
+    <body style='background-color: #e4e4e4; direction: rtl; font-size:20px;'>
+  	<div style='width:100%;height:10%;text-align: center; color:white;'><h3></h3></div>
+
+        <table cellspacing='0' style='border-collapse: collapse; border: 5px black; width: 70%; min-height: 30%; margin:50px auto; background-color:white'>
+            <tr>
+  			<th style='border: 1px solid black; width:10%;'>Name<br>الاسم</th>
+  			<td style='border: 1px solid black; width:40%;text-align: center;'>$sender_name</td>
+  			<th style='border: 1px solid black; width:10%;'>Email<br>الايميل</th>
+  			<td style='border: 1px solid black; width:40%;text-align: center;'>$sender_email</td>
+            </tr>
+
+            <tr>
+              <th rowspan='5' style='border: 1px solid black; width:10%;'>Message<br>ملاحظات</th>
+  			<td rowspan='5' colspan='3' style='border: 1px solid black; width:90%;'>$message</td>
+
+            </tr>
+        </table>
+        <div style='width:100%;height:10%;'></div>
+    </body>
+    </html>
+
+  ";
+
+
+
+    if($file_count > 0){ //if attachment exists
+        //header
+        $headers = "MIME-Version: 1.0\r\n";
+        $headers .= "From:".$from_email."\r\n";
+        $headers .= "Content-Type: multipart/mixed; boundary = $boundary\r\n\r\n";
+
+        //message text
+        $body = "--$boundary\r\n";
+        $body .= "Content-type:text/html;charset=UTF-8\r\n";
+        $body .= "Content-Transfer-Encoding: base64\r\n\r\n";
+        $body .= chunk_split(base64_encode($message_body));
+
+        //attachments
+        for ($x = 0; $x < $file_count; $x++){
+            if(!empty($attachments['name'][$x])){
+
+                if($attachments['error'][$x]>0) //exit script and output error if we encounter any
+                {
+                    $mymsg = array(
+                    1=>"The uploaded file exceeds the upload_max_filesize directive in php.ini",
+                    2=>"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form",
+                    3=>"The uploaded file was only partially uploaded",
+                    4=>"No file was uploaded",
+                    6=>"Missing a temporary folder" );
+                    print  json_encode( array('type'=>'error',$mymsg[$attachments['error'][$x]]) );
+					exit;
+                }
+
+                //get file info
+                $file_name = $attachments['name'][$x];
+                $file_size = $attachments['size'][$x];
+                $file_type = $attachments['type'][$x];
+
+                //read file
+                $handle = fopen($attachments['tmp_name'][$x], "r");
+                $content = fread($handle, $file_size);
+                fclose($handle);
+                $encoded_content = chunk_split(base64_encode($content)); //split into smaller chunks (RFC 2045)
+
+                $body .= "--$boundary\r\n";
+                $body .="Content-Type: $file_type; name=".$file_name."\r\n";
+                $body .="Content-Disposition: attachment; filename=".$file_name."\r\n";
+                $body .="Content-Transfer-Encoding: base64\r\n";
+                $body .="X-Attachment-Id: ".rand(1000,99999)."\r\n\r\n";
+                $body .= $encoded_content;
+            }
+        }
+
+    }else{ //send plain email otherwise
+			print json_encode(array('type'=>'error', 'text' => 'file'));
+			exit;
+    }
+
+    $sentMail = mail($recipient_email, $subject, $body, $headers);
+    if($sentMail) //output success or failure messages
+    {
+        print json_encode(array('type'=>'done', 'text' => 'sent'));
+		exit;
+    }else{
+        print json_encode(array('type'=>'error', 'text' => 'senterror'));
+		exit;
+    }
+}
+
+}
+}
+
+
+?>

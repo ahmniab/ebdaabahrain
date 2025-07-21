@@ -1,0 +1,264 @@
+/* team.css - Modern Team Page Styles for بنك الإبداع البحرين */
+body {
+    background: linear-gradient(135deg, #f8fff8 0%, #e9f9f7 50%, #f0fdfa 100%);
+    font-family: 'Tajawal', Arial, sans-serif;
+    color: #222;
+}
+#team{
+    padding: 40px 0;
+
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    color: #2E8F36;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: #5DA930;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+hr.lines {
+    border: none;
+    height: 4px;
+    width: 80px;
+    margin: 1rem auto 1.5rem auto;
+    background: linear-gradient(90deg, #7EB55D, #B7C639, #5DA930, #2E8F36, #3BA8A2);
+    border-radius: 2px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.team-card {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px 0 rgba(59, 168, 162, 0.10);
+    border: 1.5px solid rgba(126, 181, 93, 0.18);
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 1.2rem 1.5rem 1.2rem;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    overflow: hidden;
+    direction: rtl;
+}
+
+.team-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 16px 40px 0 rgba(46, 143, 54, 0.13);
+    border-color: #3BA8A2;
+}
+
+.team-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #3BA8A2;
+    margin-bottom: 1.2rem;
+    background: #f8fff8;
+}
+
+.team-name {
+    color: #2E8F36;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.team-role {
+    color: #5DA930;
+    font-size: 1.05rem;
+    margin-bottom: 0.7rem;
+}
+
+.team-bio-btn {
+    background: linear-gradient(135deg, #5DA930, #2E8F36);
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 0.7rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(93, 169, 48, 0.13);
+}
+
+.team-bio-btn:hover {
+    background: linear-gradient(135deg, #3BA8A2, #2E8F36);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Modal Styles */
+.team-modal .modal-content {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 20px 60px rgba(46, 143, 54, 0.18);
+    padding: 2rem 1.5rem;
+    background: #fff;
+}
+
+.team-modal .modal-header {
+    border-bottom: 1px solid rgba(126, 181, 93, 0.18);
+    background: linear-gradient(135deg, #f8fff8, #e9f9f7);
+    border-radius: 20px 20px 0 0;
+}
+
+.team-modal .modal-title {
+    color: #2E8F36;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.team-modal .modal-body {
+    padding: 1.5rem 0.5rem;
+    color: #222;
+    font-size: 1.08rem;
+    line-height: 1.9;
+}
+
+.team-modal .modal-footer {
+    border-top: 1px solid rgba(126, 181, 93, 0.18);
+    background: linear-gradient(135deg, #f8fff8, #e9f9f7);
+    border-radius: 0 0 20px 20px;
+    justify-content: flex-end;
+}
+
+.team-modal .btn {
+    background: linear-gradient(135deg, #5DA930, #2E8F36);
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 600;
+    padding: 10px 28px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.team-modal .btn:hover {
+    background: linear-gradient(135deg, #3BA8A2, #2E8F36);
+    color: #fff;
+}
+
+/* CEO Card Styles */
+.ceo-card-wrapper {
+    margin-bottom: 2.5rem;
+}
+
+.ceo-card {
+    /* border: 2.5px solid #FFD700 !important; */
+    box-shadow: 0 12px 40px 0 rgba(255, 215, 0, 0.10), 0 12px 40px 0 rgba(46, 143, 54, 0.18);
+    background: #fff;
+    max-width: 480px;
+    width: 100%;
+    padding: 2.5rem 2rem 2rem 2rem;
+    text-align: center;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    overflow: hidden;
+    direction: rtl;
+}
+
+.ceo-card .team-img {
+    width: 140px !important;
+    height: 140px !important;
+    border-width: 6px !important;
+    margin-bottom: 1.5rem;
+}
+
+.ceo-badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: linear-gradient(90deg, #FFD700, #FFF7C2);
+    color: #2E8F36;
+    font-weight: 700;
+    padding: 6px 18px;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.10);
+    z-index: 2;
+}
+
+.ceo-card .team-name {
+    font-size: 1.7rem !important;
+    margin-bottom: 0.3rem;
+}
+
+.ceo-card .team-role {
+    font-size: 1.15rem !important;
+    margin-bottom: 1rem;
+}
+
+.ceo-card .team-bio-btn {
+    font-size: 1.1rem !important;
+    padding: 12px 36px !important;
+    margin-top: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .ceo-card {
+        max-width: 98vw;
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+    }
+
+    .ceo-card .team-img {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .ceo-badge {
+        font-size: 0.95rem;
+        padding: 5px 12px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .ceo-card .team-name {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .team-grid {
+        gap: 1.2rem;
+    }
+
+    .team-card {
+        max-width: 90vw;
+        padding: 1.5rem 0.7rem 1.2rem 0.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .team-card {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+    }
+
+    .team-img {
+        width: 80px;
+        height: 80px;
+    }
+}

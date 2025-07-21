@@ -1,0 +1,7 @@
+Options -Indexes
+
+Options +FollowSymlinks 
+
+<Files .htaccess> 
+deny from all 
+</Files>

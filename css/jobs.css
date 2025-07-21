@@ -1,0 +1,150 @@
+/* jobs.css - Custom styles for the وظائف (Jobs) page - بنك الإبداع البحرين */
+
+body {
+    background: linear-gradient(135deg, #f8fff8 0%, #e9f9f7 50%, #f0fdfa 100%);
+    font-family: 'Tajawal', Arial, sans-serif;
+    color: #222;
+}
+
+.jobs-section {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 10px 32px 0 rgba(59, 168, 162, 0.10);
+    padding: 2.5rem 2rem 2rem 2rem;
+    margin: 40px auto;
+    max-width: 900px;
+    border: 1.5px solid rgba(126, 181, 93, 0.18);
+    position: relative;
+    overflow: hidden;
+}
+
+.jobs-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #7EB55D, #B7C639, #5DA930, #2E8F36, #3BA8A2);
+    border-radius: 22px 22px 0 0;
+    z-index: 2;
+}
+
+.jobs-section h2 {
+    color: #2E8F36;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+#accordion {
+    margin-bottom: 2rem;
+}
+
+.collapsible {
+    background: linear-gradient(90deg, #e9f9f7 0%, #f0fdfa 100%);
+    color: #2E8F36;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(59, 168, 162, 0.06);
+}
+
+.collapsible.active,
+.collapsible:hover {
+    background: linear-gradient(90deg, #7EB55D 0%, #3BA8A2 100%);
+    color: #fff;
+}
+
+.content {
+    padding: 1rem 1.5rem;
+    display: none;
+    overflow: hidden;
+    background: #f8fff8;
+    border-radius: 0 0 12px 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #e9f9f7;
+    color: #222;
+    text-align: justify;
+}
+
+.content p,
+.content ol {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.contact-form {
+    background: #f8fff8;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px 0 rgba(59, 168, 162, 0.07);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    border: 1px solid #e9f9f7;
+}
+
+.form-group label,
+.form-label {
+    color: #2E8F36;
+    font-weight: 500;
+}
+
+.form-control {
+    background: #fff;
+    color: #2E8F36;
+    border: 2px solid rgba(126, 181, 93, 0.3);
+    border-radius: 12px;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Tajawal', Arial, sans-serif;
+}
+
+.form-control:focus {
+    border-color: #3BA8A2;
+    box-shadow: 0 0 0 3px rgba(59, 168, 162, 0.10);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #5DA930, #2E8F36);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 14px;
+    padding: 0.75rem 2.5rem;
+    font-size: 1.15rem;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 25px rgba(46, 143, 54, 0.18);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: linear-gradient(135deg, #2E8F36, #3BA8A2);
+    color: #fff;
+    box-shadow: 0 12px 35px rgba(46, 143, 54, 0.22);
+}
+
+@media (max-width: 900px) {
+    .jobs-section {
+        max-width: 98vw;
+        padding: 1.2rem 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .jobs-section {
+        padding: 0.7rem 0.2rem;
+    }
+
+    .contact-form {
+        padding: 1rem 0.5rem;
+    }
+}

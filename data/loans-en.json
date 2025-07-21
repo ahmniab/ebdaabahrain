@@ -1,0 +1,139 @@
+{
+    "loans": [
+        {
+            "id": "saydati",
+            "title": "SAYDATI LOAN",
+            "image": "assets/img/loan/saydati-new.webp",
+            "description": "A specialized financing solution for women entrepreneurs, offering 200 to 1,000 BHD based on women-owned home-business needs. This loan supports business growth without traditional guarantees.",
+            "details": "Ebdaa - Bahrain innovated the \"Sayedati\" loan to support women working with home-based businesses. The loan ranges between BHD 200 and 1000 based on the business needs to be paid over a period of 12 months.",
+            "terms": [
+                "The loan must be used to support home-based or mobile businesses.",
+                "Applicants must have an existing business or a viable business idea.",
+                "Applicants must be between 20 and 65 years old."
+            ],
+            "requirements": [
+                "A copy of a valid smart ID card.",
+                "A copy of a valid passport or driver’s license.",
+                "Proof of project income or salary certificate for employees.",
+                "Proof of residence (rental contract, ownership, or electricity and water bill)."
+            ]
+        },
+        {
+            "id": "ebdaa",
+            "title": "EBDAA LOAN",
+            "image": "assets/img/loan/ebdaa-new.webp",
+            "description": "Supporting men's home-based businesses with collateral-free financing from 200 to 1,000 BHD. Repayable through convenient monthly installments over 12 months.",
+            "details": "Ebdaa - Bahrain introduced the \"Ebdaa\" loan to empower men with home-based businesses. This loan offers amounts between BHD 200 and 1000, tailored to the specific needs of each business, and is repayable over 12 months.",
+            "terms": [
+                "The loan must be used to support home-based or mobile businesses.",
+                "Applicants must have an existing business or a viable business idea.",
+                "Applicants must be between 20 and 65 years old."
+            ],
+            "requirements": [
+                "A copy of a valid smart ID card.",
+                "A copy of a valid passport or driver’s license.",
+                "Proof of project income or salary certificate for employees.",
+                "Proof of residence (rental contract, ownership, or electricity and water bill)."
+            ]
+        },
+        {
+            "id": "amal",
+            "title": "AL AMAL LOAN",
+            "image": "assets/img/loan/hope-new.webp",
+            "description": "For clients with existing commercial, industrial, or service businesses (home-based, mobile, or licensed) ready to transition from household to commercial sector operations.",
+            "details": "Ebdaa - Bahrain offers Al Amal Loan with simple terms to support those who have a variety of commercial, service, and industrial business needs, and those who are preparing to move from the informal to the formal sector. The loan amount ranges between BD 1000 and 2400 and is paid over 24 months.",
+            "terms": [
+                "The loan must be used to support home-based or mobile businesses.",
+                "Applicants must have an existing business or a viable business idea.",
+                "Applicants must be between 20 and 65 years old."
+            ],
+            "requirements": [
+                "A copy of a valid smart ID card.",
+                "A copy of a valid passport or driver’s license.",
+                "Proof of project income or salary certificate for employees.",
+                "Proof of residence (rental contract, ownership, or electricity and water bill)."
+            ]
+        },
+        {
+            "id": "tamayouz",
+            "title": "AL TAMAYOUZ LOAN",
+            "image": "assets/img/loan/excell-new.webp",
+            "description": "Supporting licensed businesses with 1,500-7,000 BHD in funding for operational growth or equipment needs. Repay over 3 years with competitive rates.",
+            "details": "Ebdaa Bahrain now offers Al Tamayuz Loan for licensed commercial, industrial and service business owners. The loan amount ranges between BD 1500 and 7000, and is paid over 24 months.",
+            "terms": [
+                "The loan must be used for a licensed business.",
+                "The loan must be used to purchase new equipment or increase the working capital.",
+                "The business must have been operational for at least 3 years.",
+                "Applicants must be between 20 and 65 years old."
+            ],
+            "requirements": [
+                "A copy of a valid passport and smart ID card.",
+                "A copy of a valid passport or driver’s license.",
+                "A copy of the commercial registration or business license.",
+                "Proof of Business Income",
+                "Bank statement for the last six months.",
+                "Valid Commercial registration (for at least 6 months).",
+                "Proof of residence (rental contract, ownership, or electricity and water bill)."
+            ]
+        },
+        {
+            "id": "tafawoq",
+            "title": "AL TAFAWOQ LOAN",
+            "image": "assets/img/loan/tafawoq-new.webp",
+            "description": "This loan stands out for its repayment flexibility, specifically designed to meet the needs of licensed commercial business owners (both men and women) operating outside residential premises. It is also available for mobile businesses such as distribution/delivery vans and taxis. The loan features adaptable repayment periods, allowing clients to choose 6, 12, 18, or 24-month plans.",
+            "details": "This loan is known for its flexibility. It is designed to meet the needs men or women with licensed businesses. It can also be provided to mobile businesses such as distribution and delivery businesses or even taxi owners. Al Tafawoq loan is an amount between BD 1000 and 7000 and can be paid over 6, 12, 18 or 24 months.",
+            "terms": [
+                "The loan must be used for a licensed business.",
+                "The loan must be used to purchase new equipment or increase the working capital.",
+                "The business must have been operational for at least 3 years.",
+                "Applicants must be between 25 and 65 years old."
+            ],
+            "requirements": [
+                "A copy of a valid smart ID card.",
+                "A copy of a valid passport or driver’s license.",
+                "A copy of the commercial registration or business license.",
+                "Proof of Business Income",
+                "Bank statement for the last six months.",
+                "Valid Commercial registration (for at least 6 months).",
+                "Proof of residence (rental contract, ownership, or electricity and water bill)."
+            ]
+        },
+        {
+            "id": "mawsimi",
+            "title": "AL MAWSIMI LOAN",
+            "image": "assets/img/loan/mawsimi-new.webp",
+            "description": "Designed to support informal and formal business activities during seasonal periods such as the holy month of Ramadan and the Back-to-School season. Loan amounts range from BHD 100 to BHD 800, with a repayment period of up to 10 months.",
+            "details": "Ebdaa - Bahrain offers you credit to meet your seasonal needs. This loan is available before special occasions, such as Ramadan, the school season, and the Holy Eids.",
+            "terms": [
+                "Applicants must be between 23 and 60 years old.",
+                "Applicants must demonstrate a steady, reliable income.",
+                "The loan must be used to purchase seasonal goods or supplies."
+            ],
+            "requirements": [
+                "A copy of a valid smart ID card.",
+                "A copy of a valid passport or driver’s license.",
+                "Latest salary slip for government employees.",
+                "Salary certificate for private sector employees.",
+                "Bank statement for the last 3 months."
+            ]
+        },
+        {
+            "id": "najah",
+            "title": "AL NAJAH LOAN",
+            "image": "assets/img/loan/najah-new.webp",
+            "description": "Specifically designed for home-based business owners of both genders who wish to grow and transition their businesses into licensed commercial enterprises. This loan offers flexible financing amounts to suit a variety of customer needs, starting from BHD 600 and reaching up to BHD 1,400, with a repayment period of up to 18 months.",
+            "details": "Ebdaa Bahrain offers Al-Najah loans to eligible entrepreneurs who operate home businesses and to support and increase the business volume. The loan amount ranges between BD 600 and 1400 to be paid over 18 months.",
+            "terms": [
+                "The loan must be used to support home-based or mobile businesses.",
+                "Applicants must have an existing business or a viable business idea.",
+                "Applicants must be between 20 and 65 years old."
+            ],
+            "requirements": [
+                "A copy of a valid smart ID card.",
+                "A copy of a valid passport or driver’s license.",
+                "Proof of project income or salary certificate for employees.",
+                "Proof of residence (rental contract, ownership, or electricity and water bill)."
+            ]
+        }
+    ]
+}
