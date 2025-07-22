@@ -20,7 +20,7 @@
     <div class="header">
         <h1>الإدارة التنفيذية</h1>
     </div>
-    <div class="stuff-item leader">
+    <div class="stuff-item leader" data-toggle="modal" data-target="#KhaledModal">
         <div class="img-container">
             <img loading="lazy" src="assets/img/stuff/pic-all-01.webp" alt="stuff img">
         </div>
@@ -31,7 +31,7 @@
     </div>
     <div class="stuff-container">
         <div class="d-flex justify-content-around flex-wrap">
-            <div class="stuff-item">
+            <div class="stuff-item" data-toggle="modal" data-target="#hamzaModal">
                 <div class="img-container">
                     <img loading="lazy" src="assets/img/stuff/pic-all-07.webp" alt="stuff img">
                 </div>
@@ -49,7 +49,7 @@
                     <p>مسؤول اول تدقيق عمليات</p>
                 </div>
             </div>
-            <div class="stuff-item">
+            <div class="stuff-item" data-toggle="modal" data-target="#MashaelModal">
                 <div class="img-container">
                     <img loading="lazy" src="assets/img/stuff/pic-all-02.webp" alt="stuff img">
                 </div>
@@ -70,7 +70,7 @@
                     <p>السكيرتير التنفيذي</p>
                 </div>
             </div>
-            <div class="stuff-item">
+            <div class="stuff-item" data-toggle="modal" data-target="#YousefModal">
                 <div class="img-container">
                     <img loading="lazy" src="assets/img/stuff/pic-all-04.webp" alt="stuff img">
                 </div>
@@ -79,9 +79,9 @@
                     <p>مسؤول اول الموارد البشرية و الشؤون الإدارية</p>
                 </div>
             </div>
-            <div class="stuff-item">
+            <div class="stuff-item" data-toggle="modal" data-target="#aliModal">
                 <div class="img-container">
-                    <img loading="lazy" src="assets/img/stuff/pic-all-02.webp" alt="stuff img">
+                    <img loading="lazy" src="assets/img/stuff/pic-all-03.webp" alt="stuff img">
                 </div>
                 <div class="info-container">
                     <h3>على عيسى</h3>
@@ -91,10 +91,127 @@
 
         </div>
     </div>
+    <!-- Modals for Team Bios -->
+    <div class="modal fade team-modal" id="KhaledModal" tabindex="-1" role="dialog" aria-labelledby="KhaledModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" di>
+                    <h5 class="modal-title" id="KhaledModalLabel">خالد الغزاوي - الرئيس التنفيذي</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    في 2014/04/01، انضم د. خالد وليد الغزاوي كرئيس تنفيذي لشركة الإبداع للتمويل متناهي الصغر في البحرين حاملاً معه ما يزيد عن 19 عاماً من الخبرة في مجال التمويل الأصغر وأكثر من ثمانية سنوات من الخبرة في القطاع المالي والمصرفي.<br>
+                    د. الغزاوي يحمل شهادة دكتوراه مهنية في إدارة الأعمال الدولية من الولايات المتحدة الأمريكية، ودرجتي الماجستير والبكالوريوس في إدارة الأعمال والتمويل من الأردن، مدرّب مجاز في عدة مجالات في علم التمويل الأصغر، مثل التخطيط للأعمال، إدارة التعثر، ضبط معدل الفائدة، المحاسبة، إدارة الأخطار التشغيلية والتحليل المالي. <br>
+                    قبل انضمامه لأسرة أبداع البحرين ، شغل د. الغزاوي منصب المدير العام لشركة جرامين-جميل للتمويل الأصغر محدودة المسؤولية في دبي – الإمارات العربية المتحدة، وقبلها كمستشار مقيم لصندوق الخليج العربي للتنمية (الأجفند) في لبنان، حيث قاد هناك الجهود الرامية لإنشاء شركة الابداع للتمويل الأصغر في لبنان، واستطاع تدريب وبناء كفاءة فريق من العاملين وإطلاق أنشطة البنك التمويلية للفقراء ومحدودي الدخل خلال فترة لم تتجاوز 90 يومًا. <br>
+                    قبل ذلك مباشرة، وبين عامي 2009 و2012، عمل د. الغزاوي كرئيس تنفيذي للمؤسسة الأولى للتمويل متناهي الصغر في مصر والتي تتبع لوكالة الأغا خان للتمويل متناهي الصغر ومقرها جنيفا – سويسرا، ومستشار لشركة جودة التمويل الدولية والتي تعمل من القاهره في الفترة بين 2007 و2009، وفي الفترة من بداية عام 2006 وحتى منتصف 2007، عمل د. الغزاوي في الولايات المتحدة الأمريكية كمدير لبرنامج الشرق الأوسط الكبير في بنوك القرية العالمية (فينكا)، وقبلها مباشرة وبين عامي 1999 و 2005، كان د. الغزاوي أحد المؤسسين والرئيس التنفيذي للشركة الأردنية لتمويل المشاريع الصغيرة (تمويلكم) وهي إحدى الشركات الرائدة في مجال التمويل الأصغر في الأردن تملكها بالكامل مؤسسة الملكة نور الحسين ومولتها الوكالة الأميركية للتنمية الدولية، وفي عهده أصبحت (تمويلكم) واحدة من أهم الشركات المقدمة لخدمات التمويل الأصغر في الأردن، وحازت جوائز عالمية مرموقة في مناسبات مختلفة نظير شفافيتها وتفانيها في الحدّ من الفقر والحاكمية الرشيدة.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade team-modal" id="YousefModal" tabindex="-1" role="dialog" aria-labelledby="YousefModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" dir="ltr">
+                    <h5 class="modal-title" id="YousefModalLabel">يوسف قمبر - مسؤول موارد بشرية وإدارية</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    انضم السيد يوسف قمبر لأسرة أبداع البحرين منذ تأسيسه في يوليو 2009 كمنسق إداري في قسم الموارد البشرية والشئون الإدارية، ليتسلم في يوليو 2011 مهام سكرتير تنفيذي بمكتب الرئيس التنفيذي، وسكرتير لمجلس الإدارة، ثم تدرج في مكتب الرئيس التنفيذي حتى استلم مهام مدير مكتب الرئيس التنفيذي، وقد أظهر السيد يوسف مهارات متميزة في العمل واستمر في التدرج في الوظائف حتى استلامه منصب مشرف أول لقسم الموارد البشرية والشئون الإدارية في البنك في ابريل 2016. <br>
+                    يحمل السيد يوسف دبلوم متخصص من معهد البحرين للتدريب ويدرس حالياً في الجامعة العربية المفتوحة للحصول على درجة البكالوريوس في إدارة الأعمال، كما حضر العديد من المؤتمرات والدورات الاحترافية وحصل على العديد من الشهادات في مجال صناعة التمويل الأصغر وشهادات متخصصة في الموارد البشرية والشئون الإدارية.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade team-modal" id="aliModal" tabindex="-1" role="dialog" aria-labelledby="aliModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" di>
+                    <h5 class="modal-title" id="aliModalLabel">علي عيسى محمد - مسؤول تكنولوجيا المعلومات</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    يعمل السيد علي محمد في شركة ابداع البحرين منذ عام 2018 ويحمل شهادة دبلوم الوطنية من معهد البحرين في تخصص نظم المعلومات.<br>
+                    عمل السيد علي قبل انضمامه الى اسرة أبداع البحرين في شركة المؤيد للمقاولات في قسم تقنية المعلومات لمدة تسع سنوات قبل ان ينظم الى اسرة أبداع البحرين بوظيفة داعم نظم معلومات، ثم تسلق السلم الوظيفي الى ان وصل الى منصب مسؤول اول تقنية المعلومات. كما حضر العديد من المؤتمرات والدورات الاحترافية وحصل على أكثر من رخصة عالمية في مجال تقنية المعلومات.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade team-modal" id="hanaModal" tabindex="-1" role="dialog" aria-labelledby="hanaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" di>
+                    <h5 class="modal-title" id="hanaModalLabel">هناء سلمان - مسؤول أول أتمان</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    انضمت الآنسة هناء سلمان لشركة ابداع البحرين في اغسطس 2016 كأخصائية اقراض في دائرة العمليات، وسرعان ما أثبتت نفسها للعمل بكل اخلاص وتفاني، وبدأت هناء بالتدرج في عملها لتتسلم مهام مشرف مجموعة في مايو 2017 حيث تميزت بإتقانها للمهارات القيادية واستمرت في التدرج وبذل ما في وسعها في نفس الدائرة إلى أن وصلت إلى منصب مدير فرع في مايو 2018، ولكونها متميزة وحريصة على تحقيق أهدافها تشغل اليوم هناء منصب مسئول أول للائتمان حيث قد عينت بذلك المنصب منذ أكتوبر 2019.<br>
+                    هناء من الفئة المخلصة والمثابرة لعملها كما تطمح دائماً لتحقيق اهدافها من خلال تميزها وحرصها على أن تكون دائماً لأفضل مستوى، حيث أنها اضافت الكثير لهذه الشركة لكونها من الاشخاص الذين لديهم ولاء كبير لعملائهم<br>
+                    الآنسة هناء تحمل شهادة البكالوريوس في إدارة الاعمال من الجامعة العربية المفتوحة تخصص النظم الادارية، وحصلت أيضا على العديد من الشهادات التدريبية التي تهتم بشكل أساسي في التمويل الأصغر، وخدمات الزبائن والادارة ومهارات القيادة. شاركت هناء في العديد من المحافل الدولية والعديد من الفعاليات التي تخدم الشركة والمجتمع البحريني كافة
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade team-modal" id="MashaelModal" tabindex="-1" role="dialog" aria-labelledby="MashaelModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" di>
+                    <h5 class="modal-title" id="MashaelModalLabel">مشاعل صالح - مدير مالي</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    تحمل الآنسة مشاعل عدنان صالح شهادة البكالوريوس في المحاسبة من جامعة بوليتكنيك البحرين، وقد عملت في بنك سيتي الاسلامي الاستثماري لمدة سنتين قبل ان تنضم لأسرة أبداع البحرين بوظيفة محاسب، وما لبثت أن ترقت خلال فترة وجيزة نظراً لكفائتها وعملها المتميز إلى منصب المحاسب الرئيسي للبنك اعتباراً من الربع الأول من عام 2018، وقد حضرت الآنسة مشاعل دورات متعددة في العمل المصرفي والإدارة المالية والتخطيط المالي.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade team-modal" id="hamzaModal" tabindex="-1" role="dialog" aria-labelledby="hamzaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" di>
+                    <h5 class="modal-title" id="hamzaModalLabel">حمزة القطيشات - مسؤول أول تحصيل</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    يعمل السيد حمزه القطيشات في بتك الأبداع منذ مارس 2015، وتدرج في عدة مناصب وظيفية حتى وصل إلى منصب مسؤول تحصيل اول بداية عام 2018.<br>
+                    بدأ حمزه مسيرته في البنك كأخصائي قروض (ضابط قروض)، ثم تم تحويله الى قسم التحصيل (ضابط تحصيل داخلي)، وقد أظهر السيد حمزه مهارات متميزة في العمل حتى استلامه مسؤول تحصيل في فرع عالي ثم جرى ترفيعه إلى مسؤول تحصيل اول. كما حضر العديد من المؤتمرات والدورات الاحترافية وحصل على العديد من الشهادات في مجال صناعة التمويل الأصغر.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <?php include 'footer.php'; ?>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
-</html>counter-reset: ;
+</html>
