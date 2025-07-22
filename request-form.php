@@ -9,9 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تقديم طلب جديد | بنك الإبداع البحرين</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet" async defer />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" async defer>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -69,7 +66,7 @@
             border-radius: 14px;
             font-size: 1rem;
             transition: all 0.3s ease;
-            font-family: 'Tajawal', sans-serif;
+            /* font-family: 'Tajawal', sans-serif; */
         }
 
         .form-control:focus,
@@ -86,7 +83,7 @@
             border: 2px solid rgba(126, 181, 93, 0.3);
             border-radius: 14px;
             font-size: 1rem;
-            font-family: 'Tajawal', sans-serif;
+            /* font-family: 'Tajawal', sans-serif; */
         }
 
         .btn-primary {

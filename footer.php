@@ -102,10 +102,10 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
 </script>
 
 <!-- WhatsApp Floating Button -->
-<!-- <a href="https://wa.me/97333539666" target="_blank" rel="noopener noreferrer"
+<a href="https://wa.me/97333539666" target="_blank" rel="noopener noreferrer"
     class="whatsapp-floating" aria-label="تواصل معنا عبر واتساب">
     <i class="fab fa-whatsapp"></i>
-  </a> -->
+  </a>
 
 
 

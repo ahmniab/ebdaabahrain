@@ -1,14 +1,35 @@
 /* ==========================================================================
    2. GENERAL
    ========================================================================== */
-.clearfix:after {
+/* Define your font faces with font-display: swap */
+@font-face {
+  font-family: 'EnglishFont';
+  src: url('../assets/fonts/en-century-gothic/Dominik.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ArabicFont';
+  src: url('../assets/fonts/ar-GE-SS/ArbFONTS-GE_SS_Two_Light.otf') format('opentype');
+  font-display: swap;
+}
+
+/* Apply fonts based on language */
+:lang(en) {
+  font-family: 'EnglishFont', system-ui, sans-serif;
+}
+
+:lang(ar) {
+  font-family: 'ArabicFont', system-ui, sans-serif;
+}
+
+   .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
   color: #333;
   font-size: 14px;
   font-weight: 400;
@@ -87,20 +108,18 @@ textarea {
 .navbar-nav {
   display: flex;
   align-items: center;
-  gap: 10px;
   margin: 0 !important;
 }
 
 .nav-item {
   position: relative;
-  margin: 0 5px;
+  /* margin: 0 5px; */
 }
 
 .nav-link {
   color: #2E8F36 !important;
-  font-weight: 600;
   font-size: 1rem;
-  padding: 12px 20px !important;
+  padding: 12px 10px !important;
   border-radius: 25px;
   transition: all 0.3s ease;
   position: relative;
@@ -175,7 +194,6 @@ textarea {
   /* background: linear-gradient(135deg, #2E8F36, #5DA930); */
   color: #2E8F36;
   border-radius: 25px;
-  font-weight: 600;
   transition: all 0.3s ease;
   text-decoration: none;
 }
@@ -202,7 +220,7 @@ textarea {
   }
 
   .nav-item {
-    margin: 0 15px;
+    margin: 0 10px;
   }
 
   .collapse-button {
@@ -771,11 +789,11 @@ textarea {
 }
 
 .whatsapp-button .whatsapp-text {
-  font-family: 'Tajawal', sans-serif;
+  /* font-family: 'Tajawal', sans-serif; */
 }
 
 /* Floating WhatsApp Button (Alternative) */
-/* .whatsapp-floating {
+.whatsapp-floating {
         position: fixed;
         bottom: 30px;
         left: 30px;
@@ -827,10 +845,10 @@ textarea {
       
       .whatsapp-floating:hover i {
         transform: rotate(10deg);
-      } */
+      }
 
 /* WhatsApp tooltip */
-/* .whatsapp-floating::after {
+.whatsapp-floating::after {
         content: 'تواصل معنا عبر واتساب';
         position: absolute;
         right: 70px;
@@ -865,7 +883,7 @@ textarea {
       .whatsapp-floating:hover::before {
   opacity: 1;
         visibility: visible;
-      } */
+      }
 
 /* Footer WhatsApp Button */
 .footer-whatsapp {
@@ -1277,11 +1295,12 @@ textarea {
 .navbar .dropdown-item {
   color: #2E8F36;
   font-weight: 600;
-  font-family: 'Tajawal', 'Poppins', sans-serif;
+  /* font-family: 'Tajawal', 'Poppins', sans-serif; */
   padding: 12px 28px;
   border-radius: 12px;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
   position: relative;
+  text-align: justify;
 }
 
 .navbar .dropdown-item:hover,

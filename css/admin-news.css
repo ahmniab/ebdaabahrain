@@ -1,7 +1,7 @@
 /* Admin News Management Styles */
 .admin-news-container {
     direction: rtl;
-    font-family: 'Tajawal', Arial, sans-serif;
+    /* font-family: 'Tajawal', Arial, sans-serif; */
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
