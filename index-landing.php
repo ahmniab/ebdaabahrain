@@ -47,7 +47,7 @@
                                         </div>
 
                                         <div class="slide-actions ">
-                                            <a href="#application" class="btn btn-primary btn-lg">
+                                            <a href="application-form.php" class="btn btn-primary btn-lg">
                                                 <i class="fa-solid fa-rocket ml-2"></i>
                                                 <?= $translations['apply-loan']; ?>
                                             </a>
