@@ -1290,6 +1290,7 @@ textarea {
   min-width: 210px;
   padding: 10px 0;
   margin-top: 10px;
+  margin-left: calc(-50% - 10px);
 }
 
 .navbar .dropdown-item {
