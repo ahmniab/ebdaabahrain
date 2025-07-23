@@ -21,14 +21,14 @@ return [
         [
             "name" => "Services",
             "submenu" => [
-                ["name" => "Mawsimi Loan", "href" => "loan-details.php?id=mawsimi"],
                 ["name" => "Sidetie Loan", "href" => "loan-details.php?id=saydati"],
                 ["name" => "Ebdaa Loan", "href" => "loan-details.php?id=ebdaa"],
                 ["name" => "Najah Loan", "href" => "loan-details.php?id=najah"],
                 ["name" => "Amal Loan", "href" => "loan-details.php?id=amal"],
-                ["name" => "Tamayouz Loan", "href" => "loan-details.php?id=tamayouz"],
                 ["name" => "Tafawaq Loan", "href" => "loan-details.php?id=tafawoq"],
+                ["name" => "Tamayouz Loan", "href" => "loan-details.php?id=tamayouz"],
                 ["name" => "Tamayouz Plus Loan", "href" => "loan-details.php?id=tamayouz-plus"],
+                ["name" => "Mawsimi Loan", "href" => "loan-details.php?id=mawsimi"],
 
             ]
         ],

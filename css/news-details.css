@@ -18,7 +18,7 @@
 .news-details-card .card-img-top {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    max-height: 350px;
+    max-height: 400px;
     object-fit: cover;
 }
 

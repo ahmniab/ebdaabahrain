@@ -37,7 +37,7 @@
                     <img loading="lazy" src="assets/img/stuff/pic-all-07.webp" alt="stuff img">
                 </div>
                 <div class="info-container">
-                    <h3>حمزة قشيات</h3>
+                    <h3>حمزة القطشيات</h3>
                     <p>مدير العمليات</p>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="info-container">
                     <h3>محمد الحداد</h3>
-                    <p>السكيرتير التنفيذي</p>
+                    <p>السكرتير التنفيذي</p>
                 </div>
             </div>
             <div class="stuff-item" data-toggle="modal" data-target="#YousefModal">
@@ -108,7 +108,7 @@
             </div>
             <div class="info-container">
                 <h3>مهند محمد علي</h3>
-                <p>مدير الفرع الرئيسي ونائب مدير العمليات والمبيعات</p>
+                <p>نائب مدير العمليات والمبيعات</p>
             </div>
         </div>
 

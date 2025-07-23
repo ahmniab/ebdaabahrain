@@ -1,10 +1,12 @@
 <?php
-require_once 'lang/init.php';
 require_once 'services/stories-service.php';
+require_once 'lang/init.php';
 $stories_data = getStories($lang);
+// echo $lang;
+// exit;
 ?>
 <!DOCTYPE html>
-<html dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>" lang="<?php $lang ?>">
+<html dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>" lang="<?php echo $lang ?>">
 
 <head>
   <meta charset="UTF-8">
@@ -15,20 +17,19 @@ $stories_data = getStories($lang);
   <meta name="apple-mobile-web-app-capable" content="yes">
   <title><?php echo htmlspecialchars($stories_data['pageTitle']); ?></title>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" async defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" async defer>
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous" async defer></script>
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous" ></script>
 
 
-  <link rel="stylesheet" href="css/success-stories.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" async defer>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/success-stories.css">
 </head>
 
 <body>
-  <?php include "includes/header.php"; ?>
   <?php include "navbar.php"; ?>
 
   <div class="container">
@@ -83,11 +84,8 @@ $stories_data = getStories($lang);
   <?php include "footer.php"; ?>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Handle filter clicks
       document.querySelectorAll('.stories-filter').forEach(function(btn) {
         btn.addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
 
           document.querySelectorAll('.stories-filter').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');

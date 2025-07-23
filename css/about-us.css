@@ -8,7 +8,9 @@
 .section-subtitle{
   text-align: justify;
 }
-
+h4{
+  text-align: justify;
+}
 /* Tab Navigation */
 
 
@@ -225,23 +227,36 @@
 }
 
 /* Governance Reports List */
-.governance-list {
+.report-list {
   padding-right: 0;
+  list-style-type: none;
 }
 
-.governance-list li {
+.report-list li {
   margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  box-shadow: 0 4px 20px rgba(59, 168, 162, 0.1);
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
-.governance-list a {
-  color: #3BA8A2;
+.report-list li:hover {
+  color: #fff;
+}
+
+.report-list a {
+  color: var(--light);
   font-weight: 600;
   text-decoration: underline;
   transition: color 0.2s;
-}
-
-.governance-list a:hover {
-  color: #2E8F36;
+  text-decoration: none;
 }
 
 /* Financial Reports Styling */

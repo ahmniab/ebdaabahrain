@@ -10,7 +10,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>طلب قرض - بنك الإبداع البحرين</title>
 
-    <!-- fonts -->
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
@@ -119,11 +121,11 @@
                                 <div class="arabic-checkbox">
                                     <input class="form-check-input" type="checkbox" id="arabicCheckbox2">
                                     <label class="form-check-label" for="arabicCheckbox2">
-                                        أقر
+                                     <strong>   أقر</strong>
+                                        أننى قرأت وتفهمت كافة شروط تقديم الطلب وتعتبر موافقتي عليها بمثابة إقرار نهائي غير قابل للطعن أو الرجوع فيه مستقبلا .
                                     </label>
                                 </div>
                                 <label class="form-check-label" for="arabicCheckbox2">
-                                    أننى قرأت وتفهمت كافة شروط تقديم الطلب وتعتبر موافقتي عليها بمثابة إقرار نهائي غير قابل للطعن أو الرجوع فيه مستقبلا .
                                 </label>
                             </div>
 

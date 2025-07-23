@@ -17,12 +17,12 @@
 <main class="container py-5" style="background: linear-gradient(135deg, #f8fff8 0%, #e9f9f7 100%); border-radius: 24px; box-shadow: 0 4px 32px rgba(59,168,162,0.07);">
     
     <section class="tab-content about-tab-content">
-        <div class="tab-pane fade show active" id="tabs-5">
+        <div class="tab-pane fade show active" id="tabs_5">
             <h4 style="color:#2E8F36;">تقرير الحوكمة</h4>
             <hr>
-            <ul class="governance-list">
+            <ul class="report-list d-flex flex-row justify-content-between align-items-center flex-wrap">
                 <li>
-                    <a href="assets/governance_reports/GovernanceReport2024.pdf" target="_blank" style="color:#61D2B4;">تقرير الحوكمة لسنة 2024</a>
+                    <a href="assets/governance_reports/GovernanceReport2024.pdf" target="_blank"> 2024</a>
                 </li>
                 <!-- Add more reports as needed -->
             </ul>

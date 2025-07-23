@@ -57,7 +57,7 @@
 .application-input,
 .application-form-card select.form-control {
     background: rgba(255, 255, 255, 0.95);
-    color: #2E8F36;
+    color: var(--primary);
     border: 2px solid rgba(126, 181, 93, 0.3);
     border-radius: 14px;
     font-size: 1rem;
@@ -154,9 +154,13 @@ select.application-input {
     justify-content: flex-end;
     align-items: center;
     gap: 0.5rem;
+    text-align: justify;
 }
 .arabic-checkbox .form-check-label{
-    color: #2E8F36;
+    color: var(--dark);
+}
+.arabic-checkbox .form-check-label strong{
+    color: var(--danger);
 }
 
 .arabic-checkbox .form-check-input {

@@ -199,6 +199,54 @@
                 }
             },
             "id": "story_1753293846"
+        },
+        {
+            "name": "Ziyada Shafi Al-Dosari",
+            "type": "stories",
+            "image": "uploads\/story_main_1753306079.jpeg",
+            "modal": {
+                "title": "Ziyada is a hardworking Bahraini woman who built herself up from the ground. ",
+                "video": "",
+                "images": [],
+                "content": {
+                    "0": "Ziyada is a hardworking Bahraini woman who built herself up from the ground. She is one of the inspiring women from Bahrain’s golden generation—still creative, still ambitious. She runs a home-based business where she cooks and sells traditional Bahraini dishes along with various food products.",
+                    "2": "Her project stands out as a successful and unique one, thanks to the remarkable woman behind it who believed in her success and shared that belief with Ebda’a Microfinance (one of AGFUND’s institutions). Ebda’a has been supporting her journey since 2014 and continues to do so today.",
+                    "4": "Recently, Ziyada received a new loan which she used to purchase supplies, equipment, and kitchen essentials for her growing business—made possible first by God, and then by her relentless dedication and hard work.",
+                    "6": "Ebda’a remains committed to supporting Ziyada (and every determined, exceptional Bahraini woman like her) on the path to achieving her dreams and improving her quality of life.",
+                    "8": "Wishing you all the best, Ziyada!"
+                }
+            },
+            "id": "story_1753306079"
+        },
+        {
+            "name": "Laila Ahmed Salman",
+            "type": "stories",
+            "image": "uploads\/story_main_1753306253.jpeg",
+            "modal": {
+                "title": "Laila is a talented Bahraini woman",
+                "video": "",
+                "images": [],
+                "content": {
+                    "0": "Laila is a talented Bahraini woman, skilled in various forms of art—most notably design and handmade crafts. She started her small home-based business by creating beautiful handcrafted pieces right from her home.",
+                    "2": "Laila continued her work and gradually built a loyal customer base, becoming well-known in her field for her elegant designs, precision, and high quality.",
+                    "4": "As demand for her products grew and she needed to purchase more raw materials, she turned to Ebda’a Microfinance (one of AGFUND’s institutions) for financial support. Ebda’a was quick to respond, providing her with the funding she needed to grow her business."
+                }
+            },
+            "id": "story_1753306253"
+        },
+        {
+            "name": "Ahmed ",
+            "type": "stories_video",
+            "image": "uploads\/story_main_1753306543.jpeg",
+            "modal": {
+                "title": "Ahmed is a young Bahraini man who is passionate about Bahrain’s heritage",
+                "video": "https://www.youtube.com/embed/MToSKerTJq0?si=y-3qOP8yKmYNhGSw",
+                "images": [],
+                "content": [
+                    "Ahmed is a young Bahraini man who is passionate about Bahrain’s heritage and deeply connected to the charm and authenticity of the past. He turned his beautiful hobby of collecting heritage items and antiques into a small shop where he displays his collection and sells it to those who truly appreciate this cultural legacy."
+                ]
+            },
+            "id": "story_1753306543"
         }
     ]
 }

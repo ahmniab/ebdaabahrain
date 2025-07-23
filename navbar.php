@@ -13,7 +13,7 @@
     <?php foreach ($navbar_translations['items'] as $key => $value) { ?>
       <?php if (isset($value['submenu']) && is_array($value['submenu'])) { ?>
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown<?= $key ?>" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown<?= $key ?>" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <?= $value['name']; ?>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown<?= $key ?>">

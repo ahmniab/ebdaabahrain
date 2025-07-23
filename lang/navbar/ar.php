@@ -21,14 +21,14 @@ return [
         [
             "name" => "منتجاتنا",
             "submenu" => [
-                ["name" => "قرض الموسمى", "href" => "loan-details.php?id=mawsimi"],
                 ["name" => "قرض سيدتي", "href" => "loan-details.php?id=saydati"],
                 ["name" => "قرض الإبداع", "href" => "loan-details.php?id=ebdaa"],
                 ["name" => "قرض النجاح", "href" => "loan-details.php?id=najah"],
                 ["name" => "قرض الأمل", "href" => "loan-details.php?id=amal"],
-                ["name" => "قرض التميز", "href" => "loan-details.php?id=tamayouz"],
                 ["name" => "قرض التفوق", "href" => "loan-details.php?id=tafawoq"],
+                ["name" => "قرض التميز", "href" => "loan-details.php?id=tamayouz"],
                 ["name" => "قرض التميز بلس", "href" => "loan-details.php?id=tamayouz-plus"],
+                ["name" => "قرض الموسمى", "href" => "loan-details.php?id=mawsimi"],
 
             ]
         ],
