@@ -8,7 +8,7 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
     <div class="footer-content">
       <div class="footer-section">
         <div class="footer-brand">
-          <img src="assets/img/ebdaa2.webp" alt="إبداع البحرين" loading="lazy" class="footer-logo">
+          <img src="assets/img/logo-ar-en-white.webp" alt="إبداع البحرين" loading="lazy" class="footer-logo">
           <p class="footer-description"><?= $footer_translations['footer-ph']; ?></p>
         </div>
         <div class="footer-contact">

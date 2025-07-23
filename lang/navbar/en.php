@@ -48,5 +48,5 @@ return [
             "href" => "index.php#contact"
         ],
     ],
-    "logo" => "assets/img/LOGO_ENG_GREY_old.PNG",
+    "logo" => "assets/img/logo-ar-eng-02.webp",
 ];
