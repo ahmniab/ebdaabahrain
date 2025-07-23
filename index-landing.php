@@ -77,6 +77,40 @@
                     </div>
                 </div>
             </li>
+            <li class="splide__slide">
+                <div class="success-elements-container" dir="ltr">
+                    <a class="success-element">
+                        <img src="assets/img/home-s3-slides/s1.jpeg" alt="success image">
+                        <div class="success-filter"></div>
+                    </a>
+                    <a class="success-element">
+                        <img src="assets/img/home-s3-slides/s2.jpeg" alt="success image">
+                        <div class="success-filter"></div>
+                    </a>
+                    <a class="success-element">
+                        <img src="assets/img/home-s3-slides/s3.jpeg" alt="success image">
+                        <div class="success-filter"></div>
+                    </a>
+                    <a class="success-element">
+                        <img src="assets/img/home-s3-slides/s4.jpeg" alt="success image">
+                        <div class="success-filter"></div>
+                    </a>
+                    <a class="success-element">
+                        <img src="assets/img/home-s3-slides/s5.jpeg" alt="success image">
+                        <div class="success-filter"></div>
+                    </a>
+
+                </div>
+                <div class="success-text">
+                    <h1>انضم لسلسة الناجحين الذين استفادوا من تمويلات
+                        <strong class="bold">الإبداع</strong>
+                    </h1>
+                    <h2>أيا كانت الفكرة نساعدك على تحقيقها</h2>
+                    <a href="success-stories.php" class="btn btn-info">
+                        تعرف على قصصهم
+                    </a>
+                </div>
+            </li>
             <li class="splide__slide" dir="<?php echo $dir ?>">
                 <!-- Modern Counters Section -->
                 <section class="counters-section" data-stellar-background-ratio="0.5">
@@ -218,7 +252,7 @@
     new Splide('.splide', {
         type: 'fade',
         rewind: true,
-        autoplay: true,
+        autoplay: false,
         interval: 3000,
         height: '100vh',
         cover: true,

@@ -21,7 +21,7 @@ return [
             "name" => "Services",
             "submenu" => [
                 ["name" => "Mawsimi Loan", "href" => "loan-details.php?id=mawsimi"],
-                ["name" => "Sidetie Loan", "href" => "loan-details.php?id=sidetie"],
+                ["name" => "Sidetie Loan", "href" => "loan-details.php?id=saydati"],
                 ["name" => "Ebdaa Loan", "href" => "loan-details.php?id=ebdaa"],
                 ["name" => "Najah Loan", "href" => "loan-details.php?id=najah"],
                 ["name" => "Amal Loan", "href" => "loan-details.php?id=amal"],

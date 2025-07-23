@@ -7,10 +7,20 @@
   src: url('../assets/fonts/en-century-gothic/Dominik.ttf') format('truetype');
   font-display: swap;
 }
+@font-face {
+  font-family: 'EnglishFontBold';
+  src: url('../assets/fonts/en-century-gothic/Dominik.ttf') format('truetype');
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'ArabicFont';
   src: url('../assets/fonts/ar-GE-SS/ArbFONTS-GE_SS_Two_Light.otf') format('opentype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ArabicFontBold';
+  src: url('../assets/fonts/ar-GE-SS/ArbFONTS-GE-SS-Two-Bold.otf') format('opentype');
   font-display: swap;
 }
 
@@ -21,6 +31,9 @@
 
 :lang(ar) {
   font-family: 'ArabicFont', system-ui, sans-serif;
+}
+:lang(ar) .bold{
+  font-family: 'ArabicFontBold', system-ui, sans-serif;
 }
 
    .clearfix:after {
@@ -989,6 +1002,7 @@ textarea {
   padding: 30px;
   height: 90vh;
   overflow-y: scroll;
+  text-align: justify;
 }
 
 .modal-body img {

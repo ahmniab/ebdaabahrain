@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فريق الإبداع</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -40,7 +41,7 @@
                     <p>مدير العمليات</p>
                 </div>
             </div>
-            <div class="stuff-item">
+            <div class="stuff-item" data-toggle="modal" data-target="#FatmaModal">
                 <div class="img-container">
                     <img loading="lazy" src="assets/img/stuff/pic-all-06.webp" alt="stuff img">
                 </div>
@@ -61,7 +62,7 @@
 
         </div>
         <div class="d-flex justify-content-around flex-wrap">
-            <div class="stuff-item">
+            <div class="stuff-item" data-toggle="modal" data-target="#MoHaddadModal">
                 <div class="img-container">
                     <img loading="lazy" src="assets/img/stuff/pic-all-05.webp" alt="stuff img">
                 </div>
@@ -91,11 +92,33 @@
 
         </div>
     </div>
+    <div class="d-flex justify-content-around flex-wrap">
+        <div class="stuff-item" data-toggle="modal" data-target="#HanaaModal">
+            <div class="img-container">
+                <img loading="lazy" src="assets/img/stuff/pic-all-05.webp" alt="stuff img">
+            </div>
+            <div class="info-container">
+                <h3>هناء سلمان</h3>
+                <p>مسؤول أول أتمان</p>
+            </div>
+        </div>
+        <div class="stuff-item" data-toggle="modal" data-target="#MohannadModal">
+            <div class="img-container">
+                <img loading="lazy" src="assets/img/stuff/pic-all-04.webp" alt="stuff img">
+            </div>
+            <div class="info-container">
+                <h3>مهند محمد علي</h3>
+                <p>مدير الفرع الرئيسي ونائب مدير العمليات والمبيعات</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
     <!-- Modals for Team Bios -->
     <div class="modal fade team-modal" id="KhaledModal" tabindex="-1" role="dialog" aria-labelledby="KhaledModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header" di>
+                <div class="modal-header" dir="ltr">
                     <h5 class="modal-title" id="KhaledModalLabel">خالد الغزاوي - الرئيس التنفيذي</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
                         <span aria-hidden="true">&times;</span>
@@ -135,7 +158,7 @@
     <div class="modal fade team-modal" id="aliModal" tabindex="-1" role="dialog" aria-labelledby="aliModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header" di>
+                <div class="modal-header" dir="ltr">
                     <h5 class="modal-title" id="aliModalLabel">علي عيسى محمد - مسؤول تكنولوجيا المعلومات</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
                         <span aria-hidden="true">&times;</span>
@@ -154,7 +177,7 @@
     <div class="modal fade team-modal" id="hanaModal" tabindex="-1" role="dialog" aria-labelledby="hanaModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header" di>
+                <div class="modal-header" dir="ltr">
                     <h5 class="modal-title" id="hanaModalLabel">هناء سلمان - مسؤول أول أتمان</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
                         <span aria-hidden="true">&times;</span>
@@ -174,7 +197,7 @@
     <div class="modal fade team-modal" id="MashaelModal" tabindex="-1" role="dialog" aria-labelledby="MashaelModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header" di>
+                <div class="modal-header" dir="ltr">
                     <h5 class="modal-title" id="MashaelModalLabel">مشاعل صالح - مدير مالي</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
                         <span aria-hidden="true">&times;</span>
@@ -192,7 +215,7 @@
     <div class="modal fade team-modal" id="hamzaModal" tabindex="-1" role="dialog" aria-labelledby="hamzaModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header" di>
+                <div class="modal-header" dir="ltr">
                     <h5 class="modal-title" id="hamzaModalLabel">حمزة القطيشات - مسؤول أول تحصيل</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
                         <span aria-hidden="true">&times;</span>
@@ -201,6 +224,86 @@
                 <div class="modal-body">
                     يعمل السيد حمزه القطيشات في بتك الأبداع منذ مارس 2015، وتدرج في عدة مناصب وظيفية حتى وصل إلى منصب مسؤول تحصيل اول بداية عام 2018.<br>
                     بدأ حمزه مسيرته في البنك كأخصائي قروض (ضابط قروض)، ثم تم تحويله الى قسم التحصيل (ضابط تحصيل داخلي)، وقد أظهر السيد حمزه مهارات متميزة في العمل حتى استلامه مسؤول تحصيل في فرع عالي ثم جرى ترفيعه إلى مسؤول تحصيل اول. كما حضر العديد من المؤتمرات والدورات الاحترافية وحصل على العديد من الشهادات في مجال صناعة التمويل الأصغر.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade team-modal" id="FatmaModal" tabindex="-1" role="dialog" aria-labelledby="FatmaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" dir="ltr">
+                    <h5 class="modal-title" id="FatmaModalLabel">فاطمة كمال</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>تشغل فاطمة وظيفة مساعد ضابط الامتثال ومسؤول تدقيق العمليات في الوقت الحالي، وقد تخرجت من جامعة البحرين بدرجة البكالوريوس في تخصص الأعمال المصرفية والمالية سنة ( 2012) ، وألتحقت بشهر فبراير 2018 لشركة الإبداع للتمويل متناهي الصغر في وظيفة "موظف استقبال"، ثم تدرجت في الوظائف الى مسؤول خدمات الزبائن في الشركة بالاضافة الى تسلمها مهام مسؤول ائتمان لاحقاً، حتى وصولها لوظيفتها الحالية وهي مسؤول تدقيق العمليات.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade team-modal" id="HanaaModal" tabindex="-1" role="dialog" aria-labelledby="HanaaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" dir="ltr">
+                    <h5 class="modal-title" id="HanaaModalLabel">هناء سلمان</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        تشغل هناء منصب مسؤول أول الائتمان، وقد انضمت للشركة 2016 عام حيث بدأت كأخصائي أقراض ومن بعدها تم تعيينها كرئيس مجموعة ولحسن أداؤها وما تتمتع به من شخصية قيادية تم تعيينها مدير فرع، وقد تم ترفيعها في اكتوبر 2019 لتصبح في منصب مسؤول أول الائتمان. تحمل شهادة البكالوريوس في ادارة الاعمال من الجامعة العربية المفتوحة وقد حضرت العديد من الدورات وورش العمل المتخصصة في مجال التمويل الاصغر، وتقوم السيدة هناء في الوقت الحالي استكمال برنامج الدبلوم الدولي للامتثال ICA.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade team-modal" id="MohannadModal" tabindex="-1" role="dialog" aria-labelledby="MohannadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" dir="ltr">
+                    <h5 class="modal-title" id="MohannadModalLabel">مهند محمد علي</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        يشغل السيد مهند وظيفة مدير الفرع الرئيسي ونائب مدير العمليات والمبيعات، وقد تم تعيين السيد مهند في الشركة في شهر مارس 2015 في وظيفة ضابط اقراض، وقد تدرج السيد مهند في الوظائف حتى وصوله مؤخراً لوظيفة نائب مدير العمليات ومدير الفرع الرئيسي، ويحمل السيد مهند شهادة البكالوريوس من جامعة النيلين لعلوم الرياضيات والاحصاء.
+
+
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade team-modal" id="MoHaddadModal" tabindex="-1" role="dialog" aria-labelledby="MoHaddadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" dir="ltr">
+                    <h5 class="modal-title" id="MoHaddadModalLabel">محمد الحداد</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="إغلاق">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        انضم للشركة عام 2015 حيث بدأ كأخصائي إقراض، ومن بعدها تم ترفيعه كرئيس مجموعة، ولحسن أداؤه وما يتمتع به من شخصية قيادية تم ترفيعه لمدير فرع، ولحسن أداءه تم ترفيعه إلى نائب مسؤول أول تحصيل، وعندما أثبت جدارته وتفانيه أكثر في العمل تم ترفيعه إلى مدير العمليات في عام 2024، وقد يشغل الآن مسؤول العلاقات العامة ومدير المكتب التنفيذي .
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn" data-dismiss="modal">إغلاق</button>

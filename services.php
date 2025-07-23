@@ -53,7 +53,7 @@ $translations = GetTranslations('index', $lang);
             <p class="service-description">
               <?= $translations['saydati-des']; ?>
             </p>
-            <a class="service-btn" href="loan-details.php?id=sidetie">
+            <a class="service-btn" href="loan-details.php?id=saydati">
               <i class="fa fa-info-circle ml-2"></i>
               <?= $translations['det']; ?>
             </a>
