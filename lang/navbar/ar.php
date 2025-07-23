@@ -48,7 +48,7 @@ return [
             "href" => "index.php#contact"
         ],
     ],
-    "logo" => "assets/img/logo_arabic_gray_old.webp",
+    "logo" => "assets/img/lo",
     "logo-alt" => "إبداع البحرين",
     
     ];
