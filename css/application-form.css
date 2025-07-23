@@ -6,7 +6,9 @@
     }
     
 }
-
+.form-vertical {
+    text-align: justify;
+}
 .application-form-section {
     background: linear-gradient(135deg, #f8fff8 0%, #e9f9f7 50%, #f0fdfa 100%);
     min-height: 100vh;
