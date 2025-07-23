@@ -13,7 +13,7 @@
         "subtitle": "تابع آخر الأخبار والتحديثات من بنك الإبداع البحرين\nأحدث الإنجازات والخدمات التمويلية الجديدة"
     },
     "news_items": {
-        "1": {
+        "5": {
             "id": "News23",
             "image": "assets\/img\/news\/news_23.jpg",
             "badge": {
@@ -28,7 +28,7 @@
                 "assets\/img\/news\/news_23.jpg"
             ]
         },
-        "2": {
+        "6": {
             "id": "News21",
             "image": "assets\/img\/news\/news_21.jpg",
             "badge": {
@@ -43,7 +43,7 @@
                 "assets\/img\/news\/news_21.jpg"
             ]
         },
-        "3": {
+        "7": {
             "id": "News20",
             "image": "assets\/img\/news\/news_22.jpg",
             "badge": {
@@ -58,7 +58,7 @@
                 "assets\/img\/news\/news_22.jpg"
             ]
         },
-        "4": {
+        "8": {
             "id": "News19",
             "image": "assets\/img\/news\/news_20.jpg",
             "badge": {
@@ -73,7 +73,7 @@
                 "assets\/img\/news\/news_20.jpg"
             ]
         },
-        "5": {
+        "9": {
             "id": "News18",
             "image": "assets\/img\/news\/mona-khaled-nasser.jpg",
             "badge": {
@@ -88,7 +88,7 @@
                 "assets\/img\/news\/mona-khaled-nasser.jpg"
             ]
         },
-        "6": {
+        "10": {
             "id": "News17",
             "image": "assets\/img\/news\/news_17.jpg",
             "badge": {

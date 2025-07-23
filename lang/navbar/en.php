@@ -1,6 +1,7 @@
 <?php
 return [
     "lang" => "العربية",
+    "lang-flag" => "assets/img/Flag_of_Bahrain.svg",
     "items" => [
         [
             "name" => "Home",
@@ -40,8 +41,9 @@ return [
             "href" => "news.php"
         ],
         [
-            "name" => "Apply for a Loan?",
-            "href" => "application-form.php"
+            "name" => "Apply for a Loan",
+            "href" => "application-form.php",
+            "active" => true
         ],
         [
             "name" => "Contact Us",

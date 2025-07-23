@@ -1,6 +1,7 @@
 <?php
 return [
-    "lang" => "English",
+    "lang" => "En",
+    "lang-flag" => "assets/img/uk_flag.png",
     "items" => [
         [
             "name" => "الرئيسية",
@@ -41,7 +42,8 @@ return [
         ],
         [
             "name" => "ترغب في الحصول على قرض؟",
-            "href" => "application-form.php"
+            "href" => "application-form.php",
+            "active" => true
         ],
         [
             "name" => "تواصل معنا",

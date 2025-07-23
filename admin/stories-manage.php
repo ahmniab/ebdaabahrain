@@ -95,9 +95,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 
 // Handle delete
 if (isset($_GET['delete'])) {
-    if (deleteStory($_GET['delete'])) {
+    if (deleteStory($_GET['delete'], 'ar') && deleteStory($_GET['delete'], 'en')) {
         $success = 'تم حذف القصة بنجاح';
-        $stories_data = getStories();
+        $stories_data = getStories('ar');
     } else {
         $error = 'تعذر حذف القصة';
     }
@@ -144,9 +144,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>إدارة قصص النجاح</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/admin-news.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -249,21 +249,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     
     <script>
         // Show/hide video URL field based on story type
-        document.getElementById('storyType').addEventListener('change', function() {
-            const videoUrl = document.getElementById('videoUrl');
-            const contentAr = document.getElementById('contentAr');
-            const contentEn = document.getElementById('contentEn');
+        // document.getElementById('storyType').addEventListener('change', function() {
+        //     const videoUrl = document.getElementById('videoUrl');
+        //     const contentAr = document.getElementById('contentAr');
+        //     const contentEn = document.getElementById('contentEn');
             
-            if (this.value === 'stories_video') {
-                videoUrl.required = true;
-                contentAr.required = false;
-                contentEn.required = false;
-            } else {
-                videoUrl.required = false;
-                contentAr.required = true;
-                contentEn.required = true;
-            }
-        });
+        //     if (this.value === 'stories_video') {
+        //         videoUrl.required = true;
+        //         contentAr.required = false;
+        //         contentEn.required = false;
+        //     } else {
+        //         videoUrl.required = false;
+        //         contentAr.required = true;
+        //         contentEn.required = true;
+        //     }
+        // });
     </script>
 </body>
 

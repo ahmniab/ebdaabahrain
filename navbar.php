@@ -13,7 +13,7 @@
     <?php foreach ($navbar_translations['items'] as $key => $value) { ?>
       <?php if (isset($value['submenu']) && is_array($value['submenu'])) { ?>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown<?= $key ?>" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown<?= $key ?>" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <?= $value['name']; ?>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown<?= $key ?>">
@@ -23,10 +23,10 @@
           </div>
         </li>
       <?php } else { ?>
-        <li class="nav-item"><a class="nav-link" href="<?= $value['href']; ?>"><?= $value['name']; ?></a></li>
+        <li class="nav-item"><a class="nav-link <?= isset($value['active']) && $value['active'] ? 'active' : ''; ?>" href="<?= $value['href']; ?>"><?= $value['name']; ?></a></li>
       <?php } ?>
     <?php } ?>
-    <li class="nav-item"><a class="nav-link" 
+    <li class="nav-item"><a class="nav-link lang-switch" 
         <?php 
           
           $lang_url ='?lang=' . ($lang === 'ar' ? 'en' : 'ar');
@@ -35,7 +35,7 @@
             $lang_url .= '&' . $key . '=' . $value;
           }
         ?>
-      href="<?= $lang_url; ?>"><i class="fa-solid fa-language"></i> &nbsp; <?= $navbar_translations['lang']; ?></a></li>
+      href="<?= $lang_url; ?>"><img src="<?= $navbar_translations['lang-flag']; ?>" alt="flag" > &nbsp; <?= $navbar_translations['lang']; ?></a></li>
   </ul>
   <div class="collapse-button" >
     <i class="fa-solid fa-bars"></i>

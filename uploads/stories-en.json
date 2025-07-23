@@ -25,21 +25,21 @@
             "id": "story_1",
             "name": "Wahiba Khalil",
             "type": "stories_video",
-            "image": "assets/img/story/story_1.jpg",
+            "image": "assets\/img\/story\/story_1.jpg",
             "modal": {
                 "title": "Delicious Sweets from Wahiba Khalil",
-                "video": "https://www.youtube.com/embed/isdSslF8FMI"
+                "video": "https:\/\/www.youtube.com\/embed\/isdSslF8FMI"
             }
         },
         {
             "id": "story_2",
             "name": "Sahira Ibrahim",
             "type": "stories",
-            "image": "assets/img/story/story_2.jpg",
+            "image": "assets\/img\/story\/story_2.jpg",
             "modal": {
                 "title": "Turning Talent into a Successful Project",
                 "images": [
-                    "assets/img/story/story_2.jpg"
+                    "assets\/img\/story\/story_2.jpg"
                 ],
                 "content": [
                     "Ms. Sahira Ibrahim chose the path of freelancing to achieve her dreams of establishing her own project. Sahira was passionate about cooking since childhood, and over time she was able to develop her passion for cooking into a profession. After graduation, she worked on establishing a commercial project based on preparing distinctive dishes and promoting them among family and friends.",
@@ -52,23 +52,23 @@
             "id": "story_3",
             "name": "Fatima Mohammed Ali",
             "type": "stories_video",
-            "image": "assets/img/story/story_3.jpg",
+            "image": "assets\/img\/story\/story_3.jpg",
             "modal": {
                 "title": "Fatima's Success Story",
-                "video": "https://www.youtube.com/embed/XjfWo_Qwgz8"
+                "video": "https:\/\/www.youtube.com\/embed\/XjfWo_Qwgz8"
             }
         },
         {
             "id": "story_4",
             "name": "Mohammed Abbas",
             "type": "stories",
-            "image": "assets/img/story/story_4.jpg",
+            "image": "assets\/img\/story\/story_4.jpg",
             "modal": {
                 "title": "Partnership in Achievement",
                 "images": [
-                    "assets/img/story/story_4.jpg",
-                    "assets/img/story/story_4.1.jpg",
-                    "assets/img/story/story_4.2.jpg"
+                    "assets\/img\/story\/story_4.jpg",
+                    "assets\/img\/story\/story_4.1.jpg",
+                    "assets\/img\/story\/story_4.2.jpg"
                 ],
                 "content": [
                     "Mohammed Maher Abbas is a Bahraini young man with great ambition to improve his financial conditions and elevate his living standard. He thought of creating a private project to support the salary he receives from his main job in one of the private sector companies.",
@@ -81,21 +81,21 @@
             "id": "story_5",
             "name": "Sawsan Mohammed",
             "type": "stories_video",
-            "image": "assets/img/story/story_5.jpg",
+            "image": "assets\/img\/story\/story_5.jpg",
             "modal": {
                 "title": "Sawsan Mohammed's Success Story",
-                "video": "https://www.youtube.com/embed/DSyqpqr-P38"
+                "video": "https:\/\/www.youtube.com\/embed\/DSyqpqr-P38"
             }
         },
         {
             "id": "story_6",
             "name": "Ahmed Jawhar",
             "type": "stories",
-            "image": "assets/img/story/story_6.JPG",
+            "image": "assets\/img\/story\/story_6.JPG",
             "modal": {
                 "title": "Sports Club at Home",
                 "images": [
-                    "assets/img/story/story_6.JPG"
+                    "assets\/img\/story\/story_6.JPG"
                 ],
                 "content": [
                     "Ahmed Ghanem Jawhar is another Bahraini young man who benefited from his passion, experience, and capabilities in the field of sports to open a sports club in his home in Hamad City, where he trains club members in boxing and bodybuilding.",
@@ -108,13 +108,13 @@
             "id": "story_7",
             "name": "Isa Ali",
             "type": "stories",
-            "image": "assets/img/story/story_7.jpg",
+            "image": "assets\/img\/story\/story_7.jpg",
             "modal": {
                 "title": "Isa Ali's Success Story",
                 "images": [
-                    "assets/img/story/story_7.jpg",
-                    "assets/img/story/story_7.1.jpg",
-                    "assets/img/story/story_7.2.jpg"
+                    "assets\/img\/story\/story_7.jpg",
+                    "assets\/img\/story\/story_7.1.jpg",
+                    "assets\/img\/story\/story_7.2.jpg"
                 ],
                 "content": [
                     "Continuing project success requires continuous development in tools and equipment, which is exactly what Isa Naji Mohammed Ali understands. He lives in Hamad City and owns a garage in Al-Hamla area for repairing cars and motorcycles, with over five years of experience in repairing and programming car computers.",
@@ -126,23 +126,23 @@
             "id": "story_8",
             "name": "Hassan Mohammed",
             "type": "stories_video",
-            "image": "assets/img/story/story_8.png",
+            "image": "assets\/img\/story\/story_8.png",
             "modal": {
                 "title": "Hassan Mohammed's Success Story",
-                "video": "https://www.youtube.com/embed/g5VhG1_LWbA"
+                "video": "https:\/\/www.youtube.com\/embed\/g5VhG1_LWbA"
             }
         },
         {
             "id": "story_9",
             "name": "Hamid Eid",
             "type": "stories",
-            "image": "assets/img/story/story_9.jpg",
+            "image": "assets\/img\/story\/story_9.jpg",
             "modal": {
                 "title": "When Your Hobby Becomes Your Profession",
                 "images": [
-                    "assets/img/story/story_9.jpg",
-                    "assets/img/story/story_9.1.jpg",
-                    "assets/img/story/story_9.2.jpg"
+                    "assets\/img\/story\/story_9.jpg",
+                    "assets\/img\/story\/story_9.1.jpg",
+                    "assets\/img\/story\/story_9.2.jpg"
                 ],
                 "content": [
                     "Do all types of private projects require ideas, business plans, large capital, employees, and processors...?! Absolutely not.",
@@ -155,27 +155,50 @@
             "id": "story_10",
             "name": "Hamad Shabeeb",
             "type": "stories",
-            "image": "assets/img/story/story_10.jpg",
+            "image": "assets\/img\/story\/story_10.jpg",
             "modal": {
                 "title": "Adding Activity",
                 "images": [
-                    "assets/img/story/story_10.jpg"
+                    "assets\/img\/story\/story_10.jpg"
                 ],
                 "content": [
                     "Hamad Abbas Shabeeb lives in Aali and owns a farm for horse rental and livestock breeding in Karanah area, investing his experience in the field of horses specifically, where he trains children to ride them and provides them with the necessary basic instructions and guidance.",
                     "Recently, Hassan wanted to expand his project and add a new activity to it, which is sheep breeding. He is now grateful for Ebdaa Bahrain's initiative in supporting him with part of the amount needed to launch the new activity and helping him achieve his goals and increase his productivity."
                 ]
             }
+        },
+        {
+            "name": "Hessa Al dosari",
+            "type": "stories",
+            "image": "uploads\/story_main_1753280152.jpg",
+            "modal": {
+                "title": "Hessa is ambitious Bahraini ",
+                "video": "",
+                "images": [],
+                "content": {
+                    "0": "Hessa Al-Dosari",
+                    "1": "Hessa is an ambitious Bahraini woman with a passion for baking. She taught herself how to bake and mastered the creation of delicious baked goods. After impressing those around her with her creations, she decided to launch her own home-based baking business.",
+                    "3": "Her treats quickly gained popularity, and the reputation of her delicious baked goods spread by word of mouth. Hessa then moved on to produce her baked goods at the \"Netaj Khair Bahrain\" cooperative, known for their exceptional taste and affordable prices.",
+                    "5": "Wanting to further develop her bakery, Hessa sought to upgrade her equipment to keep up with advancements in baking techniques. This is where Ebda’a Microfinance (one of the AGFUND institutions) stepped in, offering her the support and funding she needed. They continue to stand by her as long as her ambition lives on."
+                }
+            },
+            "id": "story_1753280152"
+        },
+        {
+            "name": "gomaa the beekeeper",
+            "type": "stories",
+            "image": "uploads\/story_main_1753293846.jpeg",
+            "modal": {
+                "title": "gomaa the beekeeper",
+                "video": "",
+                "images": [],
+                "content": {
+                    "0": "Jumaa is a passionate Bahraini who learned beekeeping from his teacher at school. After taking early retirement, he dedicated himself fully to beekeeping. What started as a simple hobby soon evolved into producing honey with unique colors and flavors.",
+                    "2": "Later, he launched his business under the name \"Jumaa Bee,\" where he showcases and sells various products derived from bees and honey.",
+                    "4": "Today, Jumaa organizes educational programs about bees for school students and children, and he will soon launch programs that combine art with beekeeping."
+                }
+            },
+            "id": "story_1753293846"
         }
-    ],
-    "scripts": [
-        "https://code.jquery.com/jquery-3.6.0.min.js",
-        "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js",
-        "https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"
-    ],
-    "stylesheets": [
-        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
-        "css/success-stories.css",
-        "css/main.css"
     ]
 }

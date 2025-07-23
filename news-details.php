@@ -1,8 +1,9 @@
 <?php
+require_once 'lang/init.php';
 require_once 'services/news-service.php';
 $id = $_GET['id'] ?? '';
-$news = getNewsById($id, 'ar');
-$news_data = getNews('ar');
+$news = getNewsById($id, $lang);
+$news_data = getNews($lang);
 if (!$news) {
     http_response_code(404);
     echo '<h2>الخبر غير موجود</h2>';
@@ -21,11 +22,11 @@ if (!$news) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha512-iceXjjbmB2rwoX93Ka6HAHP+B76IY1z0o3h+N1PeDtRSsyeetU3/0QKJqGyPJcX63zysNehggFwMC/bi7dvMig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
-    <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css " rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/news-details.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css " rel="stylesheet">
 </head>
 
 <body>
@@ -39,9 +40,6 @@ if (!$news) {
 
 
                     <div class="card-body">
-                        <span class="badge badge-<?php echo htmlspecialchars($news['badge']['type']); ?> mb-2">
-                            <?php echo htmlspecialchars($news['badge']['text']); ?>
-                        </span>
                         <small class="text-muted d-block mb-2"><?php echo htmlspecialchars($news['date']); ?></small>
                         <h2 class="card-title mb-3"><?php echo htmlspecialchars($news['title']); ?></h2>
                         <div class="card-text mb-3">
@@ -66,7 +64,7 @@ if (!$news) {
                             </div>
                         <?php } ?>
                     </div>
-                        <a href="news.php" class="btn btn-outline-primary mt-3"><i class="fa fa-arrow-right ml-2"></i> عودة للأخبار</a>
+                        <a href="news.php" class="btn btn-outline-primary mt-3"><i class="fa fa-arrow-right ml-2"></i> <?php echo $lang === 'ar' ? 'عودة للأخبار' : 'Back to News'; ?></a>
                     </div>
                 </div>
             </div>

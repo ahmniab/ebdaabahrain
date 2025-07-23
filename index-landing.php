@@ -79,7 +79,7 @@
             </li>
             <li class="splide__slide">
                 <div class="success-elements-container" dir="ltr">
-                    <a class="success-element">
+                    <a class="success-element" href="story-details.php?id=story_1753293846">
                         <img src="assets/img/home-s3-slides/s1.jpeg" alt="success image">
                         <div class="success-filter"></div>
                     </a>
@@ -95,7 +95,7 @@
                         <img src="assets/img/home-s3-slides/s4.jpeg" alt="success image">
                         <div class="success-filter"></div>
                     </a>
-                    <a class="success-element">
+                    <a class="success-element" href="story-details.php?id=story_1753280152">
                         <img src="assets/img/home-s3-slides/s5.jpeg" alt="success image">
                         <div class="success-filter"></div>
                     </a>

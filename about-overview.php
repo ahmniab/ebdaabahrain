@@ -36,6 +36,23 @@ $translations = GetTranslations(basename(__FILE__, '.php'));
         <h5><?php echo $translations['sub_title_1'] ?></h5>
         <p><?php echo nl2br(htmlspecialchars($translations['paragraph_1'])) ?></p>
         <img loading="lazy" src="assets/img/secon-img-overview.webp" alt="ebdaa building">
+        <br>
+        
+        <h5><?php echo $translations['mission']['title'] ?></h5>
+        <p><?php echo nl2br(htmlspecialchars($translations['mission']['content'])) ?></p>
+
+        <h5><?php echo $translations['vision']['title'] ?></h5>
+        <p><?php echo nl2br(htmlspecialchars($translations['vision']['content'])) ?></p>
+
+        <h5><?php echo $translations['about_ebdaa']['title'] ?></h5>
+        <p><?php echo nl2br(htmlspecialchars($translations['about_ebdaa']['content'])) ?></p>
+
+        <h5><?php echo $translations['goals']['title'] ?></h5>
+        <ul>
+            <?php foreach ($translations['goals']['items'] as $item) : ?>
+                <li><?php echo $item; ?></li>
+            <?php endforeach; ?>
+        </ul>
     </div>
 
 

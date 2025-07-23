@@ -12,7 +12,7 @@ if (!$story) {
 }
 ?>
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>" lang="<?php echo $lang; ?>">
 
 <head>
     <meta charset="utf-8" />
@@ -24,10 +24,10 @@ if (!$story) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha512-iceXjjbmB2rwoX93Ka6HAHP+B76IY1z0o3h+N1PeDtRSsyeetU3/0QKJqGyPJcX63zysNehggFwMC/bi7dvMig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/news-details.css">
     <link rel="stylesheet" href="css/story-details.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
@@ -45,11 +45,11 @@ if (!$story) {
                         <div class="story-type-badge mb-2">
                             <?php if ($story['type'] === 'stories_video'): ?>
                                 <span class="badge badge-primary">
-                                    <i class="fa fa-video mr-1"></i> قصة مصورة
+                                    <i class="fa fa-video mr-1"></i> <?php echo $lang === 'ar' ? 'قصة مصورة' : 'Video Story'; ?>
                                 </span>
                             <?php else: ?>
                                 <span class="badge badge-success">
-                                    <i class="fa fa-file-text mr-1"></i> قصة نجاح
+                                    <i class="fa fa-file-text mr-1"></i> <?php echo $lang === 'ar' ? 'قصة نجاح' : 'Success Story'; ?>
                                 </span>
                             <?php endif; ?>
                         </div>
@@ -90,7 +90,7 @@ if (!$story) {
                         <?php endif; ?>
                         
                         <a href="success-stories.php" class="btn btn-outline-primary mt-3">
-                            <i class="fa fa-arrow-right ml-2"></i> عودة لقصص النجاح
+                            <i class="fa fa-arrow-right ml-2"></i> <?php echo $lang === 'ar' ? 'عودة لقصص النجاح' : 'Back to Success Stories'; ?>
                         </a>
                     </div>
                 </div>

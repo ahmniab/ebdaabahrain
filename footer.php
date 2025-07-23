@@ -41,7 +41,7 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
             <i class="fab fa-facebook-f"></i>
           </a>
           <a href="https://twitter.com/ebdaabahrain" class="social-link" title="تويتر">
-            <i class="fab fa-twitter"></i>
+          <i class="fa-brands fa-x-twitter"></i>
           </a>
           <a href="#" class="social-link" title="لينكد إن">
             <i class="fab fa-linkedin-in"></i>

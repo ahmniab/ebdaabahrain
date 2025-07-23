@@ -1,9 +1,10 @@
 <?php
+require_once 'lang/init.php';
 require_once 'services/stories-service.php';
-$stories_data = getStories('ar');
+$stories_data = getStories($lang);
 ?>
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>" lang="<?php $lang ?>">
 
 <head>
   <meta charset="UTF-8">
@@ -15,17 +16,19 @@ $stories_data = getStories('ar');
   <title><?php echo htmlspecialchars($stories_data['pageTitle']); ?></title>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" async defer></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" async defer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
-  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous" async defer></script>
-  
-  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous" async defer></script>
+
+
   <link rel="stylesheet" href="css/success-stories.css">
+  <link rel="stylesheet" href="css/main.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" async defer>
 </head>
 
 <body>
+  <?php include "includes/header.php"; ?>
   <?php include "navbar.php"; ?>
 
   <div class="container">
@@ -42,10 +45,12 @@ $stories_data = getStories('ar');
         <!-- Filter Controls -->
         <div class="stories-controls">
           <?php foreach ($stories_data['filterControls'] as $filter): ?>
-            <?php 
-            $filterValue = $filter['filter'] === 'all' ? 'all' : '.' . $filter['filter'];
+            <?php
+            $filterValue = $filter['filter'] === 'all' ? 'all' : $filter['filter'];
             ?>
-            <a class="stories-filter <?php echo $filter['active'] ? 'active' : ''; ?>" data-filter="<?php echo htmlspecialchars($filterValue); ?>">
+            <a class="stories-filter <?php echo $filter['active'] ? 'active' : ''; ?>"
+              href="javascript:void(0);"
+              data-filter="<?php echo htmlspecialchars($filterValue); ?>">
               <?php echo htmlspecialchars($filter['text']); ?>
             </a>
           <?php endforeach; ?>
@@ -74,24 +79,44 @@ $stories_data = getStories('ar');
       </div>
     </section>
   </div>
-  
+
   <?php include "footer.php"; ?>
-  <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var mixer = mixitup('#portfolio', {
-        selectors: {
-          target: '.mix'
-        }
-      });
-
+      // Handle filter clicks
       document.querySelectorAll('.stories-filter').forEach(function(btn) {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+
           document.querySelectorAll('.stories-filter').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
+
+          const filterValue = btn.getAttribute('data-filter');
+          console.log('Filter value:', filterValue);
+          filterStories(filterValue);
         });
       });
     });
+
+
+    // Custom filter function
+    function filterStories(filterType) {
+      const stories = document.querySelectorAll('.mix');
+      console.log(`${stories.length} stories found`);
+      stories.forEach(function(story) {
+        console.log(story.classList);
+        if (filterType === 'all') {
+          story.style.display = 'block';
+        } else {
+          if (story.classList.contains(filterType)) {
+            story.style.display = 'block';
+          } else {
+            story.style.display = 'none';
+          }
+        }
+      });
+    }
   </script>
 </body>
 

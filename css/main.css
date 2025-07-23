@@ -2,6 +2,21 @@
    2. GENERAL
    ========================================================================== */
 /* Define your font faces with font-display: swap */
+:root{
+  --primary: #0d7a63;          /* أخضر رئيسي */
+
+  --primary-light: #61D2B4;    /* أخضر فاتح */
+
+  --dark: #075e4b;             /* أخضر داكن */
+
+  --light: #e0f7f1;            /* خلفية فاتحة */
+
+  --danger: #dc3545;           /* أحمر للتنبيه */
+
+  --gray: #6c757d;             /* رمادي */
+
+ 
+}
 @font-face {
   font-family: 'EnglishFont';
   src: url('../assets/fonts/en-century-gothic/Dominik.ttf') format('truetype');
@@ -56,7 +71,7 @@ html {
 
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.8;
   margin-bottom: 15px;
 }
@@ -130,7 +145,7 @@ textarea {
 }
 
 .nav-link {
-  color: #2E8F36 !important;
+  color: var(--dark) !important;
   font-size: 1rem;
   padding: 12px 10px !important;
   border-radius: 25px;
@@ -156,7 +171,7 @@ textarea {
 }
 
 .nav-link:hover {
-  color: #5d7351 !important;
+  color: var(--gray) !important;
   background: rgba(46, 143, 54, 0.1);
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(46, 143, 54, 0.2);
@@ -197,31 +212,17 @@ textarea {
 ---------------------------------
 */
 
-#lang-switch {
+.lang-switch {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   cursor: pointer;
-  padding: 10px 20px;
-  /* background: linear-gradient(135deg, #2E8F36, #5DA930); */
-  color: #2E8F36;
-  border-radius: 25px;
-  transition: all 0.3s ease;
-  text-decoration: none;
 }
 
-#lang-switch:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(46, 143, 54, 0.3);
-  background: linear-gradient(135deg, #5DA930, #7EB55D);
-  color: white;
-  text-decoration: none;
-}
-
-#lang-switch i {
-  margin-left: 8px;
-  transition: transform 0.3s ease;
+.lang-switch img {
+  width: 25px;
+  /* height: 20px; */
 }
 
 
@@ -445,8 +446,10 @@ textarea {
   position: relative;
   overflow: hidden;
 }
-
-.footer-links a::before {
+:lang(en) .footer-links a {
+  font-size: 0.9rem;
+}
+/* .footer-links a::before {
   content: '';
   position: absolute;
   top: 0;
@@ -455,11 +458,11 @@ textarea {
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(126, 181, 93, 0.2), transparent);
   transition: left 0.5s;
-}
+} */
 
-.footer-links a:hover::before {
+/* .footer-links a:hover::before {
   left: 100%;
-}
+} */
 
 .footer-links a:hover {
   color: #ffffff;
