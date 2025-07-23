@@ -276,7 +276,11 @@
          ========================================================================== */
 
   .counters-section {
-    background: linear-gradient(135deg, rgba(46, 143, 54, 0.1) 0%, rgba(93, 169, 48, 0.15) 25%, rgba(126, 181, 93, 0.1) 50%, rgba(183, 198, 57, 0.15) 75%, rgba(59, 168, 162, 0.1) 100%);
+    /* background: linear-gradient(135deg, rgba(46, 143, 54, 0.1) 0%, rgba(93, 169, 48, 0.15) 25%, rgba(126, 181, 93, 0.1) 50%, rgba(183, 198, 57, 0.15) 75%, rgba(59, 168, 162, 0.1) 100%); */
+    background-image: url('../assets/img/connters-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 80px 0;
     position: relative;
     overflow: hidden;
@@ -305,7 +309,7 @@
     background: linear-gradient(135deg, rgba(46, 143, 54, 0.1), rgba(59, 168, 162, 0.1));
     border: 1px solid rgba(46, 143, 54, 0.2);
     border-radius: 25px;
-    color: #2E8F36;
+    color: #ffffff;
     font-weight: 500;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 15px rgba(46, 143, 54, 0.1);
