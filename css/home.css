@@ -1462,6 +1462,7 @@
   .contact-box ul li {
     margin-bottom: 15px;
     text-align: right;
+    display: flex;
   }
 
   .contact-box ul li a {
