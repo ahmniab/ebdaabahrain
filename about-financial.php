@@ -1,11 +1,20 @@
+<?php
+require_once 'lang/init.php';
+?>
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="<?php echo $lang; ?>" dir="<?php echo $dir; ?>">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="موقع بنك الإبداع البحرين - فرص وظيفية، خدمات تمويلية، دعم المشاريع الصغيرة والمتوسطة.">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>التقارير المالية</title>
+    <title>
+        <?php if($lang == 'ar'){ ?>
+            التقارير المالية
+        <?php } else{ ?>
+            Financial Reports
+        <?php } ?>
+    </title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -18,7 +27,13 @@
     
     <section class="tab-content about-tab-content">
         <div class="tab-pane fade show active" id="tabs-4">
-            <h4 class="financial-title">القوائم المالية المدققة الى إبداع البحرين</h4>
+            <h4 class="financial-title">
+                <?php if($lang == 'ar'){ ?>
+                    القوائم المالية المدققة الى إبداع البحرين
+                <?php } else{ ?>
+                    Audited Financial Statements to Elbdaa Bahrain
+                <?php } ?>
+            </h4>
             <hr>
 
             <ul class="report-list d-flex flex-row justify-content-between align-items-center flex-wrap">
