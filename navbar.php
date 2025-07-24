@@ -116,8 +116,8 @@
       <!-- Desktop language switcher -->
       <div class="d-none d-lg-flex <?= $is_arabic ? 'me-auto' : 'ms-auto' ?>">
         <a class="nav-link lang-switch" href="<?= $lang_url; ?>">
-          <img src="<?= $navbar_translations['lang-flag']; ?>" alt="flag">
           <?= $navbar_translations['lang']; ?>
+          <img src="<?= $navbar_translations['lang-flag']; ?>" alt="flag">
         </a>
       </div>
     </div>
