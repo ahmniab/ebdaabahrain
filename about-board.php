@@ -1,6 +1,8 @@
+<?php
+require_once 'lang/init.php';
+?>
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-
+<html lang="<?php echo $lang; ?>" dir="<?php echo $dir; ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
