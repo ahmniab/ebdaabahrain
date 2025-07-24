@@ -49,7 +49,7 @@ $stories_data = getStories($lang);
             <?php
             $filterValue = $filter['filter'] === 'all' ? 'all' : $filter['filter'];
             ?>
-            <a class="stories-filter <?php echo $filter['active'] ? 'active' : ''; ?>"
+            <a class="stories-filter <?php echo ((isset($filter['active'])) && $filter['active']) ? 'active' : ''; ?>"
               href="javascript:void(0);"
               data-filter="<?php echo htmlspecialchars($filterValue); ?>">
               <?php echo htmlspecialchars($filter['text']); ?>
