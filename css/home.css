@@ -495,8 +495,11 @@
     color: white;
   }
 
-  .detail-content {
+  .detail-content:lang(ar) {
     text-align: right;
+  }
+  .detail-content:lang(en) {
+    text-align: left;
   }
 
   .detail-number {
@@ -708,7 +711,12 @@
     border-radius: 50%;
     overflow: hidden;
     border: #fff 2px solid;
+  }
+  .item-img-container:lang(ar){
     text-align: right;
+  }
+  .item-img-container:lang(en){
+    text-align: left;
   }
 
   .item-img-container img {
@@ -720,18 +728,30 @@
     font-size: 16px;
     line-height: 1.5;
     padding: 0 20px;
+  }
+  .item-text:lang(ar){
     text-align: right;
     direction: rtl;
   }
+  .item-text:lang(en){
+    text-align: left;
+    direction: ltr;
+  }
 
   .item-name {
-    text-align: right;
     align-self: flex-end;
     color: #fff;
     font-weight: 900;
     font-size: 16px;
   }
-
+  .item-name:lang(ar){
+    text-align: right;
+    direction: rtl;
+  }
+  .item-name:lang(en){
+    text-align: left;
+    direction: ltr;
+  }
   .item-jop {
     font-size: 16px;
     font-weight: 300;
@@ -830,6 +850,12 @@
     margin-bottom: 25px;
     line-height: 1.2;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  .slide-title:lang(ar){
+    text-align: right;
+  }
+  .slide-title:lang(en){
+    text-align: left;
   }
   
   .slide-title .highlight {
@@ -1277,21 +1303,22 @@
 
   @media (max-width: 576px) {
     .counter-card {
-      padding: 35px 20px;
-      min-height: 220px;
+      padding: 10px 20px;
+      min-height: 50px;
     }
 
     .counter-icon {
-      width: 60px;
-      height: 60px;
+      width: 35px;
+      height: 35px;
+      margin-bottom: 10px;
     }
 
     .counter-icon i {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
 
     .counter-number {
-      font-size: 1.8rem;
+      font-size: 1rem;
     }
 
     .counter-label {
@@ -1299,21 +1326,27 @@
     }
 
     .percentage-counter {
-      padding: 35px 20px;
-      min-height: 220px;
+      padding: 10px 20px;
+      min-height: 50px;
     }
 
     .percentage-number {
-      font-size: 2rem;
+      font-size: 1.2rem;
     }
 
     .percentage-label {
-      font-size: 1.1rem;
+      font-size: 0.8rem;
     }
 
     .update-info {
       padding: 10px 15px;
       font-size: 0.8rem;
+    }
+    .percentage-icon{
+      width: 35px;
+      height: 35px;
+      margin-bottom: 10px;
+      font-size: 1rem;
     }
   }
 
@@ -1655,6 +1688,34 @@
     text-decoration: underline;
   }
 
+  .owl-container .owl-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .owl-container .item {
+    height: 400px;
+    margin-bottom: 32px;
+    padding: 28px 50px;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+
+  .item-img-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: #fff 2px solid;
+    margin: 0 auto 12px auto;
+  }
+  .item-img-container:lang(ar){
+    text-align: right;
+  }
+  .item-img-container:lang(en){
+    text-align: left;
+  }
   @media (max-width: 991px) {
     .owl-container .container-theme {
       height: auto;
@@ -1688,11 +1749,11 @@
     }
 
     .owl-container .item {
-      width: 400px;
+      width: 440px;
       min-width: 0;
       max-width: 100%;
       height: auto;
-      padding: 18px 6px;
+      padding: 18px 60px;
       margin: 0 auto 14px auto;
     }
 
@@ -1713,26 +1774,4 @@
     }
   }
 
-  .owl-container .owl-carousel {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 32px;
-  }
-
-  .owl-container .item {
-    height: 400px;
-    margin-bottom: 32px;
-    padding: 28px 50px;
-    transition: box-shadow 0.2s, transform 0.2s;
-  }
-
-  .item-img-container {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: #fff 2px solid;
-    text-align: right;
-    margin: 0 auto 12px auto;
-  }
+  
