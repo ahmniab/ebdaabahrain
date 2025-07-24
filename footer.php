@@ -85,22 +85,6 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
 <!-- jQuery first, then Bootstrap Bundle JS -->
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" async defer></script>
-
-<?php //include "includes/footer.php"; ?>
-
-<!-- Video modal handlers -->
-<script>
-  $(function() {
-    $('#Bank_Video1').on('show.bs.modal', function() {
-      const iframe = document.getElementById('ebdaaVideoFrame');
-      if (iframe) iframe.src = iframe.getAttribute('data-src');
-    }).on('hidden.bs.modal', function() {
-      const iframe = document.getElementById('ebdaaVideoFrame');
-      if (iframe) iframe.src = '';
-    });
-  });
-</script>
-
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/97333539666" target="_blank" rel="noopener noreferrer"
     class="whatsapp-floating" aria-label="تواصل معنا عبر واتساب">
@@ -111,66 +95,4 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
 
 
 
-<!-- Statistics Counter Animation - Simplified for Performance -->
-<script>
-  // Display statistics numbers directly without animation for better performance
-  document.addEventListener('DOMContentLoaded', async function() {
-    // Hide loader when page is loaded
-    document.getElementById('loader').classList.add('hidden');
-
-  });
-
-
-  // Smooth scrolling for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(async anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
-  });
-</script>
-
-<!-- Custom JavaScript -->
-<script>
-  $(document).ready(function() {
-    // Back to top button
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 300) {
-        $('.back-to-top').addClass('show');
-      } else {
-        $('.back-to-top').removeClass('show');
-      }
-    });
-
-    $('.back-to-top').click(function(e) {
-      e.preventDefault();
-      $('html, body').animate({
-        scrollTop: 0
-      }, 800);
-    });
-
-    // Hide loader after 3 seconds if load event doesn't fire
-    setTimeout(function() {
-      $('#loader').addClass('hidden');
-    }, 3000);
-
-    // Smooth scrolling for anchor links
-    $('a[href^="#"]').on('click', function(e) {
-      var target = $(this.getAttribute('href'));
-      if (target.length) {
-        e.preventDefault();
-        $('html, body').stop().animate({
-          scrollTop: target.offset().top - 80
-        }, 1000);
-      }
-    });
-
-
-  });
-</script>
+<script src="js/main.js"></script>

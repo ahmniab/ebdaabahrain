@@ -206,6 +206,19 @@ textarea {
   right: 10px;
 }
 
+/* For desktop/large screens only - keeps mobile behavior intact */
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap when it opens */
+  }
+  
+  /* Optional: Add animation */
+  .dropdown-menu {
+    transition: all 0.3s ease;
+  }
+}
+
 /*
 ---------------------------------
 ---------- lang switch ----------
