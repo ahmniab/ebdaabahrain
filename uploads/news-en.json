@@ -13,7 +13,7 @@
         "subtitle": "Follow the latest news and updates from Bahrain Ebdaa Bank\nLatest achievements and new financing services"
     },
     "news_items": {
-        "5": {
+        "1": {
             "id": "News23",
             "image": "assets\/img\/news\/news_23.jpg",
             "badge": {
@@ -28,7 +28,7 @@
                 "assets\/img\/news\/news_23.jpg"
             ]
         },
-        "6": {
+        "2": {
             "id": "News21",
             "image": "assets\/img\/news\/news_21.jpg",
             "badge": {
@@ -43,7 +43,7 @@
                 "assets\/img\/news\/news_21.jpg"
             ]
         },
-        "7": {
+        "3": {
             "id": "News20",
             "image": "assets\/img\/news\/news_22.jpg",
             "badge": {
@@ -58,7 +58,7 @@
                 "assets\/img\/news\/news_22.jpg"
             ]
         },
-        "8": {
+        "4": {
             "id": "News19",
             "image": "assets\/img\/news\/news_20.jpg",
             "badge": {
@@ -73,7 +73,7 @@
                 "assets\/img\/news\/news_20.jpg"
             ]
         },
-        "9": {
+        "5": {
             "id": "News18",
             "image": "assets\/img\/news\/mona-khaled-nasser.jpg",
             "badge": {
@@ -88,7 +88,7 @@
                 "assets\/img\/news\/mona-khaled-nasser.jpg"
             ]
         },
-        "10": {
+        "6": {
             "id": "News17",
             "image": "assets\/img\/news\/news_17.jpg",
             "badge": {

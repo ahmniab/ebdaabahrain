@@ -21,7 +21,7 @@ function addNews(array $newsItem, string $lang = 'ar')
 {
     $data = getNews($lang);
     $newsItem['id'] = 'News' . time();
-    $newsItem['date'] = date('Y-m-d H:i:s');
+    $newsItem['date'] = date('Y-m-d');
     if (!isset($data['news_items'])) {
         $data['news_items'] = [];
     }
@@ -52,6 +52,18 @@ function deleteNews(string $id, string $lang = 'ar')
     $data['news_items'] = array_filter($data['news_items'], function ($item) use ($id, &$found) {
         if ($item['id'] === $id) {
             $found = true;
+            if(isset($item['image'])){
+                if(!unlink(__DIR__ . '/../' . $item['image'])){
+                    return false;
+                }
+            }
+            if(isset($item['images'])){
+                foreach($item['images'] as $image){
+                    if(!unlink(__DIR__ . '/../' . $image)){
+                        continue;
+                    }
+                }
+            }
             return false;
         }
         return true;

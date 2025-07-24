@@ -518,7 +518,7 @@ textarea {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   color: #cccccc;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;

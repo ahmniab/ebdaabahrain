@@ -8,7 +8,18 @@ if (!isset($_SESSION['admin']) || !$_SESSION['admin']) {
 }
 
 require_once '../services/news-service.php';
-$id = $_GET['id'] ?? '';
+$success = $error = '';
+$id = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $id = $_POST['id'] ?? '';
+}elseif ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
+    $id = $_GET['id'] ?? '';
+}else{
+    http_response_code(404);
+    echo '<h2>الخبر غير موجود</h2>';
+    exit;
+}
 $news = getNewsById($id);
 $news_en = getNewsById($id, 'en'); // Fetch English news
 $news_data = getNews();
@@ -36,9 +47,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Handle main image upload
     if (isset($_FILES['image_upload']) && $_FILES['image_upload']['error'] === UPLOAD_ERR_OK) {
         $ext = pathinfo($_FILES['image_upload']['name'], PATHINFO_EXTENSION);
-        $main_target = '../uploads/news_main_' . $id . '_' . time() . '.' . $ext;
-        if (move_uploaded_file($_FILES['image_upload']['tmp_name'], $main_target)) {
-            $fields['image'] = $fields_en['image'] = ltrim($main_target, '../');
+        if (!move_uploaded_file($_FILES['image_upload']['tmp_name'], __DIR__ . '/../' . $fields['image'])){
+            $error = 'لم يتم تغيير الصورة الرئيسية';
         }
     }
     // Handle gallery images upload
@@ -46,9 +56,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         foreach ($_FILES['gallery_upload']['tmp_name'] as $idx => $tmp_name) {
             if ($_FILES['gallery_upload']['error'][$idx] === UPLOAD_ERR_OK) {
                 $ext = pathinfo($_FILES['gallery_upload']['name'][$idx], PATHINFO_EXTENSION);
-                $gallery_target = '../uploads/news_gallery_' . $id . '_' . time() . '_' . $idx . '.' . $ext;
-                if (move_uploaded_file($tmp_name, $gallery_target)) {
-                    $fields['images'][] = $fields_en['images'][] = ltrim($gallery_target, '../');
+                $gallery_target = 'uploads/news_gallery_' . $id . '_' . time() . '_' . $idx . '.' . $ext;
+                if (move_uploaded_file($tmp_name, __DIR__ . '/../' . $gallery_target)) {
+                    $fields['images'][] = $fields_en['images'][] = $gallery_target;
                 }
             }
         }
@@ -62,9 +72,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = 'يرجى تعبئة جميع الحقول المطلوبة (بالعربية والإنجليزية)';
     }
 }
+
+
 ?>
 <!DOCTYPE html>
-<html dir="<?php echo $news_data['metadata']['direction']; ?>" lang="<?php echo $news_data['metadata']['lang'] ?? 'ar'; ?>">
+<html dir="<?php echo $news_data['metadata']['direction']; ?>"
+    lang="<?php echo $news_data['metadata']['lang'] ?? 'ar'; ?>">
 
 <head>
     <meta charset="utf-8" />
@@ -80,37 +93,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php include 'includes/admin-nav.php'; ?>
     <div class="container admin-news-container py-4">
         <h2 class="mb-4">تعديل الخبر</h2>
-        <?php if ($error): ?><div class="alert alert-danger"><?php echo $error; ?></div><?php endif; ?>
+        <?php if ($error): ?>
+            <div class="alert alert-danger"><?php echo $error; ?></div><?php endif; ?>
         <form method="post" action="news-edit.php" enctype="multipart/form-data" class="card p-4">
+            <input type="hidden" name="id" value="<?php echo $id; ?>">
             <div class="form-group">
                 <label>العنوان</label>
-                <input type="text" name="title" class="form-control" value="<?php echo htmlspecialchars($news['title']); ?>" required>
+                <input type="text" name="title" class="form-control"
+                    value="<?php echo htmlspecialchars($news['title']); ?>" required>
             </div>
             <div class="form-group">
                 <label>Title (English)</label>
-                <input type="text" dir="ltr" name="title_en" class="form-control" value="<?php echo htmlspecialchars($news_en['title'] ?? ''); ?>" required>
+                <input type="text" dir="ltr" name="title_en" class="form-control"
+                    value="<?php echo htmlspecialchars($news_en['title'] ?? ''); ?>" required>
             </div>
             <div class="form-group">
                 <label>النص المختصر</label>
-                <input type="text" name="summary" class="form-control" value="<?php echo htmlspecialchars($news['summary']); ?>">
+                <input type="text" name="summary" class="form-control"
+                    value="<?php echo htmlspecialchars($news['summary']); ?>">
             </div>
             <div class="form-group">
                 <label>Summary (English)</label>
-                <input type="text" dir="ltr" name="summary_en" class="form-control" value="<?php echo htmlspecialchars($news_en['summary'] ?? ''); ?>">
+                <input type="text" dir="ltr" name="summary_en" class="form-control"
+                    value="<?php echo htmlspecialchars($news_en['summary'] ?? ''); ?>">
             </div>
             <div class="form-group">
                 <label>المحتوى</label>
-                <textarea name="content" class="form-control" rows="4" required><?php echo htmlspecialchars($news['content']); ?></textarea>
+                <textarea name="content" class="form-control" rows="4"
+                    required><?php echo htmlspecialchars($news['content']); ?></textarea>
             </div>
             <div class="form-group">
                 <label>Content (English)</label>
-                <textarea name="content_en" dir="ltr" class="form-control" rows="4" required><?php echo htmlspecialchars($news_en['content'] ?? ''); ?></textarea>
+                <textarea name="content_en" dir="ltr" class="form-control" rows="4"
+                    required><?php echo htmlspecialchars($news_en['content'] ?? ''); ?></textarea>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>الصورة الرئيسية الحالية</label><br>
                     <?php if ($news['image']): ?>
-                        <img src="../<?php echo htmlspecialchars($news['image']); ?>" class="img-fluid mt-2 rounded" >
+                        <img src="../<?php echo htmlspecialchars($news['image']); ?>" class="img-fluid mt-2 rounded">
                     <?php endif; ?>
                     <label class="mt-2">رفع صورة جديدة</label>
                     <input type="file" name="image_upload" class="form-control-file">
@@ -120,7 +141,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <?php if (!empty($news['images'])): ?>
                         <div class="row">
                             <?php foreach ($news['images'] as $img): ?>
-                                <div class="col-4 mb-2"><img src="../<?php echo htmlspecialchars($img); ?>" class="img-fluid rounded" style="max-height:60px;"></div>
+                                <div class="col-4 mb-2"><img src="../<?php echo htmlspecialchars($img); ?>"
+                                        class="img-fluid rounded" style="max-height:60px;"></div>
                             <?php endforeach; ?>
                         </div>
                     <?php endif; ?>
@@ -129,7 +151,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             </div>
 
-            
+
             <button type="submit" class="btn btn-primary" style="background:#bfa046;border:none;">حفظ التعديلات</button>
             <a href="news-manage.php" class="btn btn-secondary">إلغاء</a>
         </form>

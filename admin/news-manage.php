@@ -56,62 +56,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
         $id = addNews($fields_ar, 'ar');
         $news_ar_added = getNewsById($id, 'ar');
         $fields_en['id'] = $id;
-        $fields_en['date'] = $news_ar_added['date'] ?? date('Y-m-d H:i:s');
+        $fields_en['date'] = $news_ar_added['date'] ?? date('Y-m-d');
         // Save to English file
         $data_en = getNews('en');
         if (!isset($data_en['news_items'])) $data_en['news_items'] = [];
         array_unshift($data_en['news_items'], $fields_en);
         saveNews($data_en, 'en');
-        $success = 'تمت إضافة الخبر بنجاح (عربي وإنجليزي)';
-        $news_data = getNews();
+        header('Location: news-added.html');
+        exit;
+
     } else {
         $error = 'يرجى تعبئة جميع الحقول المطلوبة ورفع صورة رئيسية (بالعربية والإنجليزية)';
     }
 }
 // Handle delete
-if (isset($_GET['delete'])) {
+if ($_SERVER['REQUEST_METHOD'] !== 'POST' && isset($_GET['delete'])) {
     $deleted_ar = deleteNews($_GET['delete'], 'ar');
     $deleted_en = deleteNews($_GET['delete'], 'en');
     if ($deleted_ar || $deleted_en) {
-        $success = 'تم حذف الخبر بنجاح (عربي وإنجليزي)';
-        $news_data = getNews();
+        header('Location: news-deleted.html');
+        exit;
     } else {
         $error = 'تعذر حذف الخبر';
     }
 }
-// Handle update (simple inline form)
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'update') {
-    $id = $_POST['id'] ?? '';
-    $fields = [
-        'title' => $_POST['title'] ?? '',
-        'summary' => $_POST['summary'] ?? '',
-        'content' => $_POST['content'] ?? '',
-        'image' => $_POST['image'] ?? '',
-        'images' => [],
-    ];
-    if (!empty($_POST['gallery'])) {
-        $fields['images'] = array_map('trim', explode(',', $_POST['gallery']));
-    }
-    $fields_en = [
-        'title' => $_POST['title_en'] ?? '',
-        'summary' => $_POST['summary_en'] ?? '',
-        'content' => $_POST['content_en'] ?? '',
-        'image' => $_POST['image_en'] ?? ($_POST['image'] ?? ''),
-        'images' => !empty($_POST['gallery_en']) ? array_map('trim', explode(',', $_POST['gallery_en'])) : (!empty($_POST['gallery']) ? array_map('trim', explode(',', $_POST['gallery'])) : []),
-    ];
-    if ($id && $fields['title'] && $fields['content']) {
-        $updated_ar = updateNews($id, $fields, 'ar');
-        $updated_en = ($fields_en['title'] && $fields_en['content']) ? updateNews($id, $fields_en, 'en') : false;
-        if ($updated_ar || $updated_en) {
-            $success = 'تم تحديث الخبر بنجاح (عربي وإنجليزي)';
-            $news_data = getNews();
-        } else {
-            $error = 'تعذر تحديث الخبر';
-        }
-    } else {
-        $error = 'يرجى تعبئة جميع الحقول المطلوبة';
-    }
-}
+
 ?>
 <!DOCTYPE html>
 <html dir="<?php echo $news_data['metadata']['direction']; ?>" lang="<?php echo $news_data['metadata']['lang'] ?? 'ar'; ?>">
@@ -190,9 +159,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                     <div class="card news-card h-100">
                         <img src="../<?php echo htmlspecialchars($item['image']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($item['title']); ?>">
                         <div class="card-body">
-                            <span class="badge badge-<?php echo htmlspecialchars($item['badge']['type']); ?> mb-2">
-                                <?php echo htmlspecialchars($item['badge']['text']); ?>
-                            </span>
                             <small class="text-muted d-block mb-2"><?php echo htmlspecialchars($item['date']); ?></small>
                             <h5 class="card-title"><?php echo htmlspecialchars($item['title']); ?></h5>
                             <p class="card-text"><?php echo nl2br(htmlspecialchars($item['summary'])); ?></p>

@@ -18,7 +18,7 @@
 .news-details-card .card-img-top {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    max-height: 400px;
+    /* max-height: 400px; */
     object-fit: cover;
 }
 
@@ -38,6 +38,7 @@
     font-size: 1.15rem;
     color: #222;
     line-height: 2;
+    
 }
 
 .news-gallery {
@@ -72,6 +73,7 @@
 
 .item {
     height: 600px;
+    width: auto !important;
 }
 
 .item img {

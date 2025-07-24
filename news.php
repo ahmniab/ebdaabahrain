@@ -4,7 +4,7 @@ require_once 'services/news-service.php';
 $news_data = getNews($lang);
 ?>
 <!DOCTYPE html>
-<html dir="<?php echo $news_data['metadata']['direction']; ?>" lang="<?php echo $news_data['metadata']['lang'] ?? 'ar'; ?>">
+<html dir="<?php echo $dir; ?>" lang="<?php echo $lang; ?>">
 
 <head>
     <meta charset="utf-8" />

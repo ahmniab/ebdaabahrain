@@ -57,19 +57,28 @@
     margin: 0 auto;
     font-weight: 400;
   }
-  
+  :lang(ar) .news-list{
+    text-align: right;
+  }
+
+  :lang(en) .news-list{
+    text-align: left;
+  }
+
   .news-list {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: space-around;
+    align-items: space-between;
     flex-wrap: wrap;
     gap: 30px;
   }
   
   .news-list li {
-    flex: 1 1 350px;
-    max-width: 330px;
+    flex: 1 1 400px;
+    max-width: 400px;
     margin: 0;
   }
   
@@ -107,12 +116,14 @@
   }
   
   .news-card .card-title {
-    font-size: 1.25rem;
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 15px;
     line-height: 1.4;
     flex-grow: 1;
+    height: 85px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .news-card .card-title a {
@@ -131,6 +142,9 @@
     line-height: 1.6;
     margin-bottom: 20px;
     flex-grow: 1;
+    height: 198px;
+    overflow: hidden;
+    text-overflow: '...';
   }
   
   .news-card .btn {
@@ -174,38 +188,7 @@
     display: block;
   }
   
-  /* Badge color variations */
-  .news-badge.badge-primary {
-    background: linear-gradient(135deg, #007bff, #0056b3);
-    color: white;
-  }
-  
-  .news-badge.badge-success {
-    background: linear-gradient(135deg, #28a745, #1e7e34);
-    color: white;
-  }
-  
-  .news-badge.badge-info {
-    background: linear-gradient(135deg, #17a2b8, #117a8b);
-    color: white;
-  }
-  
-  .news-badge.badge-warning {
-    background: linear-gradient(135deg, #ffc107, #e0a800);
-    color: #212529;
-  }
-  
-  .news-badge.badge-danger {
-    background: linear-gradient(135deg, #dc3545, #c82333);
-    color: white;
-  }
-  
-  .news-badge.badge-secondary {
-    background: linear-gradient(135deg, #6c757d, #545b62);
-    color: white;
-  }
-  
-  /* Load more button */
+    /* Load more button */
   .news-section .btn-lg {
     background: linear-gradient(135deg, #61D2B4, #4CAF50);
     border: none;
