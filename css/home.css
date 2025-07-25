@@ -838,6 +838,7 @@
     align-items: center;
     color: #fff;
     width: 100%;
+    text-align: center;
   }
 
   .success-text h1 {

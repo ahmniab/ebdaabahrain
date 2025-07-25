@@ -162,11 +162,11 @@ $translations = GetTranslations(basename(__FILE__,".php"));
       </div>
       <div class="contact-form text-nowrap" id="contactUs">
         <div class="row ar-dir">
-          <div class="col-lg-7 col-md-6 col-sm-12 mb-4 ">
+          <div class="col-lg-12 col-md-12 col-sm-12 mb-4 ">
             <div class="contact-address">
               <div class="row">
                 <!-- الادارة العامة -->
-                <div class="col-lg-6 col-md-6 col-lg-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-lg-6 col-sm-12">
                   <div class="contact-box container-fluid--mobile">
                     <h5><?= $translations['manama-tit']; ?></h5>
                     <hr />
@@ -179,7 +179,7 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                 </div>
 
                 <!-- فرع العاصمة -->
-                <div class="col-lg-6 col-md-6 col-lg-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-lg-6 col-sm-12">
                   <div class="contact-box container-fluid--mobile">
                     <h5><?= $translations['manama-tit2']; ?></h5>
                     <hr />
@@ -192,7 +192,7 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                 </div>
 
                 <!-- فرع عالي -->
-                <div class="col-lg-6 col-md-6 col-lg-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-lg-6 col-sm-12">
                   <div class="contact-box container-fluid--mobile">
                     <h5><?= $translations['aali-tit']; ?></h5>
                     <hr />
