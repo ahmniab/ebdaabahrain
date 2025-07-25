@@ -3,7 +3,7 @@
         {
             "id": "saydati",
             "title": "SAYDATI LOAN",
-            "image": "assets/img/loan/saydati-new.webp",
+            "image": "assets/img/loan/syedaty-new.webp",
             "description": "A specialized financing solution for women entrepreneurs, offering 200 to 1,000 BHD based on women-owned home-business needs. This loan supports business growth without traditional guarantees.",
             "details": "Ebdaa - Bahrain innovated the \"Sayedati\" loan to support women working with home-based businesses. The loan ranges between BHD 200 and 1000 based on the business needs to be paid over a period of 12 months.",
             "terms": [
@@ -132,6 +132,25 @@
                 "A copy of a valid smart ID card.",
                 "A copy of a valid passport or driver’s license.",
                 "Proof of project income or salary certificate for employees.",
+                "Proof of residence (rental contract, ownership, or electricity and water bill)."
+            ]
+        },
+        {
+            "id": "tamayouz-plus",
+            "title": "TAMAYOZ PLUS LOAN",
+            "image": "assets/img/loan/excell-new.webp",
+            "description": "This loan is designed to support commercial, service, and industrial projects with flexible terms.",
+            "details": "The loan amount ranges between BD 7500 and 10,000 and can be paid over 36 months.",
+            "terms": [
+                "The loan must be used to support commercial, service, and industrial projects.",
+                "Applicants must be between 25 and 60 years old.",
+                "The business must have been operational for at least 1 year."
+            ],
+            "requirements": [
+                "A copy of a valid smart ID card.",
+                "A copy of a valid passport or driver’s license.",
+                "A copy of the commercial registration or business license.",
+                "Proof of Business Income",
                 "Proof of residence (rental contract, ownership, or electricity and water bill)."
             ]
         }
