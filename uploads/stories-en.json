@@ -175,12 +175,12 @@
                 "title": "Hessa is ambitious Bahraini ",
                 "video": "",
                 "images": [],
-                "content": {
-                    "0": "Hessa Al-Dosari",
-                    "1": "Hessa is an ambitious Bahraini woman with a passion for baking. She taught herself how to bake and mastered the creation of delicious baked goods. After impressing those around her with her creations, she decided to launch her own home-based baking business.",
-                    "3": "Her treats quickly gained popularity, and the reputation of her delicious baked goods spread by word of mouth. Hessa then moved on to produce her baked goods at the \"Netaj Khair Bahrain\" cooperative, known for their exceptional taste and affordable prices.",
-                    "5": "Wanting to further develop her bakery, Hessa sought to upgrade her equipment to keep up with advancements in baking techniques. This is where Ebda’a Microfinance (one of the AGFUND institutions) stepped in, offering her the support and funding she needed. They continue to stand by her as long as her ambition lives on."
-                }
+                "content": [
+                    "Hessa Al-Dosari",
+                    "Hessa is an ambitious Bahraini woman with a passion for baking. She taught herself how to bake and mastered the creation of delicious baked goods. After impressing those around her with her creations, she decided to launch her own home-based baking business.",
+                    "Her treats quickly gained popularity, and the reputation of her delicious baked goods spread by word of mouth. Hessa then moved on to produce her baked goods at the \"Netaj Khair Bahrain\" cooperative, known for their exceptional taste and affordable prices.",
+                    "Wanting to further develop her bakery, Hessa sought to upgrade her equipment to keep up with advancements in baking techniques. This is where Ebda’a Microfinance (one of the AGFUND institutions) stepped in, offering her the support and funding she needed. They continue to stand by her as long as her ambition lives on."
+                ]
             },
             "id": "story_1753280152"
         },
@@ -192,11 +192,11 @@
                 "title": "gomaa the beekeeper",
                 "video": "",
                 "images": [],
-                "content": {
-                    "0": "Jumaa is a passionate Bahraini who learned beekeeping from his teacher at school. After taking early retirement, he dedicated himself fully to beekeeping. What started as a simple hobby soon evolved into producing honey with unique colors and flavors.",
-                    "2": "Later, he launched his business under the name \"Jumaa Bee,\" where he showcases and sells various products derived from bees and honey.",
-                    "4": "Today, Jumaa organizes educational programs about bees for school students and children, and he will soon launch programs that combine art with beekeeping."
-                }
+                "content": [
+                    "Jumaa is a passionate Bahraini who learned beekeeping from his teacher at school. After taking early retirement, he dedicated himself fully to beekeeping. What started as a simple hobby soon evolved into producing honey with unique colors and flavors.",
+                    "Later, he launched his business under the name \"Jumaa Bee,\" where he showcases and sells various products derived from bees and honey.",
+                    "Today, Jumaa organizes educational programs about bees for school students and children, and he will soon launch programs that combine art with beekeeping."
+                ]
             },
             "id": "story_1753293846"
         },
@@ -226,11 +226,11 @@
                 "title": "Laila is a talented Bahraini woman",
                 "video": "",
                 "images": [],
-                "content": {
-                    "0": "Laila is a talented Bahraini woman, skilled in various forms of art—most notably design and handmade crafts. She started her small home-based business by creating beautiful handcrafted pieces right from her home.",
-                    "2": "Laila continued her work and gradually built a loyal customer base, becoming well-known in her field for her elegant designs, precision, and high quality.",
-                    "4": "As demand for her products grew and she needed to purchase more raw materials, she turned to Ebda’a Microfinance (one of AGFUND’s institutions) for financial support. Ebda’a was quick to respond, providing her with the funding she needed to grow her business."
-                }
+                "content": [
+                    "Laila is a talented Bahraini woman, skilled in various forms of art—most notably design and handmade crafts. She started her small home-based business by creating beautiful handcrafted pieces right from her home.",
+                    "Laila continued her work and gradually built a loyal customer base, becoming well-known in her field for her elegant designs, precision, and high quality.",
+                    "As demand for her products grew and she needed to purchase more raw materials, she turned to Ebda’a Microfinance (one of AGFUND’s institutions) for financial support. Ebda’a was quick to respond, providing her with the funding she needed to grow her business."
+                ]
             },
             "id": "story_1753306253"
         },
@@ -240,7 +240,7 @@
             "image": "uploads\/story_main_1753306543.jpeg",
             "modal": {
                 "title": "Ahmed is a young Bahraini man who is passionate about Bahrain’s heritage",
-                "video": "https://www.youtube.com/embed/MToSKerTJq0?si=y-3qOP8yKmYNhGSw",
+                "video": "https:\/\/www.youtube.com\/embed\/MToSKerTJq0?si=y-3qOP8yKmYNhGSw",
                 "images": [],
                 "content": [
                     "Ahmed is a young Bahraini man who is passionate about Bahrain’s heritage and deeply connected to the charm and authenticity of the past. He turned his beautiful hobby of collecting heritage items and antiques into a small shop where he displays his collection and sells it to those who truly appreciate this cultural legacy."
