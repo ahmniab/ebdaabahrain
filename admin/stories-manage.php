@@ -92,7 +92,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
         array_push($data_en['stories'], $fields_en);
         saveStories($data_en, 'en');
         $success = 'تمت إضافة القصة بنجاح (عربي وإنجليزي)';
-        $stories_data = getStories();
+        header('Location: added.php?type=success&link=stories-manage.php');
+        exit;
     } else {
         $error = 'يرجى تعبئة جميع الحقول المطلوبة ورفع صورة رئيسية (بالعربية والإنجليزية)';
     }
@@ -102,7 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 if (isset($_GET['delete'])) {
     if (deleteStory($_GET['delete'], 'ar') && deleteStory($_GET['delete'], 'en')) {
         $success = 'تم حذف القصة بنجاح';
-        $stories_data = getStories('ar');
+        header('Location: deleted.php?type=success&link=stories-manage.php');
     } else {
         $error = 'تعذر حذف القصة';
     }

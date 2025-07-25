@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
         if (!isset($data_en['news_items'])) $data_en['news_items'] = [];
         array_unshift($data_en['news_items'], $fields_en);
         saveNews($data_en, 'en');
-        header('Location: news-added.html');
+        header('Location: added.php?type=news&link=news-manage.php');
         exit;
 
     } else {
@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST' && isset($_GET['delete'])) {
     $deleted_ar = deleteNews($_GET['delete'], 'ar');
     $deleted_en = deleteNews($_GET['delete'], 'en');
     if ($deleted_ar || $deleted_en) {
-        header('Location: news-deleted.html');
+        header('Location: deleted.php?type=news&link=news-manage.php');
         exit;
     } else {
         $error = 'تعذر حذف الخبر';

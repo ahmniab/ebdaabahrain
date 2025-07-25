@@ -50,6 +50,14 @@ function deleteStory(string $id, string $lang = 'ar')
     $data['stories'] = array_filter($data['stories'], function ($item) use ($id, &$found) {
         if ($item['id'] === $id) {
             $found = true;
+            unlink(__DIR__ . '/../' . $item['image']);
+            if(isset($item['modal']['images'])){
+                foreach($item['modal']['images'] as $image){
+                    if(!unlink(__DIR__ . '/../' . $image)){
+                        continue;
+                    }
+                }
+            }
             return false;
         }
         return true;
