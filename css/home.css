@@ -320,6 +320,7 @@
     padding: 80px 0;
     position: relative;
     overflow: hidden;
+    height: 100%;
   }
 
   .counters-section::before {
@@ -930,16 +931,17 @@
   }
 
   .item-name {
-    align-self: flex-end;
     color: #fff;
     font-weight: 900;
     font-size: 16px;
   }
   .item-name:lang(ar){
+    align-self: flex-end;
     text-align: right;
     direction: rtl;
   }
   .item-name:lang(en){
+    align-self: flex-start;
     text-align: left;
     direction: ltr;
   }
@@ -1824,7 +1826,7 @@
   }
 
   .owl-container .item {
-    height: 400px;
+    height: 450px;
     margin-bottom: 32px;
     padding: 28px 50px;
     transition: box-shadow 0.2s, transform 0.2s;
