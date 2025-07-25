@@ -63,6 +63,41 @@
         z-index: 10;
       }
     }
+    /* Mobile Navbar (360px and below) */
+  @media (max-width: 360px) {
+    /* Shrink logo */
+    .navbar-brand img {
+      height: 45px; /* Adjust based on your logo's aspect ratio */
+      width: auto;
+    }
+
+    /* Scale down language switcher */
+    .lang-switch {
+      font-size: 0.8rem; /* Smaller text */
+    }
+    .lang-switch img {
+      width: 30px; /* Smaller flag */
+      height: auto;
+    }
+
+    /* Compact hamburger icon */
+    .navbar-toggler {
+      padding: 0.1rem;
+    }
+    .navbar-toggler-icon {
+      width: 1.5rem; /* Smaller icon */
+      height: 1.5rem;
+    }
+
+    .navbar-collapse {
+        background-color: #f8f9fa;
+        padding: 1rem;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        z-index: 10;
+      }
+  }
 
   </style>
 </head>
