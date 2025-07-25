@@ -1,7 +1,7 @@
 <?php
 require_once 'lang/init.php';
 $file = $_GET['page'] ?? basename(__FILE__, '.php');
-if($file !== 'team' && $file !== 'board'){
+if($file !== 'team' && $file !== 'about-board'){
     http_response_code(404);
     echo '<h1>Page not found</h1>';
     exit;

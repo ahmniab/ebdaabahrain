@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Check if screen is large (Bootstrap lg breakpoint)
   function isLargeScreen() {
     return window.innerWidth >= 992;
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Handle hover behavior
   dropdowns.forEach(dropdown => {
     // Mouse enter (hover in)
-    dropdown.addEventListener('mouseenter', function() {
+    dropdown.addEventListener('mouseenter', function () {
       if (isLargeScreen()) {
         this.classList.add('show');
         this.querySelector('.dropdown-menu').classList.add('show');
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Mouse leave (hover out)
-    dropdown.addEventListener('mouseleave', function() {
+    dropdown.addEventListener('mouseleave', function () {
       if (isLargeScreen()) {
         this.classList.remove('show');
         this.querySelector('.dropdown-menu').classList.remove('show');
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Prevent click from opening dropdown on large screens
     const toggle = dropdown.querySelector('.dropdown-toggle');
     if (toggle) {
-      toggle.addEventListener('click', function(e) {
+      toggle.addEventListener('click', function (e) {
         if (isLargeScreen()) {
           e.preventDefault();
           e.stopPropagation();
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Handle window resize
-  window.addEventListener('resize', function() {
+  window.addEventListener('resize', function () {
     if (!isLargeScreen()) {
       dropdowns.forEach(dropdown => {
         dropdown.classList.remove('show');
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Display statistics numbers directly without animation for better performance
-document.addEventListener('DOMContentLoaded', async function() {
+document.addEventListener('DOMContentLoaded', async function () {
   // Hide loader when page is loaded
   document.getElementById('loader').classList.add('hidden');
 
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(async anchor => {
-  anchor.addEventListener('click', function(e) {
+  anchor.addEventListener('click', function (e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
@@ -72,9 +72,9 @@ document.querySelectorAll('a[href^="#"]').forEach(async anchor => {
 });
 
 
-$(document).ready(function() {
+$(document).ready(function () {
   // Back to top button
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
       $('.back-to-top').addClass('show');
     } else {
@@ -82,20 +82,21 @@ $(document).ready(function() {
     }
   });
 
-  $('.back-to-top').click(function(e) {
+  $('.back-to-top').click(function (e) {
     e.preventDefault();
-    $('html, body').animate({
-      scrollTop: 0
-    }, 800);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
   });
 
   // Hide loader after 3 seconds if load event doesn't fire
-  setTimeout(function() {
+  setTimeout(function () {
     $('#loader').addClass('hidden');
   }, 3000);
 
   // Smooth scrolling for anchor links
-  $('a[href^="#"]').on('click', function(e) {
+  $('a[href^="#"]').on('click', function (e) {
     var target = $(this.getAttribute('href'));
     if (target.length) {
       e.preventDefault();
