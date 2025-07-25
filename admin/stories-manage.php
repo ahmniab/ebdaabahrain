@@ -208,11 +208,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                     </div>
                     
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-12">
                             <label>محتوى القصة (عربي) - كل سطر فقرة منفصلة</label>
                             <textarea name="content_ar" class="form-control" rows="4" id="contentAr"></textarea>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-12">
                             <label>Story Content (English) - Each line is a separate paragraph</label>
                             <textarea dir="ltr" name="content_en" class="form-control" rows="4" id="contentEn"></textarea>
                         </div>
