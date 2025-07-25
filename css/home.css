@@ -762,6 +762,12 @@
     justify-content: center;
     align-items: flex-start;
   }
+  @media (max-width: 1024px) {
+    .success-element img {
+      width: auto;
+      height: 100%;
+    }
+  }
   /* Mobile-specific adjustments (applies only below 768px) */
 @media (max-width: 767.98px) {
     .success-element {
@@ -1053,10 +1059,15 @@
   .slide-description {
     font-size: 1.2rem;
     line-height: 1.8;
-    text-align: justify;
     margin-bottom: 40px;
     opacity: 0.95;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  .slide-description:lang(ar){
+    text-align: right;
+  }
+  .slide-description:lang(en){
+    text-align: left;
   }
 
   .slide-features {
