@@ -1,4 +1,5 @@
 <?php
+require_once 'helper.php';
 // Check if user is logged in
 session_start();
 if (!isset($_SESSION['admin']) || !$_SESSION['admin']) {
@@ -14,13 +15,17 @@ $success = $error = '';
 // Handle create
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'create') {
     // Prepare Arabic fields
+    $video_url = getYouTubeEmbedUrl($_POST['video_url']);
+    if(!$video_url){
+        $error = 'رابط الفيديو غير صالح';
+    }
     $fields_ar = [
         'name' => $_POST['name'] ?? '',
         'type' => $_POST['type'] ?? 'stories',
         'image' => '',
         'modal' => [
             'title' => $_POST['modal_title'] ?? '',
-            'video' => $_POST['video_url'] ?? '',
+            'video' => $video_url ?? '',
             'images' => [],
             'content' => []
         ]
@@ -33,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
         'image' => '',
         'modal' => [
             'title' => $_POST['modal_title_en'] ?? '',
-            'video' => $_POST['video_url'] ?? '',
+            'video' => $video_url ?? '',
             'images' => [],
             'content' => []
         ]

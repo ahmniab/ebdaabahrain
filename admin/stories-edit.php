@@ -1,4 +1,6 @@
 <?php
+require_once 'helper.php';
+
 // Check if user is logged in
 session_start();
 if (!isset($_SESSION['admin']) || !$_SESSION['admin']) {
@@ -8,7 +10,14 @@ if (!isset($_SESSION['admin']) || !$_SESSION['admin']) {
 }
 
 require_once '../services/stories-service.php';
-$id = $_GET['id'] ?? '';
+$id = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $id = $_POST['id'] ?? '';
+
+}elseif($_SERVER['REQUEST_METHOD'] === 'GET'){
+    $id = $_GET['id'] ?? '';
+}
+
 $story = getStoryById($id);
 $story_en = getStoryById($id, 'en'); // Fetch English story
 $stories_data = getStories();
@@ -21,13 +30,17 @@ if (!$story) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $video_url = getYouTubeEmbedUrl($_POST['video_url']);
+    if(!$video_url){
+        $error = 'رابط الفيديو غير صالح';
+    }
     $fields = [
         'name' => $_POST['name'] ?? '',
         'type' => $_POST['type'] ?? 'stories',
         'image' => $story['image'],
         'modal' => [
             'title' => $_POST['modal_title'] ?? '',
-            'video' => $_POST['video_url'] ?? '',
+            'video' => $video_url ?? '',
             'images' => $story['modal']['images'] ?? [],
             'content' => []
         ]
@@ -39,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'image' => $story_en['image'] ?? $story['image'],
         'modal' => [
             'title' => $_POST['modal_title_en'] ?? '',
-            'video' => $_POST['video_url'] ?? '',
+            'video' => $video_url ?? '',
             'images' => $story_en['modal']['images'] ?? $story['modal']['images'] ?? [],
             'content' => []
         ]
@@ -48,9 +61,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Handle main image upload
     if (isset($_FILES['image_upload']) && $_FILES['image_upload']['error'] === UPLOAD_ERR_OK) {
         $ext = pathinfo($_FILES['image_upload']['name'], PATHINFO_EXTENSION);
-        $main_target = '../uploads/story_main_' . $id . '_' . time() . '.' . $ext;
-        if (move_uploaded_file($_FILES['image_upload']['tmp_name'], $main_target)) {
-            $fields['image'] = $fields_en['image'] = ltrim($main_target, '../');
+        $main_target = '../' . $story['image'];
+        if (!move_uploaded_file($_FILES['image_upload']['tmp_name'], $main_target)) {
+            $error = 'لم يتم تحديث الصورة';
         }
     }
     
@@ -108,7 +121,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php if ($error): ?><div class="alert alert-danger"><?php echo $error; ?></div><?php endif; ?>
         
         <form method="post" action="stories-edit.php" enctype="multipart/form-data" class="card p-4">
-            <div class="form-row">
+        <input type="hidden" name="id" value="<?php echo $id; ?>">
+        <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>اسم صاحب القصة (عربي)</label>
                     <input type="text" name="name" class="form-control" value="<?php echo htmlspecialchars($story['name']); ?>" required>
