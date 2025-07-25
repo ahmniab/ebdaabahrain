@@ -54,7 +54,7 @@ $loan = $id ? getLoanById($id, $lang) : null;
         <a class="loan-apply-btn" href="application-form.php">
           <i class="fa fa-paper-plane"></i> <?= $translations['apply-now'] ?? ($lang === 'ar' ? 'قدم الآن' : 'Apply Now') ?>
         </a>
-        <a class="btn btn-outline-primary" href="index.php" style="margin-top: 20px;">
+        <a class="btn btn-outline-info" href="index.php" style="margin-top: 20px;">
           <i class="fa-solid fa-arrow-right"></i> 
           <?php echo $lang === 'ar' ? 'الرجوع للصفحه الرئيسية' : 'back to main page'; ?>
         </a>
