@@ -931,7 +931,6 @@
   }
 
   .item-name {
-    align-self: flex-end;
     color: #fff;
     font-weight: 900;
     font-size: 16px;
@@ -939,10 +938,12 @@
   .item-name:lang(ar){
     text-align: right;
     direction: rtl;
+    align-self: flex-end;
   }
   .item-name:lang(en){
     text-align: left;
     direction: ltr;
+    align-self: flex-start;
   }
   .item-jop {
     font-size: 16px;
