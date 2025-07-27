@@ -28,7 +28,7 @@ return [
                 ["name" => "قرض التفوق", "href" => "loan-details.php?id=tafawoq"],
                 ["name" => "قرض التميز", "href" => "loan-details.php?id=tamayouz"],
                 ["name" => "قرض التميز بلس", "href" => "loan-details.php?id=tamayouz-plus"],
-                ["name" => "قرض الموسمى", "href" => "loan-details.php?id=mawsimi"],
+                ["name" => "القرض الموسمى", "href" => "loan-details.php?id=mawsimi"],
 
             ]
         ],
