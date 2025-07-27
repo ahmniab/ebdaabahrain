@@ -82,15 +82,15 @@
                         <img src="assets/img/home-s3-slides/s1.jpeg" alt="success image">
                         <div class="success-filter"></div>
                     </a>
-                    <a class="success-element" href="http://localhost/story-details.php?id=story_1753306253">
+                    <a class="success-element" href="story-details.php?id=story_1753306253">
                         <img src="assets/img/home-s3-slides/s2.jpeg" alt="success image">
                         <div class="success-filter"></div>
                     </a>
-                    <a class="success-element" href="http://localhost/story-details.php?id=story_1753306079">
+                    <a class="success-element" href="story-details.php?id=story_1753306079">
                         <img src="assets/img/home-s3-slides/s3.jpeg" alt="success image">
                         <div class="success-filter"></div>
                     </a>
-                    <a class="success-element" href="http://localhost/story-details.php?id=story_1753306543">
+                    <a class="success-element" href="story-details.php?id=story_1753306543">
                         <img src="assets/img/home-s3-slides/s4.jpeg" alt="success image">
                         <div class="success-filter"></div>
                     </a>
