@@ -78,7 +78,7 @@ $translations = GetTranslations('index', $lang);
         </div>
 
         <!-- قرض النجاح -->
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="service-card dark">
             <div class="service-icon">
               <i class="fa-solid fa-rocket"></i>
@@ -112,7 +112,7 @@ $translations = GetTranslations('index', $lang);
         </div>
 
         <!-- قرض التفوق -->
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="service-card secondary">
             <div class="service-icon">
               <i class="fa-solid fa-star"></i>
