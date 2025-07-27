@@ -8,100 +8,6 @@
   }
   $is_arabic = ($lang === 'ar');
 ?>
-<!DOCTYPE html>
-<html lang="<?= $lang; ?>" dir="<?= $is_arabic ? 'rtl' : 'ltr' ?>">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Navbar</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/home.css">
-
-
-  <style>
-    /* Logo fix */
-    .navbar-brand img {
-      height: 70px;
-      width: auto;
-    }
-
-    /* Remove space between logo and nav */
-    .navbar .container-fluid {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-right: 0 !important;
-      padding-right: 0 !important;
-    }
-
-    /* RTL alignment */
-    html[dir="rtl"] .navbar-nav {
-      margin-right: auto;
-      margin-left: 0;
-    }
-
-    html[dir="ltr"] .navbar-nav {
-      margin-left: auto;
-      margin-right: 0;
-    }
-
-    .lang-switch img {
-      width: 20px;
-      height: auto;
-      margin-inline-end: 5px;
-    }
-
-    @media (max-width: 991.98px) {
-      .navbar-collapse {
-        background-color: #f8f9fa;
-        padding: 1rem;
-        position: absolute;
-        top: 80px;
-        width: 100%;
-        z-index: 10;
-      }
-    }
-    /* Mobile Navbar (360px and below) */
-   @media (max-width: 479px) {
-    /* Shrink logo */
-    .navbar-brand img {
-      height: 45px; /* Adjust based on your logo's aspect ratio */
-      width: auto;
-    }
-
-    /* Scale down language switcher */
-    .lang-switch {
-      font-size: 0.8rem; /* Smaller text */
-    }
-    .lang-switch img {
-      width: 30px; /* Smaller flag */
-      height: auto;
-    }
-
-    /* Compact hamburger icon */
-    .navbar-toggler {
-      padding: 0.1rem;
-    }
-    .navbar-toggler-icon {
-      width: 1.5rem; /* Smaller icon */
-      height: 1.5rem;
-    }
-
-    .navbar-collapse {
-        background-color: #f8f9fa;
-        padding: 1rem;
-        position: absolute;
-        top: 55px;
-        width: 100%;
-        z-index: 10;
-      }
-  }
-
-  </style>
-</head>
-<body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top p-0 m-0 w-100">
   <div class="container-fluid">
@@ -161,6 +67,3 @@
 
 <!-- Bootstrap Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
