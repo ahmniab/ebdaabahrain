@@ -1,5 +1,6 @@
 <?php
 require_once 'lang/init.php';
+$translations = GetTranslations(basename(__FILE__, '.php'));
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $lang; ?>" dir="<?php echo $dir; ?>">
@@ -9,7 +10,7 @@ require_once 'lang/init.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="موقع بنك الإبداع البحرين - فرص وظيفية، خدمات تمويلية، دعم المشاريع الصغيرة والمتوسطة.">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>شركاؤنا</title>
+    <title><?php echo $translations['title']; ?></title>
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -28,69 +29,75 @@ require_once 'lang/init.php';
             <div class="tab-pane fade show active" id="tabs-3">
                 <div class="row">
                     <!-- Partner 1 -->
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-3 mb-4 rounded shadow-sm d-flex justify-content-center align-items-center">
                         <a href="http://www.agfund.org/" target="_blank">
-                            <img src="assets/img/partners/agfund.png" alt="AGFUND" class="img-fluid rounded shadow-sm">
+                            <img src="assets/img/partners/png-logos-17-e1721555549988.png" alt="AGFUND" class="img-fluid">
                         </a>
                     </div>
                     <!-- Partner 2 -->
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-3 mb-4 rounded shadow-sm d-flex justify-content-center align-items-center">
                         <a href="http://www.bdb-bh.com/en/home" target="_blank">
-                            <img src="assets/img/partners/bdb.png" alt="BDB" class="img-fluid rounded shadow-sm">
+                            <img src="assets/img/partners/logo-03.png" alt="BDB" class="img-fluid">
                         </a>
                     </div>
                     <!-- Partner 3 -->
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-3 mb-4 rounded shadow-sm d-flex justify-content-center align-items-center">
                         <a href="http://www.cbb.gov.bh/" target="_blank">
-                            <img src="assets/img/partners/cbb.png" alt="CBB" class="img-fluid rounded shadow-sm">
+                            <img src="assets/img/partners/logo-06.png" alt="CBB" class="img-fluid">
                         </a>
                     </div>
                     <!-- Partner 4 -->
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-3 mb-4 rounded shadow-sm d-flex justify-content-center align-items-center">
                         <a href="http://www.eskanbank.com/" target="_blank">
-                            <img src="assets/img/partners/eskanbank.png" alt="Eskan Bank" class="img-fluid rounded shadow-sm">
+                            <img src="assets/img/partners/logo-02.png" alt="Eskan Bank" class="img-fluid">
                         </a>
                     </div>
                     <!-- Partner 5 -->
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-3 mb-4 rounded shadow-sm d-flex justify-content-center align-items-center">
                         <a href="https://www.tamkeen.bh/ " target="_blank">
-                            <img src="assets/img/partners/tamkeen.png" alt="Tamkeen" class="img-fluid rounded shadow-sm">
+                            <img src="assets/img/partners/logo-05.png" alt="Tamkeen" class="img-fluid">
                         </a>
                     </div>
                     <!-- Partner 6 -->
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-3 mb-4 rounded shadow-sm d-flex justify-content-center align-items-center">
                         <a data-toggle="modal" data-target="#women" href="#">
-                            <img src="assets/img/partners/woman.png" alt="Women's Council" class="img-fluid rounded shadow-sm">
+                            <img src="assets/img/partners/logo-04.png" alt="Women's Council" class="img-fluid">
                         </a>
                     </div>
+                    <!-- Partner 7 -->
+                    <div class="col-md-3 mb-4 rounded shadow-sm d-flex justify-content-center align-items-center">
+                        <a href="https://uabonline.org/" target="_blank">
+                            <img src="assets/img/partners/logo-07.png" alt="Tamkeen" class="img-fluid">
+                        </a>
+                    </div>
+                    <!-- Partner 7 -->
+                    <div class="col-md-3 mb-4 rounded shadow-sm d-flex justify-content-center align-items-center">
+                        <a href="https://wuab.org/" target="_blank">
+                            <img src="assets/img/partners/logo-08.png" alt="Tamkeen" class="img-fluid">
+                        </a>
+                    </div>
+
                 </div>
             </div>
             <!-- Modal for Women's Council -->
-            <div class="modal fade ar-dir" id="women" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal fade team-modal" id="women" tabindex="-1" role="dialog" aria-labelledby="wemenLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
-                        <div class="modal-body ar-txt">
-                            <button type="button" class="close" data-dismiss="modal" style="float:left;">
-                                <span aria-hidden="true">×</span>
+                        <div class="modal-header" dir="ltr">
+                            <h5 class="modal-title" id="womenLabel"><?php echo $translations['modal']['title']; ?></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="<?php echo $lang === 'ar' ? 'إغلاق' : 'close'; ?>">
+                                <span aria-hidden="true">&times;</span>
                             </button>
-                            <div class="row">
-                                <div class="col-sm-12 col-lg-6">
-                                    <img src="assets/img/partners/sabika.jpg" alt="Sabika bint Ibrahim Al Khalifa" class="img-fluid">
-                                </div>
-                                <div class="col-sm-12 col-lg-6">
-                                    <h4>المجلس الأعلى للمرأة</h4>
-                                    <hr />
-                                    <div class="box_shadow">
-                                        <p>بمبادرة ودعم من المجلس الأعلى للمرأة وبتمويل من صندوق العمل "تمكين"... [shortened for brevity]</p>
-                                        <p>وقعت الشركة وبتاريخ 26 أبريل من عام 2010 اتفاقية مع المجلس وتمكين لإنشاء محفظة...</p>
-                                        <p>وتتراوح قيمة القروض بين 200 دينار و7000 دينار بحريني تسدد على فترات تصل إلى 3 سنوات.</p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <div class="modal-footer justify-content-between">
-                            <a class="btn btn-common" href="https://www.scw.bh/ " target="_blank">الموقع الإلكتروني</a>
-                            <button class="btn btn-common" data-dismiss="modal">إغلاق</button>
+                        <div class="modal-body">
+                            <?php echo nl2br(htmlspecialchars($translations['modal']['description'])); ?>
+                            <br>
+                            <p>
+                                <a href="https://www.scw.bh/" class="btn btn-info" target="_blank"><?php echo $translations['modal']['title']; ?></a>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal"><?php echo $lang === 'ar' ? 'إغلاق' : 'close'; ?></button>
                         </div>
                     </div>
                 </div>
