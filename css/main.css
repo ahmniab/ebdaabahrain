@@ -226,7 +226,9 @@ textarea {
 */
 
 
-
+.lang-switch {
+  display: flex !important;
+}
 .lang-switch img {
   width: 25px;
   margin: 5px;
@@ -288,10 +290,6 @@ textarea {
     top: 30px;
   }
 
-  #lang-switch {
-    margin-top: 10px;
-    align-self: center;
-  }
 }
 
 @media (max-width: 768px) {
@@ -331,10 +329,6 @@ textarea {
     width: 120px;
   }
 
-  #lang-switch {
-    padding: 8px 15px;
-    font-size: 0.9rem;
-  }
 }
 
 /* logo */
