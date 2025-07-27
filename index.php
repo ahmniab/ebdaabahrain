@@ -372,12 +372,18 @@ $translations = GetTranslations(basename(__FILE__,".php"));
   <script>
     $('.owl-carousel').owlCarousel({
       autoplay: true,
-      autoplayTimeout: 1500,
+      autoplayTimeout: 2000,
       autoplayHoverPause: true,
-      autoWidth: true,
+      autoWidth: false,
       loop: true,
-      margin: 330,
-      items: 2,
+      responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        }
+    }
     }
   );
   // html[dir="rtl"] .cta-button{
