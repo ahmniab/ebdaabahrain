@@ -171,7 +171,7 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                     <h5><?= $translations['manama-tit']; ?></h5>
                     <hr />
                     <ul>
-                      <li><a href="tel:+973 17381000"><i class="fa fa-phone"></i>973 17381000+</a></li>
+                      <li><a href="tel:+973 17381000"><i class="fa fa-phone"></i>+973 17381000</a></li>
                       <li><a href="mailto:info@ebdaabahrain.com"><i class="fa fa-envelope"></i>info@ebdaabahrain.com</a></li>
                       <li><a href="https://goo.gl/maps/M64LjU9m4v32" target="_blank"><i class="fa fa-map-marker"></i><?= $translations['manama']; ?></a></li>
                     </ul>
@@ -184,7 +184,7 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                     <h5><?= $translations['manama-tit2']; ?></h5>
                     <hr />
                     <ul>
-                      <li><a href="tel:+973 17381003"><i class="fa fa-phone"></i>973 17381003+</a></li>
+                      <li><a href="tel:+973 17381003"><i class="fa fa-phone"></i>+973 17381003</a></li>
                       <li><a href="mailto:almanama@ebdaabahrain.com"><i class="fa fa-envelope"></i><span>almanama@ebdaabahrain.com</span></a></li>
                       <li><a href="https://goo.gl/maps/M64LjU9m4v32" target="_blank"><i class="fa fa-map-marker"></i><?= $translations['manama']; ?></a></li>
                     </ul>
@@ -197,7 +197,7 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                     <h5><?= $translations['aali-tit']; ?></h5>
                     <hr />
                     <ul>
-                      <li><a href="tel:+973 17381013"><i class="fa fa-phone"></i>973 17381013+</a></li>
+                      <li><a href="tel:+973 17381013"><i class="fa fa-phone"></i>+973 17381013</a></li>
                       <li><a href="mailto:aali@ebdaabahrain.com"><i class="fa fa-envelope"></i>aali@ebdaabahrain.com</a></li>
                       <li><a href="https://goo.gl/maps/Xgobw4hn6qM2" target="_blank"><i class="fa fa-map-marker"></i><?= $translations['aali']; ?></a></li>
                     </ul>
@@ -223,7 +223,7 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                     <h5><?= $translations['hamad-tit']; ?></h5>
                     <hr />
                     <ul>
-                      <li><a href="tel:+973 17381018"><i class="fa fa-phone"></i>973 17381018+</a></li>
+                      <li><a href="tel:+973 17381018"><i class="fa fa-phone"></i>+973 17381018</a></li>
                       <li><a href="mailto:hamad.town@ebdaabahrain.com"><i class="fa fa-envelope"></i><span>hamad.town@ebdaabahrain.com</span></a></li>
                       <li><a href="https://goo.gl/maps/qShfUw1tMhk" target="_blank"><i class="fa fa-map-marker"></i><?= $translations['hamad']; ?></a></li>
                     </ul>

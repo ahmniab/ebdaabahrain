@@ -114,7 +114,7 @@ Ms. Hana holds a bachelor\'s degree in Business Administration from the Arab Ope
     [
         'id' => 'AfnanModal',
         'name' => 'Afnan Saker',
-        'title' => 'Unknown',
+        'title' => 'Senior Training Officer ',
         'image' => 'assets/img/stuff/pic-all-08.webp',
         'bio' => 'Afnan Saqer is a certified trainer in motivation, self-development, and soft skills, bringing over 8 years of experience in Human Resources and training to her work.
 
