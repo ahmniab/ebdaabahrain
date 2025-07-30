@@ -327,7 +327,7 @@ $translations = GetTranslations(basename(__FILE__,".php"));
             <div class="modal-header">
               <h4 class="modal-title"><?= $translations['compls-proc']; ?></h4>
               <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                <span aria-hidden="true">×</span>
+                <span aria-hidden="true"></span>
               </button>
             </div>
             <div class="modal-body">
@@ -396,7 +396,7 @@ $translations = GetTranslations(basename(__FILE__,".php"));
   <script>
     $('.owl-carousel').owlCarousel({
       autoplay: true,
-      autoplayTimeout: 2000,
+      autoplayTimeout: 3000,
       autoplayHoverPause: true,
       autoWidth: false,
       loop: true,

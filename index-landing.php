@@ -249,7 +249,7 @@
     new Splide('.splide', {
         type: 'fade',
         rewind: true,
-        autoplay: false,
+        autoplay: true,
         interval: 3000,
         height: '100vh',
         cover: true,
