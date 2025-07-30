@@ -1179,95 +1179,12 @@ body:lang(en){
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   }
 
-  /* Carousel Controls */
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 60px;
-    height: 60px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    transition: all 0.3s ease;
+  .splide__arrow--prev{
+    left: 2em !important;
+  }  
+  .splide__arrow--next{
+    right: 2em !important;
   }
-
-  .carousel-control-prev {
-    left: 30px;
-  }
-
-  .carousel-control-next {
-    right: 30px;
-  }
-
-  .carousel-control-prev:hover,
-  .carousel-control-next:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  }
-
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    width: 30px;
-    height: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-
-  .carousel-control-prev-icon::before,
-  .carousel-control-next-icon::before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    border: 2px solid #2E8F36;
-    border-top: none;
-    border-right: none;
-    position: absolute;
-  }
-
-  .carousel-control-prev-icon::before {
-    transform: rotate(45deg);
-    left: 12px;
-  }
-
-  .carousel-control-next-icon::before {
-    transform: rotate(-135deg);
-    right: 12px;
-  }
-
-  /* Carousel Indicators */
-  .carousel-indicators {
-    bottom: 30px;
-    z-index: 3;
-  }
-
-  .carousel-indicators li {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    margin: 0 5px;
-    transition: all 0.3s ease;
-  }
-
-  .carousel-indicators li.active {
-    background: #B7C639;
-    border-color: #B7C639;
-    transform: scale(1.2);
-  }
-
-  .carousel-indicators li:hover {
-    background: rgba(183, 198, 57, 0.7);
-    border-color: #B7C639;
-  }
-
   /* Statistics Section */
   .statistics-section {
     background: rgba(255, 255, 255, 0.1);

@@ -26,7 +26,7 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
           </div>
         </div>
       </div>
-
+      <!--
       <div class="footer-section text-nowrap">
         <ul class="footer-links text-nowrap">
           <li><a href="index.php"><?= $footer_translations['main']; ?></a></li>
@@ -35,7 +35,9 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
           <li><a href="index.php#contact"><?= $footer_translations['contact']; ?></a></li>
           <li><a href="jobs.php"><?= $footer_translations['career']; ?></a></li>
         </ul>
-
+      </div>
+      
+      <div class="footer-section text-nowrap">
         <div class="footer-social">
           <a href="https://www.facebook.com/Ebdaabahrain/" class="social-link" title="فيسبوك">
             <i class="fab fa-facebook-f"></i>
@@ -54,8 +56,30 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
           </a>
         </div>
       </div>
+      -->
+      <div class="social-links-fixed">
+        <div class="footer-social-fixed">
+          <a href="https://www.facebook.com/Ebdaabahrain/" class="social-link facebook" title="فيسبوك">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/ebdaabahrain" class="social-link twitter" title="تويتر">
+          <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/ebdaa-microfinance-bank---bahrain" class="social-link linkedin" title="لينكد إن">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com/ebdaabahrain/" class="social-link instagram" title="إنستغرام">
+            <i class="fab fa-instagram"></i>
+          </a>
+            <a href="https://wa.me/97333539666" class="social-link whatsapp" title="إنستغرام">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          <a href="https://www.youtube.com/channel/UCE5TCNCvV9D86TLo4nwFyrQ?view_as=subscriber" class="social-link youtube" title="يوتيوب">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
     </div>
-
     <div class="footer-bottom">
       <div class="copyright">
         <p><?= $footer_translations['copy-rt']; ?><a href="index.php" rel="nofollow"><?= $footer_translations['ebda-bh']; ?></a><br /><?= $footer_translations['license']; ?></p>
@@ -86,10 +110,10 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" async defer></script>
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/97333539666" target="_blank" rel="noopener noreferrer"
+<!-- <a href="https://wa.me/97333539666" target="_blank" rel="noopener noreferrer"
     class="whatsapp-floating" aria-label="تواصل معنا عبر واتساب">
     <i class="fab fa-whatsapp"></i>
-  </a>
+  </a> -->
 
 
 
