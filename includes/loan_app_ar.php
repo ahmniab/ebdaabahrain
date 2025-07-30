@@ -35,7 +35,7 @@
                     <select id="type_apply" name="type_apply" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);" required data-error="الرجاء اختيار نوع القرض">
 						<option value="">اختر نوع القرض المطلوب</option>
 						<option value="Sayedati">قرض سيدتي</option>
-						<option value="Ebdaa">قرض الابداع</option>
+						<option value="Ebdaa">قرض الإبداع</option>
 						<option value="AlNajah">قرض النجاح</option>
 						<option value="AlAmal">قرض الامل</option>
 						<option value="AlTamayoz">قرض التميز</option>

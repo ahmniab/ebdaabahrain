@@ -314,7 +314,7 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                     <p><b><?= $translations['follow']; ?></b></p>
                   </div>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12">
                   <div class="box_shadow">
                     <p><b><?= $translations['proc1']; ?></b></p>
                     <p><?= $translations['proc-mng']; ?></p>
@@ -322,7 +322,7 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                     <p><?= $translations['email-comp']; ?></p>
                   </div>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12">
                   <div class="box_shadow">
                     <p><b><?= $translations['proc2']; ?></b></p>
                     <p><?= $translations['proc2-res']; ?></p>
