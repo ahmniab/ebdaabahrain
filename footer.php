@@ -14,7 +14,7 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
         <div class="footer-contact">
           <div class="footer-contact-item">
             <i class="fa fa-phone"></i>
-            <a href="tel:+973 17381000">973 17381000+</a>
+            <a href="tel:+973 17381000"><span dir="ltr">+973 17381000</span></a>
           </div>
           <div class="footer-contact-item">
             <i class="fa fa-envelope"></i>
@@ -43,7 +43,7 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
           <a href="https://twitter.com/ebdaabahrain" class="social-link" title="تويتر">
           <i class="fa-brands fa-x-twitter"></i>
           </a>
-          <a href="#" class="social-link" title="لينكد إن">
+          <a href="https://www.linkedin.com/company/ebdaa-microfinance-bank---bahrain" class="social-link" title="لينكد إن">
             <i class="fab fa-linkedin-in"></i>
           </a>
           <a href="https://www.instagram.com/ebdaabahrain/" class="social-link" title="إنستغرام">
@@ -62,11 +62,11 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
       </div>
 
       <div class="footer-whatsapp">
-        <a href="https://wa.me/97333539666" target="_blank" rel="noopener noreferrer"
+        <!-- <a href="https://wa.me/97333539666" target="_blank" rel="noopener noreferrer"
           class="whatsapp-button" aria-label="تواصل معنا عبر واتساب">
           <i class="fab fa-whatsapp"></i>
           <span class="whatsapp-text"><?= $footer_translations['cont-whts']; ?></span>
-        </a>
+        </a> -->
       </div>
     </div>
   </div>

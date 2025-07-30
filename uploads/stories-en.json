@@ -20,18 +20,8 @@
             "filter": "stories_video"
         }
     ],
-    "stories": [
-        {
-            "id": "story_1",
-            "name": "Wahiba Khalil",
-            "type": "stories_video",
-            "image": "assets\/img\/story\/story_1.jpg",
-            "modal": {
-                "title": "Delicious Sweets from Wahiba Khalil",
-                "video": "https:\/\/www.youtube.com\/embed\/isdSslF8FMI"
-            }
-        },
-        {
+    "stories": {
+        "1": {
             "id": "story_2",
             "name": "Sahira Ibrahim",
             "type": "stories",
@@ -48,7 +38,7 @@
                 ]
             }
         },
-        {
+        "2": {
             "id": "story_3",
             "name": "Fatima Mohammed Ali",
             "type": "stories_video",
@@ -58,7 +48,7 @@
                 "video": "https:\/\/www.youtube.com\/embed\/XjfWo_Qwgz8"
             }
         },
-        {
+        "3": {
             "id": "story_4",
             "name": "Mohammed Abbas",
             "type": "stories",
@@ -77,7 +67,7 @@
                 ]
             }
         },
-        {
+        "4": {
             "id": "story_5",
             "name": "Sawsan Mohammed",
             "type": "stories_video",
@@ -87,7 +77,7 @@
                 "video": "https:\/\/www.youtube.com\/embed\/DSyqpqr-P38"
             }
         },
-        {
+        "5": {
             "id": "story_6",
             "name": "Ahmed Jawhar",
             "type": "stories",
@@ -104,7 +94,7 @@
                 ]
             }
         },
-        {
+        "6": {
             "id": "story_7",
             "name": "Isa Ali",
             "type": "stories",
@@ -122,7 +112,7 @@
                 ]
             }
         },
-        {
+        "7": {
             "id": "story_8",
             "name": "Hassan Mohammed",
             "type": "stories_video",
@@ -132,7 +122,7 @@
                 "video": "https:\/\/www.youtube.com\/embed\/g5VhG1_LWbA"
             }
         },
-        {
+        "8": {
             "id": "story_9",
             "name": "Hamid Eid",
             "type": "stories",
@@ -151,7 +141,7 @@
                 ]
             }
         },
-        {
+        "9": {
             "id": "story_10",
             "name": "Hamad Shabeeb",
             "type": "stories",
@@ -167,7 +157,7 @@
                 ]
             }
         },
-        {
+        "10": {
             "name": "Hessa Al dosari",
             "type": "stories",
             "image": "uploads\/story_main_1753280152.jpg",
@@ -184,7 +174,7 @@
             },
             "id": "story_1753280152"
         },
-        {
+        "11": {
             "name": "gomaa the beekeeper",
             "type": "stories",
             "image": "uploads\/story_main_1753293846.jpeg",
@@ -200,7 +190,7 @@
             },
             "id": "story_1753293846"
         },
-        {
+        "12": {
             "name": "Ziyada Shafi Al-Dosari",
             "type": "stories",
             "image": "uploads\/story_main_1753306079.jpeg",
@@ -218,7 +208,7 @@
             },
             "id": "story_1753306079"
         },
-        {
+        "13": {
             "name": "Laila Ahmed Salman",
             "type": "stories",
             "image": "uploads\/story_main_1753306253.jpeg",
@@ -234,7 +224,7 @@
             },
             "id": "story_1753306253"
         },
-        {
+        "14": {
             "name": "Ahmed ",
             "type": "stories_video",
             "image": "uploads\/story_main_1753306543.jpeg",
@@ -248,5 +238,5 @@
             },
             "id": "story_1753306543"
         }
-    ]
+    }
 }

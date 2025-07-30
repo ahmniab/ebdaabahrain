@@ -29,7 +29,7 @@ require_once 'lang/init.php';
         <div class="tab-pane fade show active" id="tabs-4">
             <h4 class="financial-title">
                 <?php if($lang == 'ar'){ ?>
-                    القوائم المالية المدققة الى إبداع البحرين
+                    القوائم المالية المدققة   
                 <?php } else{ ?>
                     Audited Financial Statements to Elbdaa Bahrain
                 <?php } ?>

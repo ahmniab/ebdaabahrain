@@ -1,7 +1,7 @@
  <section id="services" class="section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">خدمات الإبداع</h2>
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">قروض الإبداع</h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s">
           <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s ar-dir">.قروضنا صممت لتلائم إحتياجات مشاريعكم
           <br> .خدمتكم شرف ورضاكم هدفنا</p>

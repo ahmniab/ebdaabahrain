@@ -125,7 +125,7 @@
                                         <i class="fa-solid fa-user"></i>
                                     </div>
                                     <div class="counter-number">
-                                        <span class="counter">20,704</span>
+                                        <span class="counter">23,868</span>
                                     </div>
                                     <div class="counter-label"><?= $translations['customer']; ?></div>
 
@@ -136,7 +136,7 @@
                                                 <i class="fa fa-male"></i>
                                             </div>
                                             <div class="detail-content">
-                                                <div class="detail-number">11,585</div>
+                                                <div class="detail-number">13,573</div>
                                                 <div class="detail-label"><?= $translations['man']; ?></div>
                                             </div>
                                         </div>
@@ -145,7 +145,7 @@
                                                 <i class="fa fa-female"></i>
                                             </div>
                                             <div class="detail-content">
-                                                <div class="detail-number">9,119</div>
+                                                <div class="detail-number">10,295</div>
                                                 <div class="detail-label"><?= $translations['woman']; ?></div>
                                             </div>
                                         </div>
@@ -160,7 +160,7 @@
                                         <i class="fa-solid fa-briefcase"></i>
                                     </div>
                                     <div class="counter-number">
-                                        <span class="counter">20,704</span>
+                                        <span class="counter">23,690</span>
                                     </div>
                                     <div class="counter-label"><?= $translations['loan']; ?></div>
 
@@ -171,7 +171,7 @@
                                                 <i class="fa fa-folder-open"></i>
                                             </div>
                                             <div class="detail-content">
-                                                <div class="detail-number">2,697</div>
+                                                <div class="detail-number">1,936</div>
                                                 <div class="detail-label"><?= $translations['pending']; ?></div>
                                             </div>
                                         </div>
@@ -180,7 +180,7 @@
                                                 <i class="fa fa-folder"></i>
                                             </div>
                                             <div class="detail-content">
-                                                <div class="detail-number">18,007</div>
+                                                <div class="detail-number">21,753</div>
                                                 <div class="detail-label"><?= $translations['paid']; ?></div>
                                             </div>
                                         </div>
@@ -195,7 +195,7 @@
                                         <i class="fa-solid fa-layer-group"></i>
                                     </div>
                                     <div class="counter-number">
-                                        <span class="counter">23,312,089</span>
+                                        <span class="counter">28,535,871</span>
                                     </div>
                                     <div class="counter-label"><?= $translations['disbursed-value']; ?></div>
 
@@ -206,7 +206,7 @@
                                                 <i class="fa fa-folder-open"></i>
                                             </div>
                                             <div class="detail-content">
-                                                <div class="detail-number">1,566,396</div>
+                                                <div class="detail-number">2,264,512</div>
                                                 <div class="detail-label"><?= $translations['pending']; ?></div>
                                             </div>
                                         </div>
@@ -215,7 +215,7 @@
                                                 <i class="fa fa-folder"></i>
                                             </div>
                                             <div class="detail-content">
-                                                <div class="detail-number">21,745,693</div>
+                                                <div class="detail-number">26,271,359</div>
                                                 <div class="detail-label"><?= $translations['paid']; ?></div>
                                             </div>
                                         </div>
@@ -230,7 +230,7 @@
                                         <i class="fa-solid fa-chart-pie"></i>
                                     </div>
                                     <div class="percentage-number">
-                                        <span class="counter">94</span>%
+                                        <span class="counter">94.4</span>%
                                     </div>
                                     <div class="percentage-label"><?= $translations['rate']; ?></div>
                                 </div>

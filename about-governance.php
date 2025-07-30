@@ -38,7 +38,19 @@ require_once 'lang/init.php';
             <hr>
             <ul class="report-list d-flex flex-row justify-content-between align-items-center flex-wrap">
                 <li>
-                    <a href="assets/governance_reports/GovernanceReport2024.pdf" target="_blank"> 2024</a>
+                    <a href="assets/governance_reports/Corporate Governance Report 2024.pdf" target="_blank"> 2024</a>
+                </li>
+                <li>
+                    <a href="assets/governance_reports/Corporate Governance Report 2023 version 1.pdf" target="_blank"> 2023</a>
+                </li>
+                <li>
+                    <a href="assets/governance_reports/Corporate Governance Report 2022 version 1.pdf" target="_blank"> 2022</a>
+                </li>
+                <li>
+                    <a href="assets/governance_reports/Corporate Governance Report 2021.pdf" target="_blank"> 2021</a>
+                </li>
+                <li>
+                    <a href="assets/governance_reports/Corporate Governance Report 2020.pdf" target="_blank"> 2020</a>
                 </li>
                 <!-- Add more reports as needed -->
             </ul>

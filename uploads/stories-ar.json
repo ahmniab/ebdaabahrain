@@ -22,18 +22,8 @@
             "active": false
         }
     ],
-    "stories": [
-        {
-            "id": "story_1",
-            "name": "وهيبه خليل",
-            "type": "stories_video",
-            "image": "assets\/img\/story\/story_1.jpg",
-            "modal": {
-                "title": "أشهى الحلويات من وهيبه خليل",
-                "video": "https:\/\/www.youtube.com\/embed\/isdSslF8FMI"
-            }
-        },
-        {
+    "stories": {
+        "1": {
             "id": "story_2",
             "name": "ساهرة إبراهيم",
             "type": "stories",
@@ -50,7 +40,7 @@
                 ]
             }
         },
-        {
+        "2": {
             "id": "story_3",
             "name": "فاطمة محمد علي",
             "type": "stories_video",
@@ -60,7 +50,7 @@
                 "video": "https:\/\/www.youtube.com\/embed\/XjfWo_Qwgz8"
             }
         },
-        {
+        "3": {
             "id": "story_4",
             "name": "محمد عباس",
             "type": "stories",
@@ -79,7 +69,7 @@
                 ]
             }
         },
-        {
+        "4": {
             "id": "story_5",
             "name": "سوسن محمد",
             "type": "stories_video",
@@ -89,7 +79,7 @@
                 "video": "https:\/\/www.youtube.com\/embed\/DSyqpqr-P38"
             }
         },
-        {
+        "5": {
             "id": "story_6",
             "name": "أحمد جوهر",
             "type": "stories",
@@ -106,7 +96,7 @@
                 ]
             }
         },
-        {
+        "6": {
             "id": "story_7",
             "name": "عيسى علي",
             "type": "stories",
@@ -124,7 +114,7 @@
                 ]
             }
         },
-        {
+        "7": {
             "id": "story_8",
             "name": "حسن محمد",
             "type": "stories_video",
@@ -134,7 +124,7 @@
                 "video": "https:\/\/www.youtube.com\/embed\/g5VhG1_LWbA"
             }
         },
-        {
+        "8": {
             "id": "story_9",
             "name": "حميد عيد",
             "type": "stories",
@@ -153,7 +143,7 @@
                 ]
             }
         },
-        {
+        "9": {
             "id": "story_10",
             "name": "حمد شبيب",
             "type": "stories",
@@ -169,7 +159,7 @@
                 ]
             }
         },
-        {
+        "10": {
             "name": "حصة الدوسري ",
             "type": "stories",
             "image": "uploads\/story_main_1753280152.jpg",
@@ -184,7 +174,7 @@
             },
             "id": "story_1753280152"
         },
-        {
+        "11": {
             "name": "جمعة النحال",
             "type": "stories",
             "image": "uploads\/story_main_1753293846.jpeg",
@@ -198,7 +188,7 @@
             },
             "id": "story_1753293846"
         },
-        {
+        "12": {
             "name": "زيادة شافي الدوسري",
             "type": "stories",
             "image": "uploads\/story_main_1753306079.jpeg",
@@ -214,7 +204,7 @@
             },
             "id": "story_1753306079"
         },
-        {
+        "13": {
             "name": "ليلى أحمد سلمان ",
             "type": "stories",
             "image": "uploads\/story_main_1753306253.jpeg",
@@ -228,7 +218,7 @@
             },
             "id": "story_1753306253"
         },
-        {
+        "14": {
             "name": "أحمد ",
             "type": "stories_video",
             "image": "uploads\/story_main_1753306543.jpeg",
@@ -242,5 +232,5 @@
             },
             "id": "story_1753306543"
         }
-    ]
+    }
 }
