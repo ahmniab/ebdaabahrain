@@ -11,7 +11,7 @@ return [
             "name" => "About Us",
             "submenu" => [
                 ["name" => "Overview", "href" => "about-overview.php"],
-                ["name" => "Board Members", "href" => "about-board.php"],
+                ["name" => "Board Members", "href" => "team.php?page=about-board"],
                 ["name" => "Team", "href" => "team.php"],
                 ["name" => "Partners", "href" => "about-partners.php"],
                 ["name" => "Financial Reports", "href" => "about-financial.php"],

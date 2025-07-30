@@ -11,7 +11,7 @@ return [
             "name" => "من نحن",
             "submenu" => [
                 ["name" => "عن الإبداع", "href" => "about-overview.php"],
-                ["name" => "اعضاء مجلس الإدارة", "href" => "about-board.php"],
+                ["name" => "اعضاء مجلس الإدارة", "href" => "team.php?page=about-board "],
                 ["name" => "فريق المبدعين", "href" => "team.php"],
                 ["name" => "شركاؤنا", "href" => "about-partners.php"],
                 ["name" => "التقارير المالية", "href" => "about-financial.php"],

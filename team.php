@@ -69,7 +69,7 @@ $translations = GetTranslations($file);
                 <div class="modal-header" dir="ltr">
                     <h5 class="modal-title" id="<?php echo $member['id']; ?>Label"><?php echo $member['name']; ?></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="<?php echo $lang === 'ar'? 'إغلاق':'close'; ?>">
-                        <span aria-hidden="true">&times;</span>
+                        <!-- <span aria-hidden="true">&times;</span> -->
                     </button>
                 </div>
                 <div class="modal-body">
@@ -88,7 +88,7 @@ $translations = GetTranslations($file);
                 <div class="modal-header" dir="ltr">
                     <h5 class="modal-title" id="<?php echo $translations['leader']['id']; ?>Label"><?php echo $translations['leader']['name']; ?></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="<?php echo $lang === 'ar'? 'إغلاق':'close'; ?>">
-                        <span aria-hidden="true">&times;</span>
+                        <!-- <span aria-hidden="true">&times;</span> -->
                     </button>
                 </div>
                 <div class="modal-body">
