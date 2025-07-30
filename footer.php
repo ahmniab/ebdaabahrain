@@ -36,7 +36,7 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
           <li><a href="jobs.php"><?= $footer_translations['career']; ?></a></li>
         </ul>
       </div>
-      
+      -->
       <div class="footer-section text-nowrap">
         <div class="footer-social">
           <a href="https://www.facebook.com/Ebdaabahrain/" class="social-link" title="فيسبوك">
@@ -56,7 +56,7 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
           </a>
         </div>
       </div>
-      -->
+      
       <div class="social-links-fixed">
         <div class="footer-social-fixed">
           <a href="https://www.facebook.com/Ebdaabahrain/" class="social-link facebook" title="فيسبوك">

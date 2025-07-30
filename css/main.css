@@ -604,7 +604,7 @@ html[dir="ltr"] .navbar-nav {
   justify-content: center;
   width: 40px;
   height: 40px;
-  /* background: rgba(255, 255, 255, 0.1); */
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   color: #cccccc;
   text-decoration: none !important;
@@ -616,7 +616,7 @@ html[dir="ltr"] .navbar-nav {
   /* background: var(--dark); */
   
 }
-.social-link::before {
+.footer-social .social-link::before {
   content: '';
   position: absolute;
   top: 0;
@@ -630,7 +630,7 @@ html[dir="ltr"] .navbar-nav {
 }
 
 .social-link:hover::before {
-  /* transform: scale(1); */
+  transform: scale(1);
 }
 
 .social-link i {
