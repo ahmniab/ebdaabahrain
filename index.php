@@ -112,39 +112,63 @@ $translations = GetTranslations(basename(__FILE__,".php"));
       <div class="owl-carousel owl-theme">
         <div class="item">
           <div class="item-img-container">
-            <img src="assets/img/team/Khaled.webp" alt="dr Khaled Image">
+            <img src="assets/img/team/clainets-01.png" alt="laila image">
           </div>
           <p class="item-text">
             <i class="fa fa-quote-right"></i>
-            <?= $translations['khaled-ph']; ?>
+            <?= $translations['laila-ph']; ?>
             <i class="fa fa-quote-left"></i>
           </p>
-          <h4 class="item-name"><?= $translations['khaled']; ?></h4>
-          <h4 class="item-jop"><?= $translations['khaled-pos']; ?></h4>
+          <h4 class="item-name"><?= $translations['laila']; ?></h4>
+          <h4 class="item-jop"><?= $translations['laila-pos']; ?></h4>
         </div>
         <div class="item">
           <div class="item-img-container">
-            <img src="assets/img/board/Mona.webp" alt="dr Khaled Image">
+            <img src="assets/img/team/clainets-03.png" alt="noora image">
           </div>
           <p class="item-text">
             <i class="fa fa-quote-right"></i>
-            <?= $translations['mona-ph']; ?>
+            <?= $translations['noora-ph']; ?>
             <i class="fa fa-quote-left"></i>
           </p>
-          <h4 class="item-name"><?= $translations['mona']; ?></h4>
-          <h4 class="item-jop"><?= $translations['mona-pos']; ?></h4>
+          <h4 class="item-name"><?= $translations['noora']; ?></h4>
+          <h4 class="item-jop"><?= $translations['noora-pos']; ?></h4>
         </div>
         <div class="item">
           <div class="item-img-container">
-            <img src="assets/img/team/mohd_alhadad.webp" alt="dr Khaled Image">
+            <img src="assets/img/team/clainets-06.png" alt="yasser image">
           </div>
           <p class="item-text">
             <i class="fa fa-quote-right"></i>
-            <?= $translations['mo-ph']; ?>
+            <?= $translations['yasser-ph']; ?>
             <i class="fa fa-quote-left"></i>
           </p>
-          <h4 class="item-name"><?= $translations['mo']; ?></h4>
-          <h4 class="item-jop"><?= $translations['mo-pos']; ?></h4>
+          <h4 class="item-name"><?= $translations['yasser']; ?></h4>
+          <h4 class="item-jop"><?= $translations['yasser-pos']; ?></h4>
+        </div>
+        <div class="item">
+          <div class="item-img-container">
+            <img src="assets/img/team/clainets-08.png" alt="truky image">
+          </div>
+          <p class="item-text">
+            <i class="fa fa-quote-right"></i>
+            <?= $translations['truky-ph']; ?>
+            <i class="fa fa-quote-left"></i>
+          </p>
+          <h4 class="item-name"><?= $translations['truky']; ?></h4>
+          <h4 class="item-jop"><?= $translations['truky-pos']; ?></h4>
+        </div>
+        <div class="item">
+          <div class="item-img-container">
+            <img src="assets/img/team/clainets-07.png" alt="lailaa">
+          </div>
+          <p class="item-text">
+            <i class="fa fa-quote-right"></i>
+            <?= $translations['lailaa-ph']; ?>
+            <i class="fa fa-quote-left"></i>
+          </p>
+          <h4 class="item-name"><?= $translations['lailaa']; ?></h4>
+          <h4 class="item-jop"><?= $translations['lailaa-pos']; ?></h4>
         </div>
       </div>
 
