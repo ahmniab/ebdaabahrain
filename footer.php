@@ -57,7 +57,7 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
         </div>
       </div> -->
       
-      <div class="social-links-fixed">
+      <!-- <div class="social-links-fixed">
         <div class="footer-social-fixed">
           <a href="https://www.facebook.com/Ebdaabahrain/" class="social-link facebook" title="فيسبوك">
             <i class="fab fa-facebook-f"></i>
@@ -78,7 +78,7 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
               </a>
           </a>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="footer-bottom">
       <div class="copyright">
@@ -114,9 +114,39 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
     class="whatsapp-floating" aria-label="تواصل معنا عبر واتساب">
     <i class="fab fa-whatsapp"></i>
   </a> -->
+   <!-- زر فتح الشات -->
+   <button id="chatbot-toggle" onclick="toggleChat()" aria-label="فتح شات البوت">
+    <i class="fas fa-comments"></i>
+  </button>
 
+  <!-- نافذة الشات -->
+  <div id="chatbot-box" role="dialog" aria-labelledby="chatbot-header">
+    <div class="chatbot-header" id="chatbot-header">
+      <span><i class="fas fa-robot"></i> <?= $footer_translations['bot-title']; ?></span>
+      <button onclick="toggleChat()" aria-label="<?= $footer_translations['bot-close']; ?>">×</button>
+    </div>
 
+    <div class="chatbot-body" id="chatbot-body">
+      <!-- المحادثة تظهر هنا -->
+    </div>
 
+    <div class="chatbot-input">
+      <input type="text" id="user-input" placeholder="<?= $footer_translations['bot-input']; ?>"
+        onkeypress="if(event.key === 'Enter') sendMessage()" aria-label="<?= $footer_translations['bot-input']; ?>">
 
+      <button onclick="startListening()" aria-label="<?= $footer_translations['bot-microphone']; ?>">
+        <i class="fas fa-microphone"></i>
+      </button>
 
-<script src="js/main.js"></script>
+      <button onclick="sendMessage()" aria-label="<?= $footer_translations['bot-send']; ?>">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <script src="js/main.js"></script>
+  <script src="js/chatbot-<?php echo $lang; ?>.js"></script>

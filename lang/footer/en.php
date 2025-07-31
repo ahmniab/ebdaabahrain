@@ -11,4 +11,9 @@ return [
     'contact'=>'',
     'manama'=>'Manama - Bahrain',
     'ebda-bh'=>'Ebdaa Bahrain',
+    'bot-title'=>'Smart Bot',
+    'bot-close'=>'Close Chat',
+    'bot-input'=>'Write your question here...',
+    'bot-microphone'=>'Start Microphone',
+    'bot-send'=>'Send Message',
 ];

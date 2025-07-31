@@ -78,7 +78,7 @@
   
   .news-list li {
     flex: 1 1 400px;
-    max-width: 400px;
+    max-width: 350px;
     margin: 0;
   }
   

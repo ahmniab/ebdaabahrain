@@ -1,27 +1,32 @@
 /* ==========================================================================
    2. GENERAL
    ========================================================================== */
-/* Define your font faces with font-display: swap */
-:root{
-  --primary: #0d7a63;          /* أخضر رئيسي */
-
-  --primary-light: #61D2B4;    /* أخضر فاتح */
-
-  --dark: #075e4b;             /* أخضر داكن */
-
-  --light: #e0f7f1;            /* خلفية فاتحة */
-
-  --danger: #dc3545;           /* أحمر للتنبيه */
-
-  --gray: #6c757d;             /* رمادي */
-
- 
+:root {
+  --primary: #0a5c4b;
+  /* لون أغمق للتحسين البصري */
+  --primary-light: #4db8a1;
+  /* لون أكثر إشراقاً */
+  --dark: #064236;
+  /* لون داكن أكثر */
+  --light: #f0faf7;
+  /* خلفية أفتح */
+  --text: #2d3748;
+  /* لون نص أكثر وضوحاً */
+  --text-light: #4a5568;
+  /* للنصوص الثانوية */
+  --danger: #c53030;
+  /* لون تحذير أكثر وضوحاً */
+  --gray: #718096;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Define your font faces with font-display: swap */
 @font-face {
   font-family: 'EnglishFont';
   src: url('../assets/fonts/en-century-gothic/Dominik.ttf') format('truetype');
   font-display: swap;
 }
+
 @font-face {
   font-family: 'EnglishFontBold';
   src: url('../assets/fonts/en-century-gothic/Dominik.ttf') format('truetype');
@@ -33,6 +38,7 @@
   src: url('../assets/fonts/ar-GE-SS/ArbFONTS-GE_SS_Two_Light.otf') format('opentype');
   font-display: swap;
 }
+
 @font-face {
   font-family: 'ArabicFontBold';
   src: url('../assets/fonts/ar-GE-SS/ArbFONTS-GE-SS-Two-Bold.otf') format('opentype');
@@ -47,11 +53,12 @@
 :lang(ar) {
   font-family: 'ArabicFont', system-ui, sans-serif;
 }
-:lang(ar) .bold{
+
+:lang(ar) .bold {
   font-family: 'ArabicFontBold', system-ui, sans-serif;
 }
 
-   .clearfix:after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
@@ -62,6 +69,7 @@ body {
   font-size: 23px;
   font-weight: 400;
   background: #fff;
+  width: 100vw;
 }
 
 
@@ -111,9 +119,9 @@ textarea {
 
 /* Navbar */
 .navbar {
-  height: 100px;
   position: sticky;
   top: 0;
+  height: 100px;
   width: 100%;
   z-index: 1000;
   background: rgba(255, 255, 255, 0.95) !important;
@@ -121,6 +129,7 @@ textarea {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  padding: 0 ;
 }
 
 .navbar:hover {
@@ -128,9 +137,7 @@ textarea {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
 }
 
-.navbar .navbar-header img {
-  /* width: 50px !important; */
-}
+
 
 /* Navigation Items Styling */
 .navbar-nav {
@@ -199,9 +206,11 @@ textarea {
   position: absolute;
   top: 30px;
 }
+
 [dir="rtl"] .collapse-button {
   left: 10px;
 }
+
 [dir="ltr"] .collapse-button {
   right: 10px;
 }
@@ -210,9 +219,10 @@ textarea {
 @media (min-width: 992px) {
   .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; /* remove the gap when it opens */
+    margin-top: 0;
+    /* remove the gap when it opens */
   }
-  
+
   /* Optional: Add animation */
   .dropdown-menu {
     transition: all 0.3s ease;
@@ -230,10 +240,12 @@ textarea {
   display: flex !important;
   align-items: center;
 }
+
 .lang-switch img {
   width: 25px;
   margin: 5px;
 }
+
 /* Logo fix */
 .navbar-brand img {
   height: 70px;
@@ -245,8 +257,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 0 !important;
-  padding-right: 0 !important;
+  padding: 0 20px;
 }
 
 /* RTL alignment */
@@ -275,37 +286,45 @@ html[dir="ltr"] .navbar-nav {
     width: 100%;
     z-index: 10;
   }
+
   .navbar-collapse {
     top: 95px;
   }
 }
 
 @media (max-width: 479px) {
-/* Shrink logo */
-.navbar-brand img {
-  height: 45px; /* Adjust based on your logo's aspect ratio */
-  width: auto;
-}
 
-/* Scale down language switcher */
-.lang-switch {
-  font-size: 0.8rem; /* Smaller text */
-}
-.lang-switch img {
-  width: 30px; /* Smaller flag */
-  height: auto;
-}
+  /* Shrink logo */
+  .navbar-brand img {
+    height: 45px;
+    /* Adjust based on your logo's aspect ratio */
+    width: auto;
+  }
 
-/* Compact hamburger icon */
-.navbar-toggler {
-  padding: 0.1rem;
-}
-.navbar-toggler-icon {
-  width: 1.5rem; /* Smaller icon */
-  height: 1.5rem;
-}
+  /* Scale down language switcher */
+  .lang-switch {
+    font-size: 0.8rem;
+    /* Smaller text */
+  }
 
-.navbar-collapse {
+  .lang-switch img {
+    width: 30px;
+    /* Smaller flag */
+    height: auto;
+  }
+
+  /* Compact hamburger icon */
+  .navbar-toggler {
+    padding: 0.1rem;
+  }
+
+  .navbar-toggler-icon {
+    width: 1.5rem;
+    /* Smaller icon */
+    height: 1.5rem;
+  }
+
+  .navbar-collapse {
     background-color: #f8f9fa;
     padding: 1rem;
     position: absolute;
@@ -502,6 +521,7 @@ html[dir="ltr"] .navbar-nav {
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: justify;
+  padding: 10px;
 }
 
 .footer-links {
@@ -529,9 +549,11 @@ html[dir="ltr"] .navbar-nav {
   position: relative;
   overflow: hidden;
 }
+
 :lang(en) .footer-links a {
   font-size: 0.9rem;
 }
+
 /* .footer-links a::before {
   content: '';
   position: absolute;
@@ -584,12 +606,14 @@ html[dir="ltr"] .navbar-nav {
   margin-top: 20px;
   justify-content: center;
 }
-.social-links-fixed{
+
+.social-links-fixed {
   position: fixed;
   top: 40%;
   left: 5px;
   z-index: 1000;
 }
+
 .footer-social-fixed {
   display: flex;
   justify-content: center;
@@ -612,10 +636,12 @@ html[dir="ltr"] .navbar-nav {
   position: relative;
   overflow: hidden;
 }
-.social-links-fixed .social-link{
+
+.social-links-fixed .social-link {
   /* background: var(--dark); */
-  
+
 }
+
 .footer-social .social-link::before {
   content: '';
   position: absolute;
@@ -644,24 +670,31 @@ html[dir="ltr"] .navbar-nav {
   transform: translateY(-3px);
   /* box-shadow: 0 8px 25px rgba(126, 181, 93, 0.3); */
 }
-.facebook{
+
+.facebook {
   background: #1877F2;
 }
-.twitter{
+
+.twitter {
   background: #1DA1F2;
 }
-.youtube{
+
+.youtube {
   background: #FF0000;
 }
-.whatsapp{
+
+.whatsapp {
   background: #25D366;
 }
-.linkedin{
+
+.linkedin {
   background: #0077B5;
 }
-.instagram{
+
+.instagram {
   background: #E1306C;
 }
+
 
 
 
@@ -704,7 +737,7 @@ html[dir="ltr"] .navbar-nav {
   right: 30px;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #5DA930, #2E8F36);
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
   color: white;
   border-radius: 50%;
   display: flex;
@@ -726,7 +759,7 @@ html[dir="ltr"] .navbar-nav {
 }
 
 .back-to-top:hover {
-  background: linear-gradient(135deg, #2E8F36, #3BA8A2);
+  background: linear-gradient(135deg, var(--primary-light), var(--dark));
   transform: translateY(-3px);
   box-shadow: 0 12px 35px rgba(46, 143, 54, 0.4);
   color: white;
@@ -734,6 +767,297 @@ html[dir="ltr"] .navbar-nav {
 
 .back-to-top i {
   font-size: 1.2rem;
+}
+
+/* chatbot */
+/* واجهة الشات بوت */
+#chatbot-toggle {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  background: var(--primary);
+  color: white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  border: none;
+}
+
+#chatbot-toggle:hover,
+#chatbot-toggle:focus {
+  transform: scale(1.1);
+  background: var(--dark);
+  outline: none;
+}
+
+#chatbot-box {
+  position: fixed;
+  bottom: 100px;
+  left: 25px;
+  width: 400px;
+  max-height: 600px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  border: 2px solid var(--primary-light);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+#chatbot-box.show {
+  display: flex;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.chatbot-header {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.chatbot-header button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.chatbot-body {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  background: #f9f9f9;
+}
+
+/* تحسينات للرسائل */
+.message {
+  transition: all 0.3s ease;
+  animation: fadeIn 0.3s ease;
+}
+
+.bot {
+  background: var(--light);
+  color: var(--text);
+  border: 1px solid #d0f0e6;
+  margin-right: auto;
+  border-radius: 15px 15px 15px 0;
+}
+
+.user {
+  background: var(--primary);
+  color: white;
+  margin-left: auto;
+  border-radius: 15px 15px 0 15px;
+}
+
+.chatbot-input {
+  display: flex;
+  padding: 12px;
+  background: white;
+  border-top: 1px solid #eee;
+}
+
+.chatbot-input input {
+  font-size: 16px;
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+}
+
+.chatbot-input button {
+  background: var(--primary);
+  color: white;
+  font-size: 14px;
+  border: none;
+  margin-right: 5px;
+  border-radius: 25px;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.chatbot-input button:hover {
+  background: var(--dark);
+}
+
+.quick-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 15px;
+  margin: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Tajawal', sans-serif;
+  transition: all 0.2s;
+  font-size: 14px;
+  text-align: right;
+}
+
+.quick-btn:hover,
+.quick-btn:focus {
+  background: var(--dark);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.quick-btn i {
+  margin-left: 5px;
+}
+
+.back-btn {
+  background: var(--gray);
+}
+
+.typing-indicator {
+  display: flex;
+  padding: 10px 15px;
+}
+
+.typing-indicator span {
+  height: 8px;
+  width: 8px;
+  background: var(--gray);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 2px;
+  animation: typing 1s infinite;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* تحسينات للعرض على الجوال */
+@media (max-width: 500px) {
+  #chatbot-box {
+    width: 90%;
+    left: 5%;
+    bottom: 80px;
+    max-height: 70vh;
+  }
+
+  #chatbot-toggle {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+}
+
+.message {
+  max-width: 90%;
+}
+
+/* تحسينات للأزرار */
+.quick-btn {
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow);
+}
+
+.quick-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes messageIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.message {
+  animation: messageIn 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+  opacity: 0;
+  transform-origin: bottom;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* تأثير hover للرسائل */
+.message:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+/* تحسين مؤشر الكتابة */
+@keyframes typingPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+.typing-indicator span {
+  animation: typingPulse 1s infinite ease-in-out;
 }
 
 /* Loader */
@@ -931,96 +1255,96 @@ html[dir="ltr"] .navbar-nav {
 
 /* Floating WhatsApp Button (Alternative) */
 .whatsapp-floating {
-        position: fixed;
-        bottom: 30px;
-        left: 30px;
-        width: 60px;
-        height: 60px;
-        background: linear-gradient(135deg, #25D366, #128C7E);
-        color: white;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
-        transition: all 0.3s ease;
-        z-index: 1000;
-        overflow: hidden;
-      }
-      
-      .whatsapp-floating::before {
-        content: '';
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.whatsapp-floating::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-        background: linear-gradient(135deg, #128C7E, #075E54);
-        border-radius: 50%;
-        transform: scale(0);
-        transition: transform 0.3s ease;
-      }
-      
-      .whatsapp-floating:hover::before {
-        transform: scale(1);
-      }
-      
-      .whatsapp-floating i {
+  background: linear-gradient(135deg, #128C7E, #075E54);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-floating:hover::before {
+  transform: scale(1);
+}
+
+.whatsapp-floating i {
   font-size: 1.5rem;
-        position: relative;
-        z-index: 2;
-        transition: transform 0.3s ease;
-      }
-      
-      .whatsapp-floating:hover {
-        transform: translateY(-3px) scale(1.1);
-        box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
-        color: white;
-        text-decoration: none;
-      }
-      
-      .whatsapp-floating:hover i {
-        transform: rotate(10deg);
-      }
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-floating:hover {
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.whatsapp-floating:hover i {
+  transform: rotate(10deg);
+}
 
 /* WhatsApp tooltip */
 .whatsapp-floating::after {
-        content: 'تواصل معنا عبر واتساب';
-        position: absolute;
-        right: 70px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.8);
-        color: white;
-        padding: 8px 12px;
-        border-radius: 6px;
-        font-size: 0.85rem;
-        white-space: nowrap;
-        opacity: 0;
-        visibility: hidden;
+  content: 'تواصل معنا عبر واتساب';
+  position: absolute;
+  right: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
   transition: all 0.3s ease;
-        pointer-events: none;
+  pointer-events: none;
 }
 
-      .whatsapp-floating::before {
+.whatsapp-floating::before {
   content: '';
   position: absolute;
-        right: 60px;
-        top: 50%;
-        transform: translateY(-50%);
-        border: 5px solid transparent;
-        border-left-color: rgba(0, 0, 0, 0.8);
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-left-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
-        visibility: hidden;
+  visibility: hidden;
   transition: all 0.3s ease;
 }
 
-      .whatsapp-floating:hover::after,
-      .whatsapp-floating:hover::before {
+.whatsapp-floating:hover::after,
+.whatsapp-floating:hover::before {
   opacity: 1;
-        visibility: visible;
-      }
+  visibility: visible;
+}
 
 /* Footer WhatsApp Button */
 .footer-whatsapp {
@@ -1137,10 +1461,12 @@ html[dir="ltr"] .navbar-nav {
   position: sticky;
   top: 20px;
 }
-.modal-body:lang(ar){
+
+.modal-body:lang(ar) {
   text-align: right;
 }
-.modal-body:lang(en){
+
+.modal-body:lang(en) {
   text-align: left;
 }
 
@@ -1191,10 +1517,12 @@ html[dir="ltr"] .navbar-nav {
   margin-top: 20px;
   /* text-align: justify; */
 }
-.box_shadow:lang(ar){
+
+.box_shadow:lang(ar) {
   text-align: right;
 }
-.box_shadow:lang(en){
+
+.box_shadow:lang(en) {
   text-align: left;
 }
 
@@ -1252,9 +1580,10 @@ html[dir="ltr"] .navbar-nav {
   margin-bottom: 20px;
   text-shadow: 0 2px 4px rgba(46, 143, 54, 0.1);
 }
-@media(max-width:450px){
+
+@media(max-width:450px) {
   #application .section-title {
-  font-size: 2rem;
+    font-size: 2rem;
   }
 }
 
@@ -1347,6 +1676,7 @@ html[dir="ltr"] .navbar-nav {
 .complaint-modal .box_shadow p:last-child {
   margin-bottom: 0;
 }
+
 .box_shadow b {
   color: #317421;
   /* font-size: 1.1rem;; */
@@ -1367,48 +1697,51 @@ html[dir="ltr"] .navbar-nav {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(46, 143, 54, 0.3);
 }
+
 /* Resopnsive Design */
- @media (max-width: 600px){
+@media (max-width: 600px) {
   .modal-dialog {
-  /* max-width: 400px; */
-  margin: 60px auto;
-}
+    /* max-width: 400px; */
+    margin: 60px auto;
+  }
 
   .modal-content {
-  /* max-height: 85vh; */
+    /* max-height: 85vh; */
+  }
+
+  .modal-title {
+    font-size: 1.2rem;
+  }
+
+  .btn-common {
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+  }
+
+  .close {
+    font-size: 1.3rem;
+  }
+
+  .box_shadow {
+    padding: 15px;
+    /* margin-bottom: 5px; */
+  }
+
+  .box_shadow p {
+    font-size: 0.9rem;
+  }
+
+  .box_shadow p b {
+    font-size: 1rem;
+  }
 }
 
-.modal-title {
-  font-size: 1.2rem;
-}
-
-.btn-common {
-  padding: 10px 25px;
-  border-radius: 25px;
-  font-weight: 600;
-}
-
-.close {
-  font-size: 1.3rem;
-}
-
-.box_shadow {
-  padding: 15px;
-  /* margin-bottom: 5px; */
-}
-
-.box_shadow p{
-  font-size: 0.9rem;
-}
-.box_shadow p b{
-  font-size: 1rem;
-}
-}
-@media (max-width: 594px){
+@media (max-width: 594px) {
   .modal-dialog {
-  max-width: 350px;
-  margin: 30px auto;
-}
+    max-width: 350px;
+    margin: 30px auto;
+  }
 }
 
 /* Responsive Design */
@@ -1549,7 +1882,7 @@ html[dir="ltr"] .navbar-nav {
   }
 }
 
-.navbar-collapse.show > ul:first-child,
-.navbar-collapse.collapsing > ul:first-child{
+.navbar-collapse.show>ul:first-child,
+.navbar-collapse.collapsing>ul:first-child {
   display: flex !important;
 }
