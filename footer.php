@@ -37,7 +37,7 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
         </ul>
       </div>
       -->
-      <div class="footer-section text-nowrap">
+      <!-- <div class="footer-section text-nowrap">
         <div class="footer-social">
           <a href="https://www.facebook.com/Ebdaabahrain/" class="social-link" title="فيسبوك">
             <i class="fab fa-facebook-f"></i>
@@ -55,7 +55,7 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
             <i class="fa-brands fa-youtube"></i>
           </a>
         </div>
-      </div>
+      </div> -->
       
       <div class="social-links-fixed">
         <div class="footer-social-fixed">
@@ -70,12 +70,12 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
           </a>
           <a href="https://www.instagram.com/ebdaabahrain/" class="social-link instagram" title="إنستغرام">
             <i class="fab fa-instagram"></i>
-          </a>
-            <a href="https://wa.me/97333539666" class="social-link whatsapp" title="إنستغرام">
-              <i class="fa-brands fa-whatsapp"></i>
+            <a href="https://www.youtube.com/channel/UCE5TCNCvV9D86TLo4nwFyrQ?view_as=subscriber" class="social-link youtube" title="يوتيوب">
+              <i class="fa-brands fa-youtube"></i>
             </a>
-          <a href="https://www.youtube.com/channel/UCE5TCNCvV9D86TLo4nwFyrQ?view_as=subscriber" class="social-link youtube" title="يوتيوب">
-            <i class="fa-brands fa-youtube"></i>
+              <a href="https://wa.me/97333539666" class="social-link whatsapp" title="واتساب">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
           </a>
         </div>
       </div>

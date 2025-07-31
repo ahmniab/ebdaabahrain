@@ -1180,10 +1180,10 @@ body:lang(en){
   }
 
   .splide__arrow--prev{
-    left: 2em !important;
+    left: 1em !important;
   }  
   .splide__arrow--next{
-    right: 2em !important;
+    right: 1em !important;
   }
   /* Statistics Section */
   .statistics-section {

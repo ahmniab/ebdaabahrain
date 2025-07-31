@@ -23,18 +23,20 @@
     "stories": {
         "1": {
             "id": "story_2",
-            "name": "Sahira Ibrahim",
+            "name": "Fatima Alhashumi",
             "type": "stories",
             "image": "assets\/img\/story\/story_2.jpg",
             "modal": {
                 "title": "Turning Talent into a Successful Project",
+                "video": false,
                 "images": [
-                    "assets\/img\/story\/story_2.jpg"
+                    "assets\/img\/story\/story_2.jpg",
+                    "uploads\/story_gallery_story_2_1753953073_0.jpg"
                 ],
                 "content": [
-                    "Ms. Sahira Ibrahim chose the path of freelancing to achieve her dreams of establishing her own project. Sahira was passionate about cooking since childhood, and over time she was able to develop her passion for cooking into a profession. After graduation, she worked on establishing a commercial project based on preparing distinctive dishes and promoting them among family and friends.",
-                    "Sahira is now widely known in Bahraini society for her unique traditional cooking, and she is the owner of the Instagram account 'Rashat Bahar' where she promotes the most delicious traditional foods.",
-                    "Sahira borrowed 600 dinars from Ebdaa Bahrain to develop her project by purchasing the necessary equipment to expand the project and increase its profits, including a new oven and electrical appliances."
+                    "Fatima is a creative young Bahraini woman with refined taste and a distinctive artistic touch in designing dresses and wedding gowns. She pursued her passion for art and elegance, channeling them into her project, which she named “Unique Chic.” Fatima’s reputation soared, and she became well-known among people due to her sophisticated choices, exceptional customer service, and reasonable prices.",
+                    "Here, Fatima sought funding from Ebdaa for Microfinance (one of the AGFUND institutions) to grow her business further and purchase fabrics and equipment needed to elevate her unique venture even more.",
+                    "Wishing you all the best, Fatima"
                 ]
             }
         },
@@ -67,33 +69,6 @@
                 ]
             }
         },
-        "4": {
-            "id": "story_5",
-            "name": "Sawsan Mohammed",
-            "type": "stories_video",
-            "image": "assets\/img\/story\/story_5.jpg",
-            "modal": {
-                "title": "Sawsan Mohammed's Success Story",
-                "video": "https:\/\/www.youtube.com\/embed\/DSyqpqr-P38"
-            }
-        },
-        "5": {
-            "id": "story_6",
-            "name": "Ahmed Jawhar",
-            "type": "stories",
-            "image": "assets\/img\/story\/story_6.JPG",
-            "modal": {
-                "title": "Sports Club at Home",
-                "images": [
-                    "assets\/img\/story\/story_6.JPG"
-                ],
-                "content": [
-                    "Ahmed Ghanem Jawhar is another Bahraini young man who benefited from his passion, experience, and capabilities in the field of sports to open a sports club in his home in Hamad City, where he trains club members in boxing and bodybuilding.",
-                    "Ahmed receives different age groups in the club, especially young people, and believes that he contributes to promoting public health and filling time with what is beneficial for the body and mind, in addition to promoting competitiveness and ethics.",
-                    "Ahmed's sports project has proven successful, and he seeks to develop this project in various aspects, while Ebdaa Bahrain is always ready to support its distinguished clients."
-                ]
-            }
-        },
         "6": {
             "id": "story_7",
             "name": "Isa Ali",
@@ -109,51 +84,6 @@
                 "content": [
                     "Continuing project success requires continuous development in tools and equipment, which is exactly what Isa Naji Mohammed Ali understands. He lives in Hamad City and owns a garage in Al-Hamla area for repairing cars and motorcycles, with over five years of experience in repairing and programming car computers.",
                     "Isa wanted to expand his project and add a new type of equipment related to Hyundai cars, so he expressed his desire to finance this expansion through Ebdaa Bahrain loans. He got what he wanted by obtaining 2000 Bahraini dinars, which he is now working on repaying to the bank according to comfortable installments and full commitment."
-                ]
-            }
-        },
-        "7": {
-            "id": "story_8",
-            "name": "Hassan Mohammed",
-            "type": "stories_video",
-            "image": "assets\/img\/story\/story_8.png",
-            "modal": {
-                "title": "Hassan Mohammed's Success Story",
-                "video": "https:\/\/www.youtube.com\/embed\/g5VhG1_LWbA"
-            }
-        },
-        "8": {
-            "id": "story_9",
-            "name": "Hamid Eid",
-            "type": "stories",
-            "image": "assets\/img\/story\/story_9.jpg",
-            "modal": {
-                "title": "When Your Hobby Becomes Your Profession",
-                "images": [
-                    "assets\/img\/story\/story_9.jpg",
-                    "assets\/img\/story\/story_9.1.jpg",
-                    "assets\/img\/story\/story_9.2.jpg"
-                ],
-                "content": [
-                    "Do all types of private projects require ideas, business plans, large capital, employees, and processors...?! Absolutely not.",
-                    "Hamid Hassan Ali Eid, one of Ebdaa Bahrain's clients, works in bird breeding, hatching, and selling. This work is not just about profit, but also includes a great deal of enjoyment. There's nothing more beautiful than dealing with birds, and few people have been able to turn their hobbies into work.",
-                    "Hassan needed an amount of money to expand his project and buy more birds, so he applied for a loan from Ebdaa Bahrain, which contributed to providing the necessary financing for him."
-                ]
-            }
-        },
-        "9": {
-            "id": "story_10",
-            "name": "Hamad Shabeeb",
-            "type": "stories",
-            "image": "assets\/img\/story\/story_10.jpg",
-            "modal": {
-                "title": "Adding Activity",
-                "images": [
-                    "assets\/img\/story\/story_10.jpg"
-                ],
-                "content": [
-                    "Hamad Abbas Shabeeb lives in Aali and owns a farm for horse rental and livestock breeding in Karanah area, investing his experience in the field of horses specifically, where he trains children to ride them and provides them with the necessary basic instructions and guidance.",
-                    "Recently, Hassan wanted to expand his project and add a new activity to it, which is sheep breeding. He is now grateful for Ebdaa Bahrain's initiative in supporting him with part of the amount needed to launch the new activity and helping him achieve his goals and increase his productivity."
                 ]
             }
         },
