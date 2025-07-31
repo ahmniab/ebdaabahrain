@@ -12,18 +12,9 @@ body:lang(ar){
 body:lang(en){
   text-align: left;
 }
-  /* Ensure navbar is full-width with no extra spacing */
-  .navbar {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 0; /* Remove default Bootstrap margin */
-  }
 
   /* Remove Bootstrap container-fluid padding */
-  .container-fluid {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
+
   @media (max-width: 767.98px){
     .container-fluid--mobile{
       width: 100%;
