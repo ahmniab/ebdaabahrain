@@ -20,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
         'content' => $_POST['content'] ?? '',
         'image' => '',
         'images' => [],
+        'date' => $_POST['date'] ?? date('Y-m-d'),
     ];
     // Prepare English fields
     $fields_en = [
@@ -28,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
         'content' => $_POST['content_en'] ?? '',
         'image' => '',
         'images' => [],
+        'date' => $_POST['date_en'] ?? date('Y-m-d'),
     ];
     // Handle main image upload
     if (isset($_FILES['image_upload']) && $_FILES['image_upload']['error'] === UPLOAD_ERR_OK) {
@@ -56,7 +58,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
         $id = addNews($fields_ar, 'ar');
         $news_ar_added = getNewsById($id, 'ar');
         $fields_en['id'] = $id;
-        $fields_en['date'] = $news_ar_added['date'] ?? date('Y-m-d');
         // Save to English file
         $data_en = getNews('en');
         if (!isset($data_en['news_items'])) $data_en['news_items'] = [];
@@ -90,7 +91,6 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST' && isset($_GET['delete'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>إدارة الأخبار</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="../css/main.css"> -->
     <link rel="stylesheet" href="../css/admin-news.css">
     <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css " rel="stylesheet">
 </head>
@@ -124,6 +124,16 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST' && isset($_GET['delete'])) {
                         <div class="form-group col-md-6">
                             <label>Summary (English)</label>
                             <input type="text" dir="ltr" name="summary_en" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>التاريخ (عربي)</label>
+                            <input type="text" name="date" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Date (English)</label>
+                            <input type="text" dir="ltr" name="date_en" class="form-control">
                         </div>
                     </div>
                     <div class="form-row">

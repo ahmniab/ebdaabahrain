@@ -36,6 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'content' => $_POST['content'] ?? '',
         'image' => $news['image'],
         'images' => $news['images'] ?? [],
+        'date' => $_POST['date'] ?? '',
     ];
     $fields_en = [
         'title' => $_POST['title_en'] ?? '',
@@ -43,6 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'content' => $_POST['content_en'] ?? '',
         'image' => $news_en['image'] ?? $news['image'],
         'images' => $news_en['images'] ?? $news['images'] ?? [],
+        'date' => $_POST['date_en'] ?? '',
     ];
     // Handle main image upload
     if (isset($_FILES['image_upload']) && $_FILES['image_upload']['error'] === UPLOAD_ERR_OK) {
@@ -116,6 +118,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label>Summary (English)</label>
                 <input type="text" dir="ltr" name="summary_en" class="form-control"
                     value="<?php echo htmlspecialchars($news_en['summary'] ?? ''); ?>">
+            </div>
+            <div class="form-group">
+                <label>التاريخ</label>
+                <input type="text" name="date" class="form-control"
+                    value="<?php echo htmlspecialchars($news['date']); ?>">
+            </div>
+            <div class="form-group">
+                <label>Date (English)</label>
+                <input type="text" dir="ltr" name="date_en" class="form-control"
+                    value="<?php echo htmlspecialchars($news_en['date'] ?? ''); ?>">
             </div>
             <div class="form-group">
                 <label>المحتوى</label>
