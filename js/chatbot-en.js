@@ -445,6 +445,26 @@ function startListening() {
           <i class="fab fa-whatsapp"></i> Sales WhatsApp
         </button>
       </div>
+      <div class="d-flex justify-content-around align-items-center mt-1">
+        <a href="https://www.facebook.com/Ebdaabahrain/" class="social-link facebook" title="فيسبوك">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/ebdaabahrain" class="social-link twitter" title="تويتر">
+          <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/ebdaa-microfinance-bank---bahrain" class="social-link linkedin" title="لينكد إن">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com/ebdaabahrain/" class="social-link instagram" title="إنستغرام">
+            <i class="fab fa-instagram"></i>
+            <a href="https://www.youtube.com/channel/UCE5TCNCvV9D86TLo4nwFyrQ?view_as=subscriber" class="social-link youtube" title="يوتيوب">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://wa.me/97333539666" class="social-link whatsapp" title="واتساب">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </a>
+      </div>
     `);
   }
 
@@ -556,6 +576,7 @@ function startListening() {
       <button class="quick-btn back-btn" onclick="showLoanDetails('${loanType}')" style="margin-top: 15px;" aria-label="Back to Loan Details">
         <i class="fas fa-arrow-left"></i> Back to Loan Details
       </button>
+      
     `);
   }
 
