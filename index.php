@@ -17,6 +17,8 @@ $translations = GetTranslations(basename(__FILE__,".php"));
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
   <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -259,24 +261,24 @@ $translations = GetTranslations(basename(__FILE__,".php"));
 
           <div class="col-lg-5 col-sm-12 col-xs-12">
             <div class="contact-block">
-              <form id="contactForm">
+              <form id="contactForm" method="POST" action="php/form-process.php">
                 <div class="form-group">
-                  <input data-error="<?= $translations['f-name-err']; ?>" id="name_contact" name="name_contact" pattern="[A-Za-z\u0600-\u065F\u066A-\u06EF\u06FA-\u06FF\s]{3,30}" placeholder="<?= $translations['f-name-plch']; ?>" required="" type="text" />
+                  <input data-error="<?= $translations['f-name-err']; ?>" id="name_contact" name="name" pattern="[A-Za-z\u0600-\u065F\u066A-\u06EF\u06FA-\u06FF\s]{3,30}" placeholder="<?= $translations['f-name-plch']; ?>" required="" type="text" />
                   <div class="help-block with-errors"></div>
                 </div>
 
                 <div class="form-group">
-                  <input data-error="<?= $translations['f-phone-err']; ?>" id="mobile_contact" name="mobile_contact" pattern="[0-9-]{8,15}" placeholder="<?= $translations['f-phone-plch']; ?>" required="" type="text" />
+                  <input data-error="<?= $translations['f-phone-err']; ?>" id="mobile_contact" name="mobile" pattern="[0-9-]{8,15}" placeholder="<?= $translations['f-phone-plch']; ?>" required="" type="text" />
                   <div class="help-block with-errors"></div>
                 </div>
 
                 <div class="form-group">
-                  <input data-error="<?= $translations['f-email-err']; ?>" id="email_contact" name="email_contact" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="<?= $translations['f-email-plch']; ?>" required="" type="email" />
+                  <input data-error="<?= $translations['f-email-err']; ?>" id="email" name="email" placeholder="<?= $translations['f-email-plch']; ?>" required="" type="email" />
                   <div class="help-block with-errors"></div>
                 </div>
 
                 <div class="form-group">
-                  <select form="contactForm" id="subject_contact" name="subject_contact">
+                  <select form="contactForm" id="subject_contact" name="subject">
                     <option value=""><?= $translations['f-message-plch']; ?></option>
                     <option value="Enquiry"><?= $translations['enquiry']; ?></option>
                     <option value="Suggestion"><?= $translations['sugg']; ?></option>
@@ -286,7 +288,13 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                 </div>
 
                 <div class="form-group">
-                  <textarea data-error="<?= $translations['f-mess-err']; ?>" id="message_contact" pattern="[A-Za-z\u0600-\u065F\u066A-\u06EF\u06FA-\u06FF1-9-\,\.\?\!\@\s]{3,200}" placeholder="<?= $translations['f-mess-plch']; ?>" required="" rows="8"></textarea>
+                  <textarea 
+                    data-error="<?= $translations['f-mess-err']; ?>" 
+                    id="message_contact" 
+                    name="message" 
+                    placeholder="<?= $translations['f-mess-plch']; ?>" 
+                    required="" 
+                    rows="8"></textarea>
                   <div class="help-block with-errors"></div>
                 </div>
 
