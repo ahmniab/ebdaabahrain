@@ -37,7 +37,7 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
         </ul>
       </div>
       -->
-      <!-- <div class="footer-section text-nowrap">
+      <div class="footer-section text-nowrap">
         <div class="footer-social">
           <a href="https://www.facebook.com/Ebdaabahrain/" class="social-link" title="فيسبوك">
             <i class="fab fa-facebook-f"></i>
@@ -55,7 +55,7 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
             <i class="fa-brands fa-youtube"></i>
           </a>
         </div>
-      </div> -->
+      </div>
       
       <!-- <div class="social-links-fixed">
         <div class="footer-social-fixed">
