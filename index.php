@@ -230,18 +230,6 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                   </div>
                 </div>
 
-                <!-- فرع سار -->
-                <!-- <div class="col-lg-6 col-sm-6 col-xs-12">
-                  <div class="contact-box">
-                    <h5>فرع سار</h5>
-                    <hr />
-                    <ul>
-                      <li><a href="tel:+973 17381018"><i class="fa fa-phone"></i>973 17381012+</a></li>
-                      <li><a href="mailto:ٍsaar@ebdaabahrain.com"><i class="fa fa-envelope"></i>Saar@ebdaabahrain.com</a></li>
-                      <li><a href="https://goo.gl/maps/azWzNzyXwCNmLyEv7" target="_blank"><i class="fa fa-map-marker"></i> سار -البحرين</a></li>
-                    </ul>
-                  </div>
-                </div> -->
 
                 <!-- فرع مدينة حمد -->
                 <div class="col-lg-6 col-lg-6">

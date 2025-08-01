@@ -912,11 +912,16 @@ html[dir="ltr"] .navbar-nav {
   margin: 5px;
   cursor: pointer;
   display: inline-flex;
+  gap: 10px;
   align-items: center;
-  font-family: 'Tajawal', sans-serif;
   transition: all 0.2s;
   font-size: 14px;
+}
+.quick-btn:lang(ar) {
   text-align: right;
+}
+.quick-btn:lang(en) {
+  text-align: left;
 }
 
 .quick-btn:hover,

@@ -280,6 +280,42 @@
         "answer": "نعم، قد تتم مشاركة بيانات الطلب مع جهات رسمية أو خاصة مثل شركة بنفت أو الممولين ، وبما يتوافق مع قانون حماية البيانات الشخصية ساري المعول."
     }
 ];
+const msg_options = `
+<div style="margin-top: 15px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+        <button class="quick-btn" onclick="showLoanMenu()" aria-label="عرض أنواع القروض">
+          <i class="fas fa-hand-holding-usd"></i> الاستفسار عن القروض
+        </button>
+        <button class="quick-btn" onclick="showBranches()" aria-label="عرض فروع البنك">
+          <i class="fas fa-map-marker-alt"></i> مواقع الفروع
+        </button>
+
+        <button class="quick-btn" onclick="showWorkingHours()" aria-label="عرض أوقات العمل">
+          <i class="fas fa-clock"></i> أوقات العمل
+        </button>
+
+        <button class="quick-btn" onclick="showFAQs()" aria-label="عرض الأسئلة الشائعة">
+          <i class="fas fa-question-circle"></i> الأسئلة الشائعة
+        </button>
+        
+        <button class="quick-btn" onclick="showJobsMenu()" aria-label="عرض الوظائف المتاحة">
+          <i class="fas fa-briefcase"></i> الوظائف المتاحة
+        </button>
+        
+        
+        
+        
+        <button class="quick-btn" onclick="showSalesWhatsApp()" aria-label="فتح واتساب المبيعات">
+          <i class="fab fa-whatsapp"></i> المزيد من المعلومات
+        </button>
+      </div>
+
+      
+      <div class="d-flex justify-content-center align-items-center mt-1 mb-2">
+        <a class="quick-btn p-3" href="application-form.php" target="_blank">
+          <i class="fas fa-file-signature"></i> التقديم على قرض
+        </a>
+      </div>
+`
 
   // تهيئة الشات بوت
   window.onload = function() {
@@ -360,7 +396,24 @@
   function processMessage(message) {
     const lowerMsg = message.toLowerCase();
     
-    if (lowerMsg.includes('قرض') || lowerMsg.includes('اقتراض')) {
+    if (lowerMsg.includes('اهلا') || 
+        lowerMsg.includes('أهلا') ||
+        lowerMsg.includes('مرحبا') ){
+      showGreeting('ًأهلاً وسهلا');
+    }
+    else if (lowerMsg.includes('السلام عليكم') || 
+        lowerMsg.includes('السلام') ){
+      showGreeting('وعليكم السلام ورحمة الله وبركاته');
+    }
+    else if (lowerMsg.includes('صباح الخير') || 
+        lowerMsg.includes('صباح النور') ){
+      showGreeting('صباح النور والسرور');
+    }
+    else if (lowerMsg.includes('مساء النور') || 
+        lowerMsg.includes('مساء الخير') ){
+      showGreeting('مساء النور والسرور');
+    }
+    else if (lowerMsg.includes('قرض') || lowerMsg.includes('اقتراض')) {
       showLoanMenu();
     } 
     else if (lowerMsg.includes('وظيف') || lowerMsg.includes('توظيف')) {
@@ -412,68 +465,22 @@ function startListening() {
 
   recognition.start();
 }
-  function showGreeting() {
+//
+  function showGreeting(greeting = '') {
     const now = new Date();
     const hour = now.getHours();
-    let greeting = '';
     
-    if (hour >= 4 && hour < 12) greeting = '☀️ صباح الخير!';
-    else if (hour >= 12 && hour < 18) greeting = '🌤️ مساء الخير!';
-    else greeting = '🌙 مساء الخير!';
+    if (greeting === '') {
+      if (hour >= 4 && hour < 12) greeting = '☀️ صباح الخير!';
+      else if (hour >= 12 && hour < 18) greeting = '🌤️ مساء الخير!';
+      else greeting = '🌙 مساء الخير!';
+    }
     
     insertBotMessage(`
       ${greeting} 👋<br>
       أنا مساعدك الذكي "مبدع". كيف يمكنني مساعدتك اليوم؟
       
-      <div style="margin-top: 15px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-        <button class="quick-btn" onclick="showLoanMenu()" aria-label="عرض أنواع القروض">
-          <i class="fas fa-hand-holding-usd"></i> الاستفسار عن القروض
-        </button>
-        <button class="quick-btn" onclick="showBranches()" aria-label="عرض فروع البنك">
-          <i class="fas fa-map-marker-alt"></i> مواقع الفروع
-        </button>
-
-        <button class="quick-btn" onclick="showWorkingHours()" aria-label="عرض أوقات العمل">
-          <i class="fas fa-clock"></i> أوقات العمل
-        </button>
-
-        <button class="quick-btn" onclick="showFAQs()" aria-label="عرض الأسئلة الشائعة">
-          <i class="fas fa-question-circle"></i> الأسئلة الشائعة
-        </button>
-        
-        <button class="quick-btn" onclick="showJobsMenu()" aria-label="عرض الوظائف المتاحة">
-          <i class="fas fa-briefcase"></i> الوظائف المتاحة
-        </button>
-        
-        
-        
-        
-        <button class="quick-btn" onclick="showSalesWhatsApp()" aria-label="فتح واتساب المبيعات">
-          <i class="fab fa-whatsapp"></i> المزيد من المعلومات
-        </button>
-      </div>
-
-      
-      <div class="d-flex justify-content-around align-items-center mt-1">
-        <a href="https://www.facebook.com/Ebdaabahrain/" class="social-link facebook" title="فيسبوك">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://twitter.com/ebdaabahrain" class="social-link twitter" title="تويتر">
-          <i class="fa-brands fa-x-twitter"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/ebdaa-microfinance-bank---bahrain" class="social-link linkedin" title="لينكد إن">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://www.instagram.com/ebdaabahrain/" class="social-link instagram" title="إنستغرام">
-            <i class="fab fa-instagram"></i>
-            <a href="https://www.youtube.com/channel/UCE5TCNCvV9D86TLo4nwFyrQ?view_as=subscriber" class="social-link youtube" title="يوتيوب">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="https://wa.me/97333539666" class="social-link whatsapp" title="واتساب">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </a>
-      </div>
+      ${msg_options}
     `);
   }
 
