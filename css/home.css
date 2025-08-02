@@ -1969,4 +1969,11 @@ body:lang(en){
     font-size: 0.7rem;
 }
 }
-
+.contact-link{
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+.contact-link:hover{
+  color: var(--primary-dark);
+  text-decoration: underline;
+}

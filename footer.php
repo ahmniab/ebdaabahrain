@@ -46,16 +46,7 @@ $footer_translations = GetTranslations(basename(__FILE__, ".php"));
             </a>
           </div>
           <div class="mt-2 text-center">
-            <p>
-              <?php echo nl2br($footer_translations['cont-info1']); ?>
-              <a class="footer-link" href="index.php#contact">
-                <?php echo nl2br($footer_translations['cont-info2']); ?>
-              </a><?php echo nl2br($footer_translations['cont-info3']); ?>
-              <a class="footer-link" data-target="#complain" data-toggle="modal" href="#">
-                <?php echo nl2br($footer_translations['cont-info4']); ?>
-              </a><?php echo nl2br($footer_translations['cont-info5']); ?>
-            </p>
-            <p><?php echo nl2br($footer_translations['jobs-dis']); ?> <a class="footer-link" href="jobs.php"><?php echo nl2br($footer_translations['click']); ?></a>.</p>
+            <p><a class="footer-link" href="jobs.php"><?php echo nl2br($footer_translations['click']); ?></a></p>
           </div>
 
 
@@ -133,60 +124,6 @@ $footer_translations = GetTranslations(basename(__FILE__, ".php"));
   </div>
 </div>
 
-
-
-<!-- complain Modal -->
-<div aria-hidden="true" class="modal fade ar-dir complaint-modal" id="complain" role="dialog" tabindex="-1">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title"><?= $footer_translations['compls-proc']; ?></h4>
-        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-          &times;
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row ar-txt">
-          <div class="col-sm-12">
-            <p><?= $footer_translations['compls-ph']; ?></p>
-            <div class="box_shadow">
-              <p><b><?= $footer_translations['follow']; ?></b></p>
-            </div>
-          </div>
-          <div class="col-sm-12">
-            <div class="box_shadow">
-              <p><b><?= $footer_translations['proc1']; ?></b></p>
-              <p><?= $footer_translations['proc-mng']; ?></p>
-              <p><?= $footer_translations['mob']; ?></p>
-              <p><?= $footer_translations['email-comp']; ?></p>
-            </div>
-          </div>
-          <div class="col-sm-12">
-            <div class="box_shadow">
-              <p><b><?= $footer_translations['proc2']; ?></b></p>
-              <p><?= $footer_translations['proc2-res']; ?></p>
-            </div>
-          </div>
-          <div class="col-sm-12">
-            <div class="box_shadow">
-              <p><b><?= $footer_translations['proc3']; ?></b></p>
-              <p><?= $footer_translations['proc3-1']; ?></p>
-              <p><?= $footer_translations['proc3-adr1']; ?></p>
-              <p><?= $footer_translations['proc3-adr2']; ?></p>
-              <p><?= $footer_translations['proc3-adr3']; ?></p>
-              <p><?= $footer_translations['proc3-adr4']; ?></p>
-              <p><?= $footer_translations['proc3-adr5']; ?></p>
-              <p><?= $footer_translations['email-comb2']; ?></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-common" data-dismiss="modal" type="button"><?= $footer_translations['close']; ?></button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <script src="js/main.js"></script>
 <script src="js/chatbot-<?php echo $lang; ?>.js"></script>

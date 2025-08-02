@@ -1279,7 +1279,7 @@ html[dir="ltr"] .navbar-nav {
   left: 30px;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, var(--primary-light), var(--primary));
+  background: var(--primary);
   color: white;
   border-radius: 50%;
   display: flex;

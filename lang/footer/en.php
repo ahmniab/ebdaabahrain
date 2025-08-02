@@ -22,7 +22,7 @@ return [
     'cont-info4'=>'Complaints Procedure ',
     'cont-info5'=>'and we will contact you.',
     'jobs-dis'=>'To view JOB VACANCIES, please ',
-    'click'=>'click here',
+    'click'=>'JOB VACANCIES',
     'compls-proc'=>'Complaints Procedure',
     'compls-ph'=>'Ebdaa Bahrain for Microfinance is committed to delivering the highest standard of service to our clients. Please let us know if our services do not meet your expectations in any way so we can promptly address your concerns.',
     'follow'=>'Follow these three steps to communicate your concerns to the relevant parties:',

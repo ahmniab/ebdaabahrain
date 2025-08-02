@@ -187,7 +187,7 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
           <br /><?= $translations['ur-opn']; ?>
         </p>
       </div>
-      <div class="contact-form text-nowrap" id="contactUs">
+      <div class="contact-form" id="contactUs">
         <div class="row ar-dir">
           <div class="col-lg-7 mb-4 ">
             <div class="contact-address">
@@ -252,12 +252,12 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
             <div class="contact-block">
               <form id="contactForm" method="POST" action="php/form-process.php">
                 <div class="form-group">
-                  <input data-error="<?= $translations['f-name-err']; ?>" id="name_contact" name="name" pattern="[A-Za-z\u0600-\u065F\u066A-\u06EF\u06FA-\u06FF\s]{3,30}" placeholder="<?= $translations['f-name-plch']; ?>" required="" type="text" />
+                  <input onkeypress="return preventNumbers(event);" data-error="<?= $translations['f-name-err']; ?>" id="name_contact" name="name" pattern="[A-Za-z\u0600-\u065F\u066A-\u06EF\u06FA-\u06FF\s]{3,30}" placeholder="<?= $translations['f-name-plch']; ?>" required="" type="text" />
                   <div class="help-block with-errors"></div>
                 </div>
 
                 <div class="form-group">
-                  <input data-error="<?= $translations['f-phone-err']; ?>" id="mobile_contact" name="mobile" pattern="[0-9-]{8,15}" placeholder="<?= $translations['f-phone-plch']; ?>" required="" type="text" />
+                  <input data-error="<?= $translations['f-phone-err']; ?>" id="mobile_contact" onkeypress="return preventCharacters(event);" name="mobile" pattern="[0-9-]{8,15}" placeholder="<?= $translations['f-phone-plch']; ?>" required="" type="text" />
                   <div class="help-block with-errors"></div>
                 </div>
 
@@ -305,6 +305,18 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
                   </div>
                   <div class="h3 text-center hidden" id="msgSubmit-form"></div>
                   <div class="clearfix"></div>
+
+                  <p class="text-center mt-3">
+                    <?= $translations['cont-info1']; ?>
+                    <a class="contact-link" href="#contact">
+                      <?= $translations['cont-info2']; ?>
+                    </a>
+                    <?= $translations['cont-info3']; ?>
+                    <a class="contact-link" data-target="#complain" data-toggle="modal" href="#">
+                      <?= $translations['cont-info4']; ?>
+                    </a>
+                    <?= $translations['cont-info5']; ?>
+                  </p>
                 </div>
               </form>
             </div>
@@ -317,6 +329,7 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
   <!-- Contact us end-->
   </div>
   <?php include "footer.php" ?>
+  <script src="js/application-form-validator.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       // Wait until CSS is loaded (DOMContentLoaded is usually enough)
@@ -353,6 +366,61 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
     //     flex-direction: row-reverse;
     //   }
   </script>
+  
+
+<!-- complain Modal -->
+<div aria-hidden="true" class="modal fade ar-dir complaint-modal" id="complain" role="dialog" tabindex="-1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title"><?= $footer_translations['compls-proc']; ?></h4>
+        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+          &times;
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row ar-txt">
+          <div class="col-sm-12">
+            <p><?= $footer_translations['compls-ph']; ?></p>
+            <div class="box_shadow">
+              <p><b><?= $footer_translations['follow']; ?></b></p>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="box_shadow">
+              <p><b><?= $footer_translations['proc1']; ?></b></p>
+              <p><?= $footer_translations['proc-mng']; ?></p>
+              <p><?= $footer_translations['mob']; ?></p>
+              <p><?= $footer_translations['email-comp']; ?></p>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="box_shadow">
+              <p><b><?= $footer_translations['proc2']; ?></b></p>
+              <p><?= $footer_translations['proc2-res']; ?></p>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="box_shadow">
+              <p><b><?= $footer_translations['proc3']; ?></b></p>
+              <p><?= $footer_translations['proc3-1']; ?></p>
+              <p><?= $footer_translations['proc3-adr1']; ?></p>
+              <p><?= $footer_translations['proc3-adr2']; ?></p>
+              <p><?= $footer_translations['proc3-adr3']; ?></p>
+              <p><?= $footer_translations['proc3-adr4']; ?></p>
+              <p><?= $footer_translations['proc3-adr5']; ?></p>
+              <p><?= $footer_translations['email-comb2']; ?></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-common" data-dismiss="modal" type="button"><?= $footer_translations['close']; ?></button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 
 </html>
