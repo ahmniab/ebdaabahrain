@@ -24,6 +24,11 @@ return [
     "purpose-apply-error" => "Please enter the loan purpose",
     "purpose-apply-success" => "Loan purpose is required",
     "purpose-apply-title" => "Please enter the loan purpose",
+    'purpose-apply-options' => [
+        'بدء مشروع جديد' => 'Start a new project',
+        'تطوير ودعم مشروع قائم' => 'Developing and supporting an existing project',
+        'أخرى' => 'Other'
+    ],
     "type-apply" => "Loan Type",
     "type-apply-placeholder" => "Loan Type",
     "type-apply-error" => "Please enter the loan type",

@@ -24,6 +24,11 @@ return [
     "purpose-apply-error" => "الرجاء قم بإدخال الغاية من القرض",
     "purpose-apply-success" => "الغاية من القرض مطلوب",
     "purpose-apply-title" => "الرجاء إدخال الغاية من القرض",
+    'purpose-apply-options' => [
+        'بدء مشروع جديد' => 'بدء مشروع جديد',
+        'تطوير ودعم مشروع قائم' => 'تطوير ودعم مشروع قائم',
+        'أخرى' => 'أخرى'
+    ],
     "type-apply" => "نوع القرض",
     "type-apply-placeholder" => "نوع القرض",
     "type-apply-error" => "الرجاء قم بإدخال نوع القرض",

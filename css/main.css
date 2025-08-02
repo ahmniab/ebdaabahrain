@@ -697,6 +697,17 @@ html[dir="ltr"] .navbar-nav {
 
 
 
+.footer-link {
+  color: var(--primary-light);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--light);
+  text-decoration: underline;
+}
 
 
 /* contact */
@@ -916,6 +927,7 @@ html[dir="ltr"] .navbar-nav {
   align-items: center;
   transition: all 0.2s;
   font-size: 14px;
+  text-decoration: none;
 }
 .quick-btn:lang(ar) {
   text-align: right;
@@ -929,6 +941,8 @@ html[dir="ltr"] .navbar-nav {
   background: var(--dark);
   transform: translateY(-2px);
   outline: none;
+  text-decoration: none;
+  color: white;
 }
 
 .quick-btn i {
@@ -1261,11 +1275,11 @@ html[dir="ltr"] .navbar-nav {
 /* Floating WhatsApp Button (Alternative) */
 .whatsapp-floating {
   position: fixed;
-  bottom: 30px;
+  bottom: 105px;
   left: 30px;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #25D366, #128C7E);
+  background: linear-gradient(135deg, var(--primary-light), var(--primary));
   color: white;
   border-radius: 50%;
   display: flex;

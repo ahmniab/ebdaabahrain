@@ -7,6 +7,7 @@
 
   const loans = {
     "sayadti": {
+        "url": "loan-details.php?id=saydati", 
         "title": "Sayidati Loan",
         "description": "Ebdaa Bahrain now offers small loans specifically designed for women who produce from home, aiming to support and develop their projects. The loan amounts range from BHD 200 to 1,000 and are repayable over a 12-month period.",
         "amount": "Between 200 and 1,000 BHD",
@@ -24,6 +25,7 @@
         ]
     },
     "ebdaa": {
+        "url": "loan-details.php?id=ebdaa",
         "title":"ebdaa loan",
         "description": "Ebdaa Bahrain now offers small loans specifically designed for men who have home-based businesses, aiming to support and develop their projects. Loan amounts range between BHD 200 and 1,000. Repayable over 12 months.",
         "amount": "Between 200 and 1,000 BHD.",
@@ -41,6 +43,7 @@
         ]
     },
     "amal": {
+        "url": "loan-details.php?id=amal",
         "title": "amal loan",
         "description": "Ebdaa Bahrain now offers the Hope Loan dedicated to supporting commercial, service, and industrial projects with easy terms. Loan amounts range between BHD 1,000 and 2,400. Repayable over 24 months.",
         "amount": "Between 1000 and 2,400 BHD.",
@@ -58,6 +61,7 @@
         ]
     },
     "tamayoz": {
+        "url": "loan-details.php?id=tamayouz",
         "title": "tamayoz loan",
         "description": "Ebdaa Bahrain now offers the Excellence Loan to support licensed commercial, industrial, and service projects with easy terms. Loan amounts range between BHD 1,500 and 7,000. Repayable over 36 months.",
         "amount": "Between 1,500 and 7,000 BHD.",
@@ -79,6 +83,7 @@
         ]
     },
     "mawsimi": {
+        "url": "loan-details.php?id=mawsimi",
         "title": "mawsimi loan",
         "description": "With simple administrative fees and quick, easy procedures, Ebdaa Bahrain offers business owners the opportunity to purchase additional school supplies and pay in installments over 24 months, with repayments starting after the end of the first month.",
         "amount": "Depending on the activity",
@@ -97,6 +102,7 @@
         ]
     },
     "tafawq": {
+        "url": "loan-details.php?id=tafawoq",
         "title": "tafawq loan",
         "description": "Ebdaa Bahrain now offers the Excellence Loan to support licensed commercial, industrial, and service projects with flexible and easy terms. Loan amounts range between BHD 1,000 and 7,000. Repayable over a period of 6 to 24 months.",
         "amount": "Between 1,000 and 7,000 BHD.",
@@ -118,6 +124,7 @@
         ]
     },
     "najah": {
+        "url": "loan-details.php?id=najah",
         "title": "najah loan",
         "description": "ebdaa Bahrain now offers small loans to owners of home-based and mobile projects to help develop and increase their working capital. The loan amounts range between 600 and 1400 Bahraini dinars, repayable over 18 months.",
         "amount": "Between 600 and 1,400 BHD.",
@@ -135,6 +142,7 @@
         ]
     },
     "tamayouz plus": {
+        "url": "loan-details.php?id=tamayouz-plus",
         "title": "tamayouz plus loan",
         "description": "Tamayoz+ Loan is offered to support commercial, service, and industrial projects with easy and flexible terms,Loan amounts range from 7,500 to 10,000 Bahraini dinars and are repayable over a period of 36 months.",
         "amount": "Between 7,500 and 1,0000 BHD.",
@@ -479,9 +487,9 @@ function startListening() {
     
     Object.keys(loans).forEach(loan => {
       html += `
-        <button class="quick-btn" onclick="showLoanDetails('${loan}')" aria-label="View Details ${loans[loan].title}">
+        <a class="quick-btn" href="${loans[loan].url}" aria-label="View Details ${loans[loan].title}">
           <i class="fas fa-file-invoice"></i> ${sanitizeInput(loans[loan].title)}
-        </button>
+        </a>
       `;
     });
     

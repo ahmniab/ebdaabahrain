@@ -1,6 +1,6 @@
 <?php
 require_once 'lang/init.php';
-$footer_translations = GetTranslations(basename(__FILE__,".php"));
+$footer_translations = GetTranslations(basename(__FILE__, ".php"));
 ?>
 <!-- Footer Section Start -->
 <footer class="footer">
@@ -26,74 +26,63 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
           </div>
         </div>
       </div>
-      <!--
-      <div class="footer-section text-nowrap">
-        <ul class="footer-links text-nowrap">
-          <li><a href="index.php"><?= $footer_translations['main']; ?></a></li>
-          <li><a href="index.php#services"><?= $footer_translations['service']; ?></a></li>
-          <li><a href="about-us.php"><?= $footer_translations['about']; ?></a></li>
-          <li><a href="index.php#contact"><?= $footer_translations['contact']; ?></a></li>
-          <li><a href="jobs.php"><?= $footer_translations['career']; ?></a></li>
-        </ul>
-      </div>
-      -->
-      <div class="footer-section text-nowrap">
-        <div class="footer-social">
-          <a href="https://www.facebook.com/Ebdaabahrain/" class="social-link" title="فيسبوك">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://twitter.com/ebdaabahrain" class="social-link" title="تويتر">
-          <i class="fa-brands fa-x-twitter"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/ebdaa-microfinance-bank---bahrain" class="social-link" title="لينكد إن">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://www.instagram.com/ebdaabahrain/" class="social-link" title="إنستغرام">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.youtube.com/channel/UCE5TCNCvV9D86TLo4nwFyrQ?view_as=subscriber" class="social-link" title="يوتيوب">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-        </div>
-      </div>
-      
-      <!-- <div class="social-links-fixed">
-        <div class="footer-social-fixed">
-          <a href="https://www.facebook.com/Ebdaabahrain/" class="social-link facebook" title="فيسبوك">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://twitter.com/ebdaabahrain" class="social-link twitter" title="تويتر">
-          <i class="fa-brands fa-x-twitter"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/ebdaa-microfinance-bank---bahrain" class="social-link linkedin" title="لينكد إن">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://www.instagram.com/ebdaabahrain/" class="social-link instagram" title="إنستغرام">
-            <i class="fab fa-instagram"></i>
-            <a href="https://www.youtube.com/channel/UCE5TCNCvV9D86TLo4nwFyrQ?view_as=subscriber" class="social-link youtube" title="يوتيوب">
+      <!-- <div class="d-flex flex-column justify-content-between"> -->
+        <div class="footer-section">
+          <div class="footer-social">
+            <a href="https://www.facebook.com/Ebdaabahrain/" class="social-link" title="فيسبوك">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/ebdaabahrain" class="social-link" title="تويتر">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/ebdaa-microfinance-bank---bahrain" class="social-link" title="لينكد إن">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/ebdaabahrain/" class="social-link" title="إنستغرام">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCE5TCNCvV9D86TLo4nwFyrQ?view_as=subscriber" class="social-link" title="يوتيوب">
               <i class="fa-brands fa-youtube"></i>
             </a>
-              <a href="https://wa.me/97333539666" class="social-link whatsapp" title="واتساب">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-          </a>
+          </div>
+          <div class="mt-2 text-center">
+            <p>
+              <?php echo nl2br($footer_translations['cont-info1']); ?>
+              <a class="footer-link" href="index.php#contact">
+                <?php echo nl2br($footer_translations['cont-info2']); ?>
+              </a><?php echo nl2br($footer_translations['cont-info3']); ?>
+              <a class="footer-link" data-target="#complain" data-toggle="modal" href="#">
+                <?php echo nl2br($footer_translations['cont-info4']); ?>
+              </a><?php echo nl2br($footer_translations['cont-info5']); ?>
+            </p>
+            <p><?php echo nl2br($footer_translations['jobs-dis']); ?> <a class="footer-link" href="jobs.php"><?php echo nl2br($footer_translations['click']); ?></a>.</p>
+          </div>
+
+
+
         </div>
-      </div> -->
-    </div>
+
+      </div>
+
+    <!-- </div> -->
     <div class="footer-bottom">
       <div class="copyright">
-        <p><?= $footer_translations['copy-rt']; ?><a href="index.php" rel="nofollow"><?= $footer_translations['ebda-bh']; ?></a><br /><?= $footer_translations['license']; ?></p>
+        <p>
+          <?php echo nl2br($footer_translations['copy-rt']); ?>
+          <a href="index.php" rel="nofollow">
+            <?php echo $footer_translations['ebda-bh']; ?>
+          </a><br /><?php echo $footer_translations['license']; ?>
+        </p>
       </div>
 
       <div class="footer-whatsapp">
         <!-- <a href="https://wa.me/97333539666" target="_blank" rel="noopener noreferrer"
-          class="whatsapp-button" aria-label="تواصل معنا عبر واتساب">
-          <i class="fab fa-whatsapp"></i>
-          <span class="whatsapp-text"><?= $footer_translations['cont-whts']; ?></span>
-        </a> -->
+        class="whatsapp-button" aria-label="تواصل معنا عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text"><?= $footer_translations['cont-whts']; ?></span>
+      </a> -->
       </div>
     </div>
-  </div>
 </footer>
 <!-- Footer Section End -->
 <!-- Go To Top Link -->
@@ -110,43 +99,94 @@ $footer_translations = GetTranslations(basename(__FILE__,".php"));
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" async defer></script>
 <!-- WhatsApp Floating Button -->
-<!-- <a href="https://wa.me/97333539666" target="_blank" rel="noopener noreferrer"
+<a href="https://wa.me/97333539666" target="_blank" rel="noopener noreferrer"
     class="whatsapp-floating" aria-label="تواصل معنا عبر واتساب">
     <i class="fab fa-whatsapp"></i>
-  </a> -->
-   <!-- زر فتح الشات -->
-   <button id="chatbot-toggle" onclick="toggleChat()" aria-label="فتح شات البوت">
-    <i class="fas fa-comments"></i>
-  </button>
+  </a>
+<!-- زر فتح الشات -->
+<button id="chatbot-toggle" onclick="toggleChat()" aria-label="فتح شات البوت">
+  <i class="fas fa-comments"></i>
+</button>
 
-  <!-- نافذة الشات -->
-  <div id="chatbot-box" role="dialog" aria-labelledby="chatbot-header">
-    <div class="chatbot-header" id="chatbot-header">
-      <span><i class="fas fa-robot"></i> <?= $footer_translations['bot-title']; ?></span>
-      <button onclick="toggleChat()" aria-label="<?= $footer_translations['bot-close']; ?>">×</button>
-    </div>
+<!-- نافذة الشات -->
+<div id="chatbot-box" role="dialog" aria-labelledby="chatbot-header">
+  <div class="chatbot-header" id="chatbot-header">
+    <span><i class="fas fa-robot"></i> <?= $footer_translations['bot-title']; ?></span>
+    <button onclick="toggleChat()" aria-label="<?= $footer_translations['bot-close']; ?>">×</button>
+  </div>
 
-    <div class="chatbot-body" id="chatbot-body">
-      <!-- المحادثة تظهر هنا -->
-    </div>
+  <div class="chatbot-body" id="chatbot-body">
+    <!-- المحادثة تظهر هنا -->
+  </div>
 
-    <div class="chatbot-input">
-      <input type="text" id="user-input" placeholder="<?= $footer_translations['bot-input']; ?>"
-        onkeypress="if(event.key === 'Enter') sendMessage()" aria-label="<?= $footer_translations['bot-input']; ?>">
+  <div class="chatbot-input">
+    <input type="text" id="user-input" placeholder="<?= $footer_translations['bot-input']; ?>"
+      onkeypress="if(event.key === 'Enter') sendMessage()" aria-label="<?= $footer_translations['bot-input']; ?>">
 
-      <button onclick="startListening()" aria-label="<?= $footer_translations['bot-microphone']; ?>">
-        <i class="fas fa-microphone"></i>
-      </button>
+    <button onclick="startListening()" aria-label="<?= $footer_translations['bot-microphone']; ?>">
+      <i class="fas fa-microphone"></i>
+    </button>
 
-      <button onclick="sendMessage()" aria-label="<?= $footer_translations['bot-send']; ?>">
-        <i class="fas fa-paper-plane"></i>
-      </button>
+    <button onclick="sendMessage()" aria-label="<?= $footer_translations['bot-send']; ?>">
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </div>
+</div>
+
+
+
+<!-- complain Modal -->
+<div aria-hidden="true" class="modal fade ar-dir complaint-modal" id="complain" role="dialog" tabindex="-1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title"><?= $footer_translations['compls-proc']; ?></h4>
+        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+          &times;
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row ar-txt">
+          <div class="col-sm-12">
+            <p><?= $footer_translations['compls-ph']; ?></p>
+            <div class="box_shadow">
+              <p><b><?= $footer_translations['follow']; ?></b></p>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="box_shadow">
+              <p><b><?= $footer_translations['proc1']; ?></b></p>
+              <p><?= $footer_translations['proc-mng']; ?></p>
+              <p><?= $footer_translations['mob']; ?></p>
+              <p><?= $footer_translations['email-comp']; ?></p>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="box_shadow">
+              <p><b><?= $footer_translations['proc2']; ?></b></p>
+              <p><?= $footer_translations['proc2-res']; ?></p>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="box_shadow">
+              <p><b><?= $footer_translations['proc3']; ?></b></p>
+              <p><?= $footer_translations['proc3-1']; ?></p>
+              <p><?= $footer_translations['proc3-adr1']; ?></p>
+              <p><?= $footer_translations['proc3-adr2']; ?></p>
+              <p><?= $footer_translations['proc3-adr3']; ?></p>
+              <p><?= $footer_translations['proc3-adr4']; ?></p>
+              <p><?= $footer_translations['proc3-adr5']; ?></p>
+              <p><?= $footer_translations['email-comb2']; ?></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-common" data-dismiss="modal" type="button"><?= $footer_translations['close']; ?></button>
+      </div>
     </div>
   </div>
-  
-  
-  
-  
-  
-  <script src="js/main.js"></script>
-  <script src="js/chatbot-<?php echo $lang; ?>.js"></script>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/chatbot-<?php echo $lang; ?>.js"></script>

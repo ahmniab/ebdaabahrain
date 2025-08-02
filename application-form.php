@@ -88,7 +88,11 @@ $translations = GetTranslations(basename(__FILE__, '.php'));
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="purpose_apply"> <?php echo $translations['purpose-apply']; ?> <span class="text-danger">*</span></label>
-                                    <input class="form-control application-input" data-error="<?php echo $translations['purpose-apply-error']; ?>" id="purpose_apply" name="purpose_apply" placeholder="<?php echo $translations['purpose-apply-placeholder']; ?>" required type="text" />
+                                    <select class="form-control application-input" data-error="<?php echo $translations['purpose-apply-error']; ?>" id="purpose_apply" name="purpose_apply" placeholder="<?php echo $translations['purpose-apply-placeholder']; ?>" required>
+                                        <?php foreach ($translations['purpose-apply-options'] as $key => $value) { ?>
+                                            <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
+                                        <?php } ?>
+                                    </select>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>

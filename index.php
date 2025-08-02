@@ -1,6 +1,6 @@
 <?php
 require_once 'lang/init.php';
-$translations = GetTranslations(basename(__FILE__,".php"));
+$translations = GetTranslations(basename(__FILE__, ".php"));
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang ?>" dir="<?= $dir ?>">
@@ -22,8 +22,8 @@ $translations = GetTranslations(basename(__FILE__,".php"));
 
   <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  
+
+
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" async defer />
   <link rel="stylesheet" href="css/home.css">
@@ -32,14 +32,14 @@ $translations = GetTranslations(basename(__FILE__,".php"));
 
 <body>
 
-  <?php 
-    include 'navbar.php'; 
-    require_once 'index-landing.php';
-  
+  <?php
+  include 'navbar.php';
+  require_once 'index-landing.php';
+
   ?>
 
 
-    <!-- <div class="container"> -->
+  <!-- <div class="container"> -->
 
 
 
@@ -49,14 +49,14 @@ $translations = GetTranslations(basename(__FILE__,".php"));
   <section class="section" data-stellar-background-ratio="0.09" id="application">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title"><?= ($lang == 'en') 
-                          ? $translations['apply2']
-                          : $translations['apply']; ?></h2>
+        <h2 class="section-title"><?= ($lang == 'en')
+                                    ? $translations['apply2']
+                                    : $translations['apply']; ?></h2>
         <p class="section-subtitle">
           <?= $translations['get-needs']; ?>
           <br class="d-none d-md-block" />
           <?= $translations['simp-steps']; ?>
-      </p>
+        </p>
       </div>
 
       <div class="text-center">
@@ -68,11 +68,11 @@ $translations = GetTranslations(basename(__FILE__,".php"));
             <h3 class="cta-title"><?= $translations['str-succ']; ?></h3>
             <p class="cta-description">
               <?= $translations['apply-req']; ?>
-          </p>
+            </p>
             <a href="application-form.php" class="cta-button">
-              <?= ($lang == 'en') 
-                          ? $translations['apply'] . '<i class="fa-solid fa-arrow-right ml-2"> </i>'
-                          : $translations['apply2'] . '<i class="fa-solid fa-arrow-left ml-2"> </i>'; ?>
+              <?= ($lang == 'en')
+                ? $translations['apply'] . '<i class="fa-solid fa-arrow-right ml-2"> </i>'
+                : $translations['apply2'] . '<i class="fa-solid fa-arrow-left ml-2"> </i>'; ?>
             </a>
           </div>
         </div>
@@ -184,7 +184,8 @@ $translations = GetTranslations(basename(__FILE__,".php"));
         <h2 class="section-title"><?= $translations['contact']; ?></h2>
         <hr class="lines" />
         <p class="section-subtitle"><?= $translations['contact-us2']; ?>
-          <br /><?= $translations['ur-opn']; ?></p>
+          <br /><?= $translations['ur-opn']; ?>
+        </p>
       </div>
       <div class="contact-form text-nowrap" id="contactUs">
         <div class="row ar-dir">
@@ -223,7 +224,7 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                     <h5><?= $translations['aali-tit']; ?></h5>
                     <hr />
                     <ul>
-                     <li><a href="tel:+973 17381013"><i class="fa fa-phone"></i><span dir="ltr">+973 17381013</span></a></li>
+                      <li><a href="tel:+973 17381013"><i class="fa fa-phone"></i><span dir="ltr">+973 17381013</span></a></li>
                       <li><a href="mailto:aali@ebdaabahrain.com"><i class="fa fa-envelope"></i>aali@ebdaabahrain.com</a></li>
                       <li><a href="https://goo.gl/maps/Xgobw4hn6qM2" target="_blank"><i class="fa fa-map-marker"></i><?= $translations['aali']; ?></a></li>
                     </ul>
@@ -276,12 +277,12 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                 </div>
 
                 <div class="form-group">
-                  <textarea 
-                    data-error="<?= $translations['f-mess-err']; ?>" 
-                    id="message_contact" 
-                    name="message" 
-                    placeholder="<?= $translations['f-mess-plch']; ?>" 
-                    required="" 
+                  <textarea
+                    data-error="<?= $translations['f-mess-err']; ?>"
+                    id="message_contact"
+                    name="message"
+                    placeholder="<?= $translations['f-mess-plch']; ?>"
+                    required=""
                     rows="8"></textarea>
                   <div class="help-block with-errors"></div>
                 </div>
@@ -290,7 +291,7 @@ $translations = GetTranslations(basename(__FILE__,".php"));
                   <!-- رسالة الإرسال -->
                   <div id="loadingMessage" style="display:none;" class="text-center my-3">
                     <?= $translations['sending']; ?>
-                </div>
+                  </div>
 
                   <!-- reCAPTCHA -->
                   <div class="form-group text-center mt-3">
@@ -311,67 +312,10 @@ $translations = GetTranslations(basename(__FILE__,".php"));
         </div>
       </div>
 
-      <div class="contact-info-text">
-        <p><?= $translations['cont-info1']; ?> <a href="#contact"><?= $translations['cont-info2']; ?></a><?= $translations['cont-info3']; ?><a data-target="#complain" data-toggle="modal" href="#"><?= $translations['cont-info4']; ?></a><?= $translations['cont-info5']; ?></p>
-        <p><?= $translations['jobs-dis']; ?> <a href="jobs.php"><?= $translations['click']; ?></a>.</p>
-      </div>
-
-      <!-- complain Modal -->
-      <div aria-hidden="true" class="modal fade ar-dir complaint-modal" id="complain" role="dialog" tabindex="-1">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title"><?= $translations['compls-proc']; ?></h4>
-              <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                <span aria-hidden="true"></span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="row ar-txt">
-                <div class="col-sm-12">
-                  <p><?= $translations['compls-ph']; ?></p>
-                  <div class="box_shadow">
-                    <p><b><?= $translations['follow']; ?></b></p>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="box_shadow">
-                    <p><b><?= $translations['proc1']; ?></b></p>
-                    <p><?= $translations['proc-mng']; ?></p>
-                    <p><?= $translations['mob']; ?></p>
-                    <p><?= $translations['email-comp']; ?></p>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="box_shadow">
-                    <p><b><?= $translations['proc2']; ?></b></p>
-                    <p><?= $translations['proc2-res']; ?></p>
-                  </div>
-                </div>
-                <div class="col-sm-12">
-                  <div class="box_shadow">
-                    <p><b><?= $translations['proc3']; ?></b></p>
-                    <p><?= $translations['proc3-1']; ?></p>
-                    <p><?= $translations['proc3-adr1']; ?></p>
-                    <p><?= $translations['proc3-adr2']; ?></p>
-                    <p><?= $translations['proc3-adr3']; ?></p>
-                    <p><?= $translations['proc3-adr4']; ?></p>
-                    <p><?= $translations['proc3-adr5']; ?></p>
-                    <p><?= $translations['email-comb2']; ?></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-common" data-dismiss="modal" type="button"><?= $translations['close']; ?></button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
   <!-- Contact us end-->
-</div>
+  </div>
   <?php include "footer.php" ?>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -398,17 +342,16 @@ $translations = GetTranslations(basename(__FILE__,".php"));
       loop: true,
       responsive: {
         0: {
-            items: 1
+          items: 1
         },
         600: {
-            items: 2
+          items: 2
         }
-    }
-    }
-  );
-  // html[dir="rtl"] .cta-button{
-  //     flex-direction: row-reverse;
-  //   }
+      }
+    });
+    // html[dir="rtl"] .cta-button{
+    //     flex-direction: row-reverse;
+    //   }
   </script>
 </body>
 
