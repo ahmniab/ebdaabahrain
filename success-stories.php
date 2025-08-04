@@ -89,7 +89,7 @@ $stories_data = getStories($lang);
   <script>
     const itemList = document.getElementById('portfolio');
     const items = itemList.querySelectorAll('#portfolio .mix');
-    console.log(items);
+    const showLessText = '<?php echo $lang === 'ar' ? 'أقل' : 'LESS'; ?>';
   </script>
   <script src="js/main.js"></script>
   <?php include "footer.php"; ?>

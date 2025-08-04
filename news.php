@@ -88,6 +88,7 @@ $news_data = getNews($lang);
      <script>
         const itemList = document.querySelector('.news-list');
         const items = itemList.querySelectorAll('li');
+        const showLessText = '<?php echo $lang === 'ar' ? 'أقل' : 'LESS'; ?>';
      </script>
     <script src="js/main.js"></script>
 

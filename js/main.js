@@ -147,7 +147,7 @@ function showMore() {
     items.forEach(item => {
       item.style.display = 'list-item';
     });
-    showMoreBtn.textContent = 'Show Less';
+    showMoreBtn.textContent = showLessText;
     showMoreBtn.dataset.shown = 'true';
   }
 }
