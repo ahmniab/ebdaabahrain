@@ -117,9 +117,9 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
             <img src="assets/img/team/clainets-01.png" alt="laila image">
           </div>
           <p class="item-text">
-            <i class="fa fa-quote-right"></i>
+            <i class="fa <?php echo $lang == 'ar' ? 'fa-quote-right': 'fa-quote-left';?>"></i>
             <?= $translations['laila-ph']; ?>
-            <i class="fa fa-quote-left"></i>
+            <i class="fa <?php echo $lang == 'ar' ? 'fa-quote-left': 'fa-quote-right';?>"></i>
           </p>
           <h4 class="item-name"><?= $translations['laila']; ?></h4>
           <h4 class="item-jop"><?= $translations['laila-pos']; ?></h4>
@@ -129,9 +129,9 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
             <img src="assets/img/team/clainets-03.png" alt="noora image">
           </div>
           <p class="item-text">
-            <i class="fa fa-quote-right"></i>
+            <i class="fa <?php echo $lang == 'ar' ? 'fa-quote-right': 'fa-quote-left';?>"></i>
             <?= $translations['noora-ph']; ?>
-            <i class="fa fa-quote-left"></i>
+            <i class="fa <?php echo $lang == 'ar' ? 'fa-quote-left': 'fa-quote-right';?>"></i>
           </p>
           <h4 class="item-name"><?= $translations['noora']; ?></h4>
           <h4 class="item-jop"><?= $translations['noora-pos']; ?></h4>
@@ -141,9 +141,9 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
             <img src="assets/img/team/clainets-06.png" alt="yasser image">
           </div>
           <p class="item-text">
-            <i class="fa fa-quote-right"></i>
+            <i class="fa <?php echo $lang == 'ar' ? 'fa-quote-right': 'fa-quote-left';?>"></i>
             <?= $translations['yasser-ph']; ?>
-            <i class="fa fa-quote-left"></i>
+            <i class="fa <?php echo $lang == 'ar' ? 'fa-quote-left': 'fa-quote-right';?>"></i>
           </p>
           <h4 class="item-name"><?= $translations['yasser']; ?></h4>
           <h4 class="item-jop"><?= $translations['yasser-pos']; ?></h4>
@@ -153,9 +153,9 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
             <img src="assets/img/team/clainets-08.png" alt="truky image">
           </div>
           <p class="item-text">
-            <i class="fa fa-quote-right"></i>
+            <i class="fa <?php echo $lang == 'ar' ? 'fa-quote-right': 'fa-quote-left';?>"></i>
             <?= $translations['truky-ph']; ?>
-            <i class="fa fa-quote-left"></i>
+            <i class="fa <?php echo $lang == 'ar' ? 'fa-quote-left': 'fa-quote-right';?>"></i>
           </p>
           <h4 class="item-name"><?= $translations['truky']; ?></h4>
           <h4 class="item-jop"><?= $translations['truky-pos']; ?></h4>
@@ -165,9 +165,9 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
             <img src="assets/img/team/clainets-07.png" alt="lailaa">
           </div>
           <p class="item-text">
-            <i class="fa fa-quote-right"></i>
+            <i class="fa <?php echo $lang == 'ar' ? 'fa-quote-right': 'fa-quote-left';?>"></i>
             <?= $translations['lailaa-ph']; ?>
-            <i class="fa fa-quote-left"></i>
+            <i class="fa <?php echo $lang == 'ar' ? 'fa-quote-left': 'fa-quote-right';?>"></i>
           </p>
           <h4 class="item-name"><?= $translations['lailaa']; ?></h4>
           <h4 class="item-jop"><?= $translations['lailaa-pos']; ?></h4>
@@ -287,20 +287,15 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
                   <div class="help-block with-errors"></div>
                 </div>
 
-                <div class="submit-button text-center">
+                <div>
                   <!-- رسالة الإرسال -->
                   <div id="loadingMessage" style="display:none;" class="text-center my-3">
                     <?= $translations['sending']; ?>
                   </div>
 
-                  <!-- reCAPTCHA -->
-                  <div class="form-group text-center mt-3">
-                    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-                  </div>
-
+                  
                   <!-- زر الإرسال -->
-                  <div class="text-center mt-3">
-                     <p class="text-center mt-3">
+                  <p class="mt-1">
                     <?= $translations['cont-info1']; ?>
                     <a class="contact-link" href="#contact">
                       <?= $translations['cont-info2']; ?>
@@ -311,9 +306,14 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
                     </a>
                     <?= $translations['cont-info5']; ?>
                   </p>
-
-
-
+                  <!-- reCAPTCHA -->
+                  <div class="form-group text-center mt-3">
+                    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                  </div>
+                  <div class="text-center mt-3">
+                    
+                    
+                    
                     <div class="g-recaptcha" data-sitekey="6LetsOQZAAAAANG2gbEt7vMzNEFNHMry4QKYdVJ5"></div>
                     <button type="submit" class="btn btn-primary btn-lg" id="submitBtn"><?= $translations['submit']; ?></button>
                   </div>
@@ -369,60 +369,60 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
     //     flex-direction: row-reverse;
     //   }
   </script>
-  
 
-<!-- complain Modal -->
-<div aria-hidden="true" class="modal fade ar-dir complaint-modal" id="complain" role="dialog" tabindex="-1">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title"><?= $footer_translations['compls-proc']; ?></h4>
-        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-          &times;
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row ar-txt">
-          <div class="col-sm-12">
-            <p><?= $footer_translations['compls-ph']; ?></p>
-            <div class="box_shadow">
-              <p><b><?= $footer_translations['follow']; ?></b></p>
+
+  <!-- complain Modal -->
+  <div aria-hidden="true" class="modal fade ar-dir complaint-modal" id="complain" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title"><?= $footer_translations['compls-proc']; ?></h4>
+          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row ar-txt">
+            <div class="col-sm-12">
+              <p><?= $footer_translations['compls-ph']; ?></p>
+              <div class="box_shadow">
+                <p><b><?= $footer_translations['follow']; ?></b></p>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-12">
-            <div class="box_shadow">
-              <p><b><?= $footer_translations['proc1']; ?></b></p>
-              <p><?= $footer_translations['proc-mng']; ?></p>
-              <p><?= $footer_translations['mob']; ?></p>
-              <p><?= $footer_translations['email-comp']; ?></p>
+            <div class="col-sm-12">
+              <div class="box_shadow">
+                <p><b><?= $footer_translations['proc1']; ?></b></p>
+                <p><?= $footer_translations['proc-mng']; ?></p>
+                <p><?= $footer_translations['mob']; ?></p>
+                <p><?= $footer_translations['email-comp']; ?></p>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-12">
-            <div class="box_shadow">
-              <p><b><?= $footer_translations['proc2']; ?></b></p>
-              <p><?= $footer_translations['proc2-res']; ?></p>
+            <div class="col-sm-12">
+              <div class="box_shadow">
+                <p><b><?= $footer_translations['proc2']; ?></b></p>
+                <p><?= $footer_translations['proc2-res']; ?></p>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-12">
-            <div class="box_shadow">
-              <p><b><?= $footer_translations['proc3']; ?></b></p>
-              <p><?= $footer_translations['proc3-1']; ?></p>
-              <p><?= $footer_translations['proc3-adr1']; ?></p>
-              <p><?= $footer_translations['proc3-adr2']; ?></p>
-              <p><?= $footer_translations['proc3-adr3']; ?></p>
-              <p><?= $footer_translations['proc3-adr4']; ?></p>
-              <p><?= $footer_translations['proc3-adr5']; ?></p>
-              <p><?= $footer_translations['email-comb2']; ?></p>
+            <div class="col-sm-12">
+              <div class="box_shadow">
+                <p><b><?= $footer_translations['proc3']; ?></b></p>
+                <p><?= $footer_translations['proc3-1']; ?></p>
+                <p><?= $footer_translations['proc3-adr1']; ?></p>
+                <p><?= $footer_translations['proc3-adr2']; ?></p>
+                <p><?= $footer_translations['proc3-adr3']; ?></p>
+                <p><?= $footer_translations['proc3-adr4']; ?></p>
+                <p><?= $footer_translations['proc3-adr5']; ?></p>
+                <p><?= $footer_translations['email-comb2']; ?></p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-common" data-dismiss="modal" type="button"><?= $footer_translations['close']; ?></button>
+        <div class="modal-footer">
+          <button class="btn btn-common" data-dismiss="modal" type="button"><?= $footer_translations['close']; ?></button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 </body>
 

@@ -71,12 +71,26 @@ $news_data = getNews($lang);
                             </div>
 
                         </li>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
                 </ul>
+                <div class="text-center mt-5">
+                    <button class="btn btn-lg" id="showMoreBtn">
+                       <?php echo $lang === 'ar'?
+                        '<i class="fa fa-plus-circle mr-2"></i> لمزيد من الاخبار<i class="fa fa-arrow-left mr-2"></i>'
+                        : '<i class="fa fa-arrow-right ml-2"></i> MORE NEWS<i class="fa fa-plus-circle mr-2"></i>' 
+                        ?>
+                    </button>
+                </div>
             </div>
         </section>
     <!-- </div> -->
     <!-- Modals -->
+     <script>
+        const itemList = document.querySelector('.news-list');
+        const items = itemList.querySelectorAll('li');
+     </script>
+    <script src="js/main.js"></script>
+
 
 
     <?php include 'footer.php'; ?>

@@ -745,7 +745,6 @@ html[dir="ltr"] .navbar-nav {
 .back-to-top {
   position: fixed;
   bottom: 30px;
-  right: 30px;
   width: 50px;
   height: 50px;
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
@@ -761,6 +760,12 @@ html[dir="ltr"] .navbar-nav {
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
+}
+.back-to-top:lang(ar) {
+  right: 30px;
+}
+.back-to-top:lang(en) {
+  left: 30px;
 }
 
 .back-to-top.show {
@@ -785,7 +790,6 @@ html[dir="ltr"] .navbar-nav {
 #chatbot-toggle {
   position: fixed;
   bottom: 25px;
-  left: 25px;
   background: var(--primary);
   color: white;
   width: 65px;
@@ -801,6 +805,12 @@ html[dir="ltr"] .navbar-nav {
   transition: all 0.3s;
   border: none;
 }
+#chatbot-toggle:lang(ar) {
+  left: 25px;
+}
+#chatbot-toggle:lang(en) {
+  right: 25px;
+}
 
 #chatbot-toggle:hover,
 #chatbot-toggle:focus {
@@ -812,7 +822,6 @@ html[dir="ltr"] .navbar-nav {
 #chatbot-box {
   position: fixed;
   bottom: 100px;
-  left: 25px;
   width: 400px;
   max-height: 600px;
   background: white;
@@ -826,6 +835,12 @@ html[dir="ltr"] .navbar-nav {
   transform: translateY(20px);
   opacity: 0;
   transition: all 0.3s;
+}
+#chatbot-box:lang(ar) {
+  left: 25px;
+}
+#chatbot-box:lang(en) {
+  right: 25px;
 }
 
 #chatbot-box.show {
@@ -1276,7 +1291,6 @@ html[dir="ltr"] .navbar-nav {
 .whatsapp-floating {
   position: fixed;
   bottom: 105px;
-  left: 30px;
   width: 60px;
   height: 60px;
   background: var(--primary);
@@ -1290,6 +1304,12 @@ html[dir="ltr"] .navbar-nav {
   transition: all 0.3s ease;
   z-index: 1000;
   overflow: hidden;
+}
+.whatsapp-floating:lang(ar) {
+  left: 30px;
+}
+.whatsapp-floating:lang(en) {
+  right: 30px;
 }
 
 .whatsapp-floating::before {
@@ -1905,3 +1925,22 @@ html[dir="ltr"] .navbar-nav {
 .navbar-collapse.collapsing>ul:first-child {
   display: flex !important;
 }
+
+    /* Load more button */
+    .btn-lg {
+      background: linear-gradient(135deg, #61D2B4, #4CAF50);
+      border: none;
+      border-radius: 12px;
+      padding: 15px 40px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: white;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(97, 210, 180, 0.3);
+    }
+    
+    .btn-lg:hover {
+      background: linear-gradient(135deg, #4CAF50, #45a049);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(97, 210, 180, 0.4);
+    }

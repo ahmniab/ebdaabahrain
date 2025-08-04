@@ -204,24 +204,6 @@
     display: block;
   }
   
-    /* Load more button */
-  .news-section .btn-lg {
-    background: linear-gradient(135deg, #61D2B4, #4CAF50);
-    border: none;
-    border-radius: 12px;
-    padding: 15px 40px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: white;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(97, 210, 180, 0.3);
-  }
-  
-  .news-section .btn-lg:hover {
-    background: linear-gradient(135deg, #4CAF50, #45a049);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(97, 210, 180, 0.4);
-  }
   
   /* Responsive Design */
   @media (max-width: 768px) {
