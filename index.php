@@ -300,13 +300,7 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
 
                   <!-- زر الإرسال -->
                   <div class="text-center mt-3">
-                    <div class="g-recaptcha" data-sitekey="6LetsOQZAAAAANG2gbEt7vMzNEFNHMry4QKYdVJ5"></div>
-                    <button type="submit" class="btn btn-primary btn-lg" id="submitBtn"><?= $translations['submit']; ?></button>
-                  </div>
-                  <div class="h3 text-center hidden" id="msgSubmit-form"></div>
-                  <div class="clearfix"></div>
-
-                  <p class="text-center mt-3">
+                     <p class="text-center mt-3">
                     <?= $translations['cont-info1']; ?>
                     <a class="contact-link" href="#contact">
                       <?= $translations['cont-info2']; ?>
@@ -317,6 +311,15 @@ $translations = GetTranslations(basename(__FILE__, ".php"));
                     </a>
                     <?= $translations['cont-info5']; ?>
                   </p>
+
+
+
+                    <div class="g-recaptcha" data-sitekey="6LetsOQZAAAAANG2gbEt7vMzNEFNHMry4QKYdVJ5"></div>
+                    <button type="submit" class="btn btn-primary btn-lg" id="submitBtn"><?= $translations['submit']; ?></button>
+                  </div>
+                  <div class="h3 text-center hidden" id="msgSubmit-form"></div>
+                  <div class="clearfix"></div>
+
                 </div>
               </form>
             </div>

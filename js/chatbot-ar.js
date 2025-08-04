@@ -320,7 +320,7 @@ const msg_options = `
       
       <div class="d-flex justify-content-center align-items-center mt-1 mb-2">
         <a class="quick-btn p-3" href="application-form.php" target="_blank">
-          <i class="fas fa-file-signature"></i> التقديم على قرض
+          <i class="fas fa-file-signature"></i> ترغب في الحصول على قرض ؟
         </a>
       </div>
 `

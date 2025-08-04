@@ -1,52 +1,52 @@
 <?php
 
 return [
-    "page_title" => "Careers | EBdaa Bank Bahrain",
+    "page_title" => "Careers | Ebdaa Bank Bahrain",
     "title" => "Available Jobs",
     "jobs" => [
         0 => [
             "id" => 'job1',
-            'title' => 'Collection Officer',
+            'title' => 'Collections Specialist',
             'sections' => [
                 [
-                    'title' => 'Objective',
-                    'content' => 'The collector is the person concerned to visit the customers who are in arrears to continue collecting what they deserve in favor of the bank.',
+                    'title' => 'General Objective',
+                    'content' => 'The collector is responsible for visiting clients who are late in payments to follow up on collecting what is due to the bank.',
                     'type' => 'paragraph'
                 ],
                 [
-                    'title' => 'Tasks and Responsibilities',
+                    'title' => 'Responsibilities',
                     'content' => [
-                        'Investigate the validity of the information provided to the Loan officers.',
-                        'Follow-up of customers who are in arrears continuously until collect the receivables.',
-                        'Coordinate with the supervisor and the Loan officer about the arrear customer to find the means to solve the problem with this customer.',
-                        'Follow-up of loans scheduled to make sure they are paid on time according to scheduling procedures.',
-                        'Prepare lawyer\'s warnings to customers who are late for payment and their guarantors.',
-                        'Follow up with the Legal Counsel regarding the files transferred to him.',
-                        'Follow any legal action taken, including follow-up of collections at the Department of Procedure.',
-                        'Coordinate with operations regarding collection of late payments and fines.',
-                        'Preparation of all reports and statements regarding outstanding installments.',
-                        'Perform any other duties assigned to him by his direct supervisor.'
+                        'Investigating the accuracy of the information provided to loan officers.',
+                        'Continuously following up with clients who are behind on payments until dues are collected.',
+                        'Coordinating with relevant supervisors and loan officers regarding clients in default to find appropriate solutions.',
+                        'Following up on rescheduled loans to ensure they are paid on time according to rescheduling procedures.',
+                        'Preparing legal notices addressed to delinquent clients and their guarantors.',
+                        'Following up with the legal advisor regarding transferred cases.',
+                        'Tracking any legal action taken, including collection at the enforcement department.',
+                        'Coordinating with the operations department regarding the collection of overdue payments and fines.',
+                        'Preparing all reports and statements related to due installments.',
+                        'Performing any other duties assigned by the direct supervisor.'
                     ],
                     'type' => 'list'
                 ],
                 [
-                    'title' => 'Academic qualifications',
-                    'content' => 'Bachelor or diploma in the specialties of administrative sciences or equivalent',
+                    'title' => 'Educational Qualifications',
+                    'content' => 'Bachelor’s degree or diploma in administrative sciences or equivalent fields.',
                     'type' => 'paragraph'
                 ],
                 [
-                    'title' => 'Experience',
+                    'title' => 'Work Experience',
                     'content' => [
-                        'Know the applicable laws in this regard.',
-                        'Know about follow-up and collection procedures.'
+                        'Familiarity with relevant laws and regulations.',
+                        'Knowledge of follow-up and collection procedures.'
                     ],
                     'type' => 'list'
                 ],
                 [
-                    'title' => 'Skills',
+                    'title' => 'Required Skills',
                     'content' => [
-                        'Leadership skills.',
-                        'Proficiency in both Arabic and English writing, reading, speaking and good knowledge in computers.'
+                        'Possess leadership skills.',
+                        'Fluency in Arabic and English (reading, writing, and speaking), and proficient computer skills.'
                     ],
                     'type' => 'list'
                 ]
@@ -54,45 +54,56 @@ return [
         ],
         1 => [
             'id' => 'job2',
-            'title' => 'Loan Officer',
+            'title' => 'Lending Specialist',
             'sections' => [
                 [
-                    'title' => 'Objective',
-                    'content' => 'Promotion of customer acquisition, applications study and field visits, as well as the achievement of the quality of the credit portfolio.',
+                    'title' => 'General Objective',
+                    'content' => 'Promoting to attract clients, evaluating loan applications, conducting field visits, in addition to collections and maintaining the quality of the credit portfolio.',
                     'type' => 'paragraph'
                 ],
                 [
-                    'title' => 'Tasks and Responsibilities',
+                    'title' => 'Responsibilities',
                     'content' => [
-                        'To promote the Bank\'s products and services to obtain applications for loans and to reach the required number of customers as determined by the Bank.',
-                        'Field visit to customers according to plans and policies prepared by the bank.',
-                        'Review Loan requests for correctness and correctness of procedures.',
-                        'Ensure that customers have completed all necessary documents related to their applications.',
-                        'An integrated study shows the financial ability of clients applying for a loan.',
-                        'Submit periodic reports to the direct supervisor regarding the credit portfolio.',
-                        'Continuous monitoring of the credit portfolio, focus on timely payment and management of arrears, if any.',
-                        'Perform any other duties assigned to you by the direct supervisor.'
+                        'Promoting bank services and products to receive loan applications and achieve the required number of clients as defined by the bank.',
+                        'Conducting field visits to clients according to bank plans and policies.',
+                        'Reviewing loan applications to ensure their accuracy and the validity of procedures.',
+                        'Ensuring that clients have completed all required documents related to their applications.',
+                        'Conducting a comprehensive study of the financial capacity of clients applying for a loan.',
+                        'Providing periodic reports to the direct supervisor regarding the credit portfolio.',
+                        'Continuous monitoring of the credit portfolio with a focus on timely repayment and managing delinquencies if any.',
+                        'Performing any other duties assigned by the direct supervisor.'
                     ],
                     'type' => 'list'
                 ],
                 [
-                    'title' => 'Academic qualifications',
-                    'content' => 'Bachelor\'s or Diploma in Administrative and Financial Sciences.',
+                    'title' => 'Educational Qualifications',
+                    'content' => 'Bachelor’s degree or diploma in administrative sciences or banking and financial sciences.',
                     'type' => 'paragraph'
                 ],
                 [
-                    'title' => 'Experience',
-                    'content' => 'No experience needed',
+                    'title' => 'Work Experience',
+                    'content' => 'No experience required',
                     'type' => 'paragraph'
                 ],
                 [
-                    'title' => 'Skills',
+                    'title' => 'Required Skills',
                     'content' => [
-                        'Leadership skills.',
-                        'Proficiency in Arabic and English Languages Writing, reading, speaking and have a good knowledge in computers.',
+                        'Possess leadership skills.',
+                        'Fluency in Arabic and English (reading, writing, and speaking), and proficient computer skills.',
                         'Ability to train staff.'
                     ],
                     'type' => 'list'
+                ]
+            ]
+        ],
+        2 => [
+            'id' => 'general',
+            'title' => 'Submit Your CV (We will contact you when a vacancy is available)',
+            'sections' => [
+                [
+                    'title' => 'Submit Your CV (We will contact you when a vacancy is available)',
+                    'content' => 'If you don’t find a suitable job among the available positions, you can submit your CV generally, and we will review it when appropriate opportunities arise.',
+                    'type' => 'paragraph'
                 ]
             ]
         ]
@@ -103,19 +114,19 @@ return [
         "email" => "Email",
         "email_palceholder" => "Email",
         "phone" => "Phone",
-        "cv" => "CV/Resume",
+        "cv" => "CV",
         "submit" => "Submit",
-        "jop_name" => "Enter job title",
+        "jop_name" => "Enter Job Title",
         "jop_name_palceholder" => "Example: Project Manager - Optional",
         "job_type" => "Job Position",
-        "jop_type_palceholder" => "Select job position",
+        "jop_type_palceholder" => "Select Job",
         "jop_type_options" => [
-            "job1" => "Collection Officer",
-            "job2" => "Loan Officer",
+            "job1" => "Collections Specialist",
+            "job2" => "Lending Specialist",
+            "general" => "General Application"
         ],
-        "msg_placeholder" => "Additional message (optional)",
-    ],
-
+        "msg_placeholder" => "Optional Additional Message",
+    ]
 ];
 
 ?>

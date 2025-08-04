@@ -37,6 +37,7 @@
 }
 .stuff-item .info-container {
     margin: 30px 0;
+    white-space:nowrap;
 }
 .stuff-item .info-container h3{
     font-weight: 600;
