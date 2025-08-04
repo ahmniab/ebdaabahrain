@@ -44,6 +44,7 @@ if (empty($_POST["message"])) {
 
 
 $EmailTo = "info@ebdaabahrain.com";
+$EmailTo2 = "complaints@ebdaabank.com";
 $Subject = "New $subject Received";
 $EmailFrom = "contactus@ebdaabank.com";
 
@@ -99,9 +100,10 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 // send email
 $success = mail($EmailTo, $Subject, $Body, $headers);
+$success2 = mail($EmailTo2, $Subject, $Body, $headers);
 
 // redirect to success page
-if ($success && $errorMSG == ""){
+if ($success && $success2 && $errorMSG == ""){
    echo "success";
 }else{
     if($errorMSG == ""){
