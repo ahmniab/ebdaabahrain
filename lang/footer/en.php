@@ -41,4 +41,5 @@ return [
     'proc3-adr5'=>'Manama - Kingdom of Bahrain',
     'email-comb2'=>'Email: complaints@cbb.gov.bh',
     'close'=>'Close',
+    'pub-exp-pol'=>'Public Exposure Policy',
 ];

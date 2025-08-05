@@ -46,7 +46,8 @@ $footer_translations = GetTranslations(basename(__FILE__, ".php"));
             </a>
           </div>
           <div class="mt-2 text-center">
-            <p><a class="footer-link" href="jobs.php"><?php echo nl2br($footer_translations['click']); ?></a></p>
+            <p class="m-1 pb-0"><a class="footer-link p-1" href="jobs.php"><?php echo nl2br($footer_translations['click']); ?></a></p>
+            <p class="m-1 p-0"><a class="footer-link p-1" href="UserFiles/File/Ebdaa_Public_Disclosure_Policy.pdf" target="_blank"><?php echo nl2br($footer_translations['pub-exp-pol']); ?></a></p>
           </div>
 
 
