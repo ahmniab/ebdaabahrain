@@ -18,7 +18,7 @@ $translations = GetTranslations(basename(__FILE__, '.php'));
 
     <!-- Favicon -->
     <link rel="stylesheet" href="css/bootstrap-4.1.1.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/min/main.css">
     <style>
         :lang(ar) {
             text-align: right;

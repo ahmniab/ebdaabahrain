@@ -28,9 +28,8 @@ $news_data = getNews();
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Local CSS -->
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/min/main.css">
+    <link rel="stylesheet" href="css/min/news.css">
 </head>
 
 <body>

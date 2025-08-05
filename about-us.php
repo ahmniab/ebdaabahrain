@@ -20,8 +20,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap-4.1.1.min.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/min/main.css">
+    <link rel="stylesheet" href="css/min/about-us.css">
 </head>
 
 <body>

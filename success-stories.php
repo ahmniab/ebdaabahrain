@@ -22,9 +22,9 @@ $stories_data = getStories($lang);
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/min/main.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/success-stories.css">
+  <link rel="stylesheet" href="css/min/success-stories.css">
 </head>
 
 <body>

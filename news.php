@@ -22,8 +22,8 @@ $news_data = getNews($lang);
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
     <!-- Local CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/min/main.css">
+    <link rel="stylesheet" href="css/min/news.css">
     <!-- Font Awesome -->
     <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css " rel="stylesheet">
 </head>

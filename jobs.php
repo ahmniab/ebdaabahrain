@@ -11,8 +11,8 @@ $translations = getTranslations(basename(__FILE__, '.php'));
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title><?php echo $translations['page_title']; ?></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/jobs.css">
+    <link rel="stylesheet" href="css/min/main.css">
+    <link rel="stylesheet" href="css/min/jobs.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" >
 </head>
 
