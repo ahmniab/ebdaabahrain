@@ -87,6 +87,11 @@ $footer_translations = GetTranslations(basename(__FILE__, ".php"));
     <div class="double-bounce2"></div>
   </div>
 </div>
+<script>
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hidden');
+  }, 3000);
+</script>
 <!-- jQuery first, then Bootstrap Bundle JS -->
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" async defer></script>

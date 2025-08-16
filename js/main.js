@@ -90,10 +90,6 @@ $(document).ready(function () {
     })
   });
 
-  // Hide loader after 3 seconds if load event doesn't fire
-  setTimeout(function () {
-    $('#loader').addClass('hidden');
-  }, 3000);
 
   // Smooth scrolling for anchor links
   $('a[href^="#"]').on('click', function (e) {
