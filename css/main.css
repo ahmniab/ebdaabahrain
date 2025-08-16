@@ -70,6 +70,7 @@ body {
   font-weight: 400;
   background: #fff;
   width: 100vw;
+  overflow-x: clip;
 }
 
 
@@ -129,7 +130,7 @@ textarea {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  padding: 0 ;
+  padding: 0;
 }
 
 .navbar:hover {
@@ -283,6 +284,7 @@ html[dir="ltr"] .navbar-nav {
     padding: 1rem;
     position: absolute;
     top: 80px;
+    left: 0;
     width: 100%;
     z-index: 10;
   }
@@ -329,6 +331,7 @@ html[dir="ltr"] .navbar-nav {
     padding: 1rem;
     position: absolute;
     top: 65px;
+    left: 0;
     width: 100%;
     z-index: 10;
   }
@@ -610,8 +613,17 @@ html[dir="ltr"] .navbar-nav {
 .social-links-fixed {
   position: fixed;
   top: 40%;
-  left: 5px;
   z-index: 1000;
+}
+
+.social-links-fixed:lang(ar) {
+  left: 5px;
+  right: auto;
+}
+
+.social-links-fixed:lang(en) {
+  right: 5px;
+  left: auto;
 }
 
 .footer-social-fixed {
@@ -761,9 +773,11 @@ html[dir="ltr"] .navbar-nav {
   visibility: hidden;
   transform: translateY(20px);
 }
+
 .back-to-top:lang(ar) {
   right: 30px;
 }
+
 .back-to-top:lang(en) {
   left: 30px;
 }
@@ -805,9 +819,11 @@ html[dir="ltr"] .navbar-nav {
   transition: all 0.3s;
   border: none;
 }
+
 #chatbot-toggle:lang(ar) {
   left: 25px;
 }
+
 #chatbot-toggle:lang(en) {
   right: 25px;
 }
@@ -836,9 +852,11 @@ html[dir="ltr"] .navbar-nav {
   opacity: 0;
   transition: all 0.3s;
 }
+
 #chatbot-box:lang(ar) {
   left: 25px;
 }
+
 #chatbot-box:lang(en) {
   right: 25px;
 }
@@ -944,9 +962,11 @@ html[dir="ltr"] .navbar-nav {
   font-size: 14px;
   text-decoration: none;
 }
+
 .quick-btn:lang(ar) {
   text-align: right;
 }
+
 .quick-btn:lang(en) {
   text-align: left;
 }
@@ -1021,7 +1041,6 @@ html[dir="ltr"] .navbar-nav {
 @media (max-width: 500px) {
   #chatbot-box {
     width: 90%;
-    left: 5%;
     bottom: 80px;
     max-height: 70vh;
   }
@@ -1188,9 +1207,18 @@ html[dir="ltr"] .navbar-nav {
 
   .back-to-top {
     bottom: 20px;
-    right: 20px;
     width: 45px;
     height: 45px;
+  }
+
+  .back-to-top:lang(ar) {
+    right: 20px;
+    left: auto;
+  }
+
+  .back-to-top:lang(en) {
+    left: 20px;
+    right: auto;
   }
 }
 
@@ -1213,9 +1241,18 @@ html[dir="ltr"] .navbar-nav {
 
   .back-to-top {
     bottom: 15px;
-    right: 15px;
     width: 40px;
     height: 40px;
+  }
+
+  .back-to-top:lang(ar) {
+    right: 15px;
+    left: auto;
+  }
+
+  .back-to-top:lang(en) {
+    left: 15px;
+    right: auto;
   }
 
   .back-to-top i {
@@ -1305,9 +1342,11 @@ html[dir="ltr"] .navbar-nav {
   z-index: 1000;
   overflow: hidden;
 }
+
 .whatsapp-floating:lang(ar) {
   left: 30px;
 }
+
 .whatsapp-floating:lang(en) {
   right: 30px;
 }
@@ -1349,9 +1388,7 @@ html[dir="ltr"] .navbar-nav {
 
 /* WhatsApp tooltip */
 .whatsapp-floating::after {
-  content: 'تواصل معنا عبر واتساب';
   position: absolute;
-  right: 70px;
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.8);
@@ -1366,17 +1403,35 @@ html[dir="ltr"] .navbar-nav {
   pointer-events: none;
 }
 
+.whatsapp-floating:lang(ar)::after {
+  content: 'تواصل معنا عبر واتساب';
+  right: 70px;
+}
+
+.whatsapp-floating:lang(en)::after {
+  content: 'Contact us via WhatsApp';
+  left: 70px;
+}
+
 .whatsapp-floating::before {
   content: '';
   position: absolute;
-  right: 60px;
   top: 50%;
   transform: translateY(-50%);
   border: 5px solid transparent;
-  border-left-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
+}
+
+.whatsapp-floating:lang(ar)::before {
+  right: 60px;
+  border-left-color: rgba(0, 0, 0, 0.8);
+}
+
+.whatsapp-floating:lang(en)::before {
+  left: 60px;
+  border-right-color: rgba(0, 0, 0, 0.8);
 }
 
 .whatsapp-floating:hover::after,
@@ -1926,21 +1981,21 @@ html[dir="ltr"] .navbar-nav {
   display: flex !important;
 }
 
-    /* Load more button */
-    .btn-lg {
-      background: linear-gradient(135deg, #61D2B4, #4CAF50);
-      border: none;
-      border-radius: 12px;
-      padding: 15px 40px;
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: white;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(97, 210, 180, 0.3);
-    }
-    
-    .btn-lg:hover {
-      background: linear-gradient(135deg, #4CAF50, #45a049);
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(97, 210, 180, 0.4);
-    }
+/* Load more button */
+.btn-lg {
+  background: linear-gradient(135deg, #61D2B4, #4CAF50);
+  border: none;
+  border-radius: 12px;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(97, 210, 180, 0.3);
+}
+
+.btn-lg:hover {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(97, 210, 180, 0.4);
+}
