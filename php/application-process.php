@@ -1,6 +1,16 @@
 <?php
 
 $errorMSG = "";
+$captcha = $_POST['g-recaptcha-response'] ?? '';
+if ($captcha === '') {
+    exit('<div class="alert alert-danger text-center">الرجاء التحقق الأمني</div>');
+}
+$secretKey = "6LetsOQZAAAAAHcz4IW80aXL9bjANt2IQlRKsNnP";
+$verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$captcha");
+$responseData = json_decode($verifyResponse);
+if (!$responseData->success) {
+    exit('<div class="alert alert-danger text-center">فشل التحقق من reCAPTCHA</div>');
+}
 
 // NAME
 if (empty($_POST["name_apply"])) {
@@ -93,6 +103,7 @@ $Body = <<<HTML
 HTML;
 
 // echo $Body;
+// // header('Location: ../thank-you.php');
 // exit();
 
 $headers = "From: " . $email . "\r\n";
@@ -104,7 +115,7 @@ $success = mail($EmailTo, $Subject, $Body, $headers);
 
 // redirect to success page
 if ($success) {
-    header('Location: thank-you.html');
+  header('Location: ../thank-you.php');
 } else {
     echo "Something went wrong :(";
 }

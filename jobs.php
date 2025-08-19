@@ -88,9 +88,6 @@ $translations = getTranslations(basename(__FILE__, '.php'));
                             <div id="alert" style="display:none" class="alert alert-danger" role="alert">
                                 <p>الرجاء الضغط على زر التحقق الأمني أدناه</p>
                             </div>
-                            <div class="form-group text-center">
-                                <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-                            </div>
                             <div class="text-center">
                                 <div class="g-recaptcha" data-sitekey="6LetsOQZAAAAANG2gbEt7vMzNEFNHMry4QKYdVJ5"></div>
                                 <button type="submit" class="btn btn-primary btn-lg"><?php echo $translations['form']['submit']; ?></button>

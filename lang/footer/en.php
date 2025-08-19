@@ -42,4 +42,5 @@ return [
     'email-comb2'=>'Email: complaints@cbb.gov.bh',
     'close'=>'Close',
     'pub-exp-pol'=>'Public Exposure Policy',
+    'close'=>'Close',
 ];

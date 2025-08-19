@@ -167,9 +167,7 @@ $translations = GetTranslations(basename(__FILE__, '.php'));
                                     Sending the request... please wait.
                                 <?php } ?>
                             </div>
-                            <div class="form-group text-center mt-3">
-                                <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-                            </div>
+                            
                             <div class="text-center mt-3">
                                 <div class="g-recaptcha" data-sitekey="6LetsOQZAAAAANG2gbEt7vMzNEFNHMry4QKYdVJ5"></div>
                                 <button type="submit" class="btn btn-primary btn-lg px-5" id="submitBtn">

@@ -41,4 +41,5 @@ return [
     'proc3-adr5'=>'المنامة – مملكة البحرين',
     'email-comb2'=>'البريد الإلكتروني: compliance@cbb.gov.bh',
     'pub-exp-pol'=>'سياسة الإفصاح',
+    'close'=>'إغلاق',
 ];

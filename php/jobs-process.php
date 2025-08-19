@@ -15,8 +15,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // تحقق reCAPTCHA
+
 $captcha = $_POST['g-recaptcha-response'] ?? '';
-if (empty($captcha)) {
+if ($captcha === '') {
     exit('<div class="alert alert-danger text-center">الرجاء التحقق الأمني</div>');
 }
 $secretKey = "6LetsOQZAAAAAHcz4IW80aXL9bjANt2IQlRKsNnP";
@@ -39,6 +40,66 @@ $job_label = match ($job_type) {
     'general' => 'تقديم عام - غير محدد',
     default => $custom_position ?: 'غير محدد'
 };
+
+$body = <<<HTML
+<html dir="rtl" lang="ar">
+<head><meta charset="utf-8"></head>
+<body style="background:#f6f8fa;margin:0;padding:16px;font-family:Tahoma,Arial,sans-serif;color:#1f3332;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+         style="width:100%;max-width:720px;margin:auto;background:#ffffff;border:1px solid #e9ecef;border-radius:8px;overflow:hidden;">
+    <tr>
+      <td colspan="2" style="background:#2ecc71;color:#fff;text-align:center;padding:14px 10px;font-size:20px;font-weight:bold;">
+        طلب توظيف جديد
+      </td>
+    </tr>
+
+    <tr>
+      <td style="width:35%;background:#eef7f0;padding:16px 18px;font-size:14px;text-align:right;direction:rtl;">
+        <div style="font-weight:bold;">الاسم</div>
+        <div style="font-size:12px;color:#6c757d;direction:ltr;text-align:left;">Name</div>
+      </td>
+      <td style="width:65%;background:#f3f9f5;padding:16px 18px;font-size:16px;text-align:right;direction:rtl;">$name</td>
+    </tr>
+
+    <tr>
+      <td style="background:#eef7f0;padding:16px 18px;font-size:14px;text-align:right;direction:rtl;">
+        <div style="font-weight:bold;">البريد الإلكتروني</div>
+        <div style="font-size:12px;color:#6c757d;direction:ltr;text-align:left;">Email</div>
+      </td>
+      <td style="background:#f3f9f5;padding:16px 18px;font-size:16px;text-align:right;direction:rtl;">$email</td>
+    </tr>
+
+    <tr>
+      <td style="background:#eef7f0;padding:16px 18px;font-size:14px;text-align:right;direction:rtl;">
+        <div style="font-weight:bold;">الوظيفة</div>
+        <div style="font-size:12px;color:#6c757d;direction:ltr;text-align:left;">Job</div>
+      </td>
+      <td style="background:#f3f9f5;padding:16px 18px;font-size:16px;text-align:right;direction:rtl;">$job_label</td>
+    </tr>
+    <tr>
+      <td style="background:#eef7f0;padding:16px 18px;font-size:14px;text-align:right;direction:rtl;">
+        <div style="font-weight:bold;">المسمى الوظيفي</div>
+        <div style="font-size:12px;color:#6c757d;direction:ltr;text-align:left;">Custom Position</div>
+      </td>
+      <td style="background:#f3f9f5;padding:16px 18px;font-size:16px;text-align:right;direction:rtl;">$custom_position</td>
+    </tr>
+    <tr>
+      <td style="background:#eef7f0;padding:16px 18px;font-size:14px;text-align:right;direction:rtl;">
+        <div style="font-weight:bold;">الرسالة</div>
+        <div style="font-size:12px;color:#6c757d;direction:ltr;text-align:left;">Message</div>
+      </td>
+      <td style="background:#f3f9f5;padding:16px 18px;font-size:16px;line-height:1.7;text-align:right;direction:rtl;">$message</td>
+    </tr>
+
+    <tr>
+      <td colspan="2" style="padding:12px;background:#fafafa;border-top:1px solid #e9ecef;font-size:12px;color:#6c757d;text-align:center;direction:rtl;">
+        هذه رسالة آلية من نموذج التوظيف في موقع إبداع البحرين
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+HTML;
 
 // رفع الملف
 $cvPath = '';
@@ -86,12 +147,7 @@ try {
 
     $mail->isHTML(true);
     $mail->Subject = 'طلب تقديم وظيفة من الموقع';
-    $mail->Body = "
-        <h3>طلب تقديم جديد</h3>
-        <p><strong>الاسم:</strong> $name</p>
-        <p><strong>البريد الإلكتروني:</strong> $email</p>
-        <p><strong>الوظيفة:</strong> $job_label</p>
-        <p><strong>الرسالة:</strong><br>" . nl2br($message) . "</p>";
+    $mail->Body = $body;
 
     $mail->send();
 

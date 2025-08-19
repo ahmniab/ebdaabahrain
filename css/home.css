@@ -314,7 +314,7 @@ body:lang(en){
 
   .counters-section {
     /* background: linear-gradient(135deg, rgba(46, 143, 54, 0.1) 0%, rgba(93, 169, 48, 0.15) 25%, rgba(126, 181, 93, 0.1) 50%, rgba(183, 198, 57, 0.15) 75%, rgba(59, 168, 162, 0.1) 100%); */
-    background-image: url('../assets/img/connters-bg.jpeg');
+    /* background-image: url('../assets/img/connters-bg.jpeg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -867,7 +867,10 @@ body:lang(en){
   ========================================================================== */
 
   .owl-container {
-    background: url('../assets/img/testimonial-bg.jpg') fixed no-repeat;
+    /* background: url('../assets/img/testimonial-bg.jpg') fixed no-repeat; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     color: #dadada;
     display: flex;

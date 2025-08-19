@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" defer>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
 <div dir="ltr" class="splide" aria-label="Fullscreen Carousel">
@@ -7,7 +7,7 @@
             <li dir="<?php echo $dir ?>" class="splide__slide">
                 <!-- First Slide -->
                 <div class="carousel-item active">
-                    <div class="slide-background lazy-bg" data-bg="assets/img/bahrain.webp">
+                    <div class="slide-background lazy-bg" data-bg="assets/img/bahrain.jpeg">
                         <div class="slide-overlay"></div>
                     </div>
                     <div class="carousel-caption">
@@ -64,7 +64,7 @@
                 </div>
 
             </li>
-            <li dir="<?php echo $dir ?>" class="splide__slide" style="background: url('assets/img/second-slide-bg.jpeg') center/cover;">
+            <li dir="<?php echo $dir ?>" class="splide__slide lazy-bg" data-bg="assets/img/second-slide-bg.jpeg" style="background-size: cover;">
                 <div class="d-flex align-items-center justify-content-center h-50">
                     <div class="text-center text-white">
                         <h1 class="display-4"><?= $translations['header-des2']; ?>
@@ -79,23 +79,23 @@
             <li class="splide__slide">
                 <div class="success-elements-container" dir="ltr">
                     <a class="success-element" href="story-details.php?id=story_1753293846">
-                        <img src="assets/img/home-s3-slides/s1.jpeg" alt="success image">
+                        <img src="assets/img/home-s3-slides/s1.jpeg" loading="lazy" alt="success image">
                         <div class="success-filter"></div>
                     </a>
                     <a class="success-element" href="story-details.php?id=story_1753306253">
-                        <img src="assets/img/home-s3-slides/s2.jpeg" alt="success image">
+                        <img src="assets/img/home-s3-slides/s2.jpeg" loading="lazy" alt="success image">
                         <div class="success-filter"></div>
                     </a>
                     <a class="success-element" href="story-details.php?id=story_1753306079">
-                        <img src="assets/img/home-s3-slides/s3.jpeg" alt="success image">
+                        <img src="assets/img/home-s3-slides/s3.jpeg" loading="lazy" alt="success image">
                         <div class="success-filter"></div>
                     </a>
                     <a class="success-element" href="story-details.php?id=story_1753306543">
-                        <img src="assets/img/home-s3-slides/s4.jpeg" alt="success image">
+                        <img src="assets/img/home-s3-slides/s4.jpeg" loading="lazy" alt="success image">
                         <div class="success-filter"></div>
                     </a>
                     <a class="success-element" href="story-details.php?id=story_1753280152">
-                        <img src="assets/img/home-s3-slides/s5.jpeg" alt="success image">
+                        <img src="assets/img/home-s3-slides/s5.jpeg" loading="lazy" alt="success image">
                         <div class="success-filter"></div>
                     </a>
 
@@ -110,7 +110,7 @@
             </li>
             <li class="splide__slide" dir="<?php echo $dir ?>">
                 <!-- Modern Counters Section -->
-                <section class="counters-section" data-stellar-background-ratio="0.5">
+                <section class="counters-section lazy-bg" data-bg="assets/img/connters-bg.jpeg" data-stellar-background-ratio="0.5">
                     <div class="container">
                         <div class="update-info">
                             <i class="fa fa-calendar-alt ml-2"></i>
