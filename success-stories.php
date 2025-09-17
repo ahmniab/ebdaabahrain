@@ -127,6 +127,7 @@ $stories_data = getStories($lang);
       });
     }
   </script>
+  <script src="js/showMore.js"></script>
 </body>
 
 </html>

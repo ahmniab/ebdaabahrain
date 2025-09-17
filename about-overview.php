@@ -55,15 +55,10 @@ $translations = GetTranslations(basename(__FILE__, '.php'));
         </ul>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <?php include "footer.php"; ?>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+ 
 </body>
 
 </html>

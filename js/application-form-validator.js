@@ -1,1 +1,0 @@
-function preventNumbers(e){let t=String.fromCharCode(e.which),r=/[0-9]/.test(t);return!r||(e.preventDefault(),!1)}function preventCharacters(e){let t=String.fromCharCode(e.which),r=/[0-9]/.test(t);return!!r||(e.preventDefault(),!1)}
